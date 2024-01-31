@@ -24,8 +24,8 @@ body > {
   justify-content: space-between;
   align-items: center;
   padding: 1.4rem 7%;
-  background-color: rgba(43, 239, 12, 0.884);
-  border-bottom: 1px solid #2a6214aa;
+  background-color: rgba(44, 119, 32, 0.884);
+  border-bottom: 1px solid #33b30055;
   position: fixed;
   top: 0;
   left: 0;
@@ -36,27 +36,27 @@ body > {
 /*huruf jafarel mediatics*/
 /*(huruf mediatics)*/
 .navbar .navbar-logo {
-  font-size: 2.5rem;
-  font-weight: 750;
+  font-size: 2rem;
+  font-weight: 700;
   color: #ffffff;
   font-style: italic;
 }
 /*(huruf mediatics)*/
 .navbar .navbar-logo span {
-  color: #1e410a;
+  color: #00ff1e;
 }
 
 /*ubah navigasi bagian tengah web*/
-
+/*editu tulisan di tengah*/
 .navbar .navbar-nav a {
   color: #000000;
   display: inline-block;
-  font-size: 1, 4rem;
+  font-size: 1.3rem;
   margin: 0 1rem;
 }
-
+/*garis kecil bayangan di tengah*/
 .navbar .navbar-nav a:hover {
-  color: #66895b;
+  color: #ffffff;
 }
 .navbar .navbar-nav a::after {
   content: "";
@@ -68,22 +68,33 @@ body > {
 
 .navbar .navbar-nav a:hover::after {
   transform: scaleX(0.5);
+  transition: 0.2s linear;
 }
 
+/*bagian icon*/
 .navbar .navbar-extra a {
   color: #062103da;
-  margin: 0.5rem;
+  margin: 0 0.5rem;
 }
 
-.navbar .navbar-extra a::hover {
-  color: var(--primary);
+.navbar .navbar-extra a:hover {
+  color: #fff;
 }
-
 #product-menu {
   display: none;
 }
-
-/* media queris (responsive size)*/
+/* Hero Section */
+/*menyimpan gambar pada bg*/
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* media queris (responsive size)CSS*/
 
 /* laptop */
 @media (max-width: 1366px) {
@@ -99,21 +110,38 @@ body > {
     font-size: 62.5%;
   }
 
-  #produt-menu {
+  #product-menu {
     display: inline-block;
   }
-
+  /*pengaturan navbar tablet & mobile version)*/
   .navbar .navbar-nav {
     position: absolute;
     top: 100%;
-    right: -75;
-    background-color: #0ad10339;
-    width: 28rem;
+    right: -100%;
+    background-color: #77c8749a;
+    width: 30rem;
     height: 100vh;
+    transition: 0.4s;
   }
 
   .navbar .navbar-nav.active {
     right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: #000000;
+    display: block; /*membuat tulisan dinavbar kebawah*/
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+  /*garis bayangan pada navbar*/
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
   }
 }
 
@@ -121,6 +149,9 @@ body > {
 
 @media (max-width: 450px) {
   html {
-    font-size: 55%;
+    font-size: 35%;
+  }
+  #product-menu {
+    display: inline-block;
   }
 }
