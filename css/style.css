@@ -16,7 +16,7 @@ body > {
   font-family: "poppins", sans-serif;
   background-color: #ffffff;
   color: #fff;
-  min-width: 2000px;
+  min-height: 300000px;
 }
 
 /*navbar*/
@@ -25,8 +25,8 @@ body > {
   justify-content: space-between;
   align-items: center;
   padding: 1.4rem 7%;
-  background-color: #436850;
-  border-bottom: 3px solid #fbfada;
+  background-color: #304d30;
+  border-bottom: 3px solid #eef0e5;
   position: fixed;
   top: 0;
   left: 0;
@@ -39,31 +39,31 @@ body > {
 .navbar .navbar-logo {
   font-size: 2rem;
   font-weight: 700;
-  color: #fbfada;
+  color: #b6c4b6;
   font-style: italic;
 }
 /*(huruf mediatics)*/
 .navbar .navbar-logo span {
-  color: #fbfada;
+  color: #eef0e5;
 }
 
 /*ubah navigasi bagian tengah web*/
 /*editu tulisan di tengah*/
 .navbar .navbar-nav a {
-  color: #000000;
+  color: #eef0e5;
   display: inline-block;
   font-size: 1.3rem;
   margin: 0 1rem;
 }
 /*garis kecil bayangan di tengah*/
 .navbar .navbar-nav a:hover {
-  color: #adbc9f;
+  color: #b6c4b6;
 }
 .navbar .navbar-nav a::after {
   content: "";
   display: block;
   padding-bottom: 0.5rem;
-  border-bottom: 0.1rem solid #000000;
+  border-bottom: 0.1rem solid #ffffff;
   transform: scaleX(0);
 }
 
@@ -79,7 +79,7 @@ body > {
 }
 
 .navbar .navbar-extra a:hover {
-  color: #12372a;
+  color: #adbc9f;
 }
 #product-menu {
   display: none;
@@ -93,14 +93,15 @@ body > {
   background-size: cover;
   background-position: center;
   color: #000000;
+  mix-blend-mode: difference;
   display: contents;
   align-items: center;
   min-height: 100vh;
-  position: absolute;
+  position: relative;
 }
-
 .video {
-  width: 100%;
+  width: 1430px;
+  height: 700px;
   object-fit: fill;
   z-index: 0;
   background-size: cover;
@@ -132,19 +133,19 @@ body > {
 }
 
 .content p {
-  font-size: 1rem;
+  font-size: 2dvh;
 }
 
 /*tulisan beli sekarang*/
 .cta {
-  color: #000000;
+  color: #12372a;
   font-size: 15pt center;
   font-style: italic;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   border: 14px;
   border-radius: 12px;
-  background-color: #10e5b7;
+  background-color: #fbfada;
   align-items: center;
   transition: 0.6s;
   padding: 5px 40px;
@@ -157,22 +158,39 @@ body > {
 }
 
 .cta:hover {
-  color: #13b995;
+  color: #436850;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   /*border: 2px solid;*/
   padding: 5px 40px;
-  background: #6eeed2;
+  background: #adbc9f;
   border-radius: 10px;
   transition: cubic-bezier(1, 0, 0, 1);
 }
 
 .logo {
-  width: 300px; /*biar gk pecah svg*/
+  width: auto; /*biar gk pecah svg*/
   height: auto;
-  margin-bottom: 45px;
   transition: ease-in-out;
 }
+
+.jafarel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+.jafarel h1 {
+  /* font-size: 4rem; */
+  font-size: clamp(1rem, 2.5vw, 4rem);
+}
+
+/* About Section */
+.about {
+  padding: 1.4rem 7%;
+}
+
 /* media queris (responsive size)CSS*/
 
 /* laptop */
@@ -185,6 +203,12 @@ body > {
 /* tablet */
 
 @media (max-width: 768px) {
+  /* .jafarel h1 {
+    font-size: 1rem !important;
+  } */
+  .logo {
+    width: 150px;
+  }
   html {
     font-size: 62.5%;
   }
@@ -197,7 +221,7 @@ body > {
     position: absolute;
     top: 100%;
     right: -100%;
-    background-color: #fbfada;
+    background-color: #d2e3c8;
     width: 25rem;
     height: 100vh;
     transition: 0.4s;
@@ -208,7 +232,7 @@ body > {
   }
   /*edit tulisan pada bentuk mobile*/
   .navbar .navbar-nav a {
-    color: #436850;
+    color: #163020;
     display: block; /*membuat tulisan dinavbar kebawah*/
     margin: 1.5rem;
     padding: 0.5rem;
@@ -218,6 +242,7 @@ body > {
 
   .navbar .navbar-nav a::after {
     transform-origin: 0 0;
+    color: #000000;
   }
   /*garis bayangan pada navbar*/
   .navbar .navbar-nav a:hover::after {
