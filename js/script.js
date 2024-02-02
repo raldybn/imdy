@@ -1,10 +1,10 @@
 //toggle class active
 const navbarNav = document.querySelector(".navbar-nav");
 //ketika product menu di klik
-const product = document.getElementById("#product-menu");
-product.onclick = () => {
+const product = document.querySelector("#product-menu");
+product.addEventListener("click", () => {
   navbarNav.classList.toggle("active");
-};
+});
 // klik diluar side bar untuk menghilangkan nav
 //const product = document.querySelector("#product-menu");
 //produk=document.queryselector
@@ -13,6 +13,3 @@ document.addEventListener("click", function (e) {
     navbarNav.classList.remove("active");
   }
 });
-console.log(navbarNav);
-
-const slideshow = [{title:"Together Developing A Healthy life", slogan:"In giving excellent service, Jafarel will focus its competency in diagnostic and distribution of medical paraphernalia to support medical examination in laboratories across Indonesia".}]
