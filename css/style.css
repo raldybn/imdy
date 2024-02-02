@@ -14,7 +14,7 @@
 }
 body > {
   font-family: "poppins", sans-serif;
-  background-color: var(--bg);
+  background-color: #ffffff;
   color: #fff;
   min-width: 2000px;
 }
@@ -26,7 +26,7 @@ body > {
   align-items: center;
   padding: 1.4rem 7%;
   background-color: #436850;
-  border-bottom: 1.5px solid #000000;
+  border-bottom: 3px solid #fbfada;
   position: fixed;
   top: 0;
   left: 0;
@@ -84,17 +84,40 @@ body > {
 #product-menu {
   display: none;
 }
-/* Hero Section */
-/*menyimpan gambar pada bg*/
-.hero {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  background-image: url("../img/header-bg.jpg");
+.container {
+  width: 100%;
+  height: min-content;
+  border-radius: 300px;
+  overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   color: #000000;
+  display: contents;
+  align-items: center;
+  min-height: 100vh;
+  position: absolute;
+}
+
+.video {
+  width: 100%;
+  object-fit: fill;
+  z-index: 0;
+  background-size: cover;
+  overflow: hidden;
+}
+.caption-layout {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  background: linear-gradient(transparent, black);
+  z-index: 1;
 }
 /* tulisan di tengah */
 .content {
@@ -105,6 +128,7 @@ body > {
   color: #000000;
   mix-blend-mode: normal;
   line-height: 1.6;
+  margin-top: -45%;
 }
 
 .content p {
@@ -144,9 +168,10 @@ body > {
 }
 
 .logo {
-  width: 200px; /*biar gk pecah svg*/
+  width: 300px; /*biar gk pecah svg*/
   height: auto;
-  margin-bottom: 100px;
+  margin-bottom: 45px;
+  transition: ease-in-out;
 }
 /* media queris (responsive size)CSS*/
 
