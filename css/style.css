@@ -190,7 +190,8 @@ body {
 }
 
 /* About Section */
-.about {
+.about,
+.contact {
   width: 100%;
   top: 850px;
   size: 85px;
@@ -200,7 +201,8 @@ body {
   text-align: center;
 }
 
-.about h2 {
+.about,
+.contact h2 {
   text-align: center;
   font-size: 2.6rem;
   margin: 5rem;
@@ -220,6 +222,7 @@ body {
   max-width: 40%;
   margin: auto;
   text-align: left;
+  font-size: 1rem;
 }
 
 /* .about .row .content {
@@ -232,10 +235,11 @@ body {
 } */
 
 .about .row .content-about-us h3 {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 .about .row .content-about-us .p h3 {
   margin-bottom: 15rem;
+  font-size: 0.5rem;
 }
 
 .about .row .content-about-us h4 {
@@ -257,6 +261,34 @@ body {
 .product h2 {
   text-align: center;
   font-size: 2.6rem;
+}
+
+.product p {
+  text-align: center;
+  color: #000000;
+  max-width: 30rem;
+  margin: auto;
+}
+
+.product .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+.product .row .product-card {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.product .row .product-card img {
+  border-radius: 50%;
+  width: 80%;
+}
+
+.product .row .product-card .product-card-title {
+  margin-top: 1.5rem auto 0.5rem;
 }
 
 /* media queris (responsive size)CSS*/
