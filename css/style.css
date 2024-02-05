@@ -3,6 +3,9 @@
   --bg: #a0f98eab;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 * {
   font-family: "poppins", sans-serif;
   margin: 0;
@@ -14,7 +17,7 @@
 }
 body {
   font-family: "poppins", sans-serif;
-  background-color: #ffffff;
+  background-color: #fefee9;
   width: 100%;
 }
 
@@ -96,11 +99,12 @@ body {
   display: contents;
   align-items: center;
   min-height: 100vh;
-  position: relative;
+  position: absolute;
+  object-fit: cover;
 }
 .video {
-  width: 1430px;
-  height: 700px;
+  width: 1415px;
+  height: 785px;
   object-fit: fill;
   z-index: 0;
   background-size: cover;
@@ -124,11 +128,11 @@ body {
   text-align: right;
   font-size: 2rem;
   width: 100%;
-  padding: 25px;
+  padding: 62px;
   color: #000000;
   mix-blend-mode: normal;
-  line-height: 1.6;
-  margin-top: -45%;
+  line-height: inherit;
+  margin-top: -30%;
 }
 
 .content p {
@@ -157,12 +161,12 @@ body {
 }
 
 .cta:hover {
-  color: #436850;
+  color: #365486;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   /*border: 2px solid;*/
   padding: 5px 40px;
-  background: #adbc9f;
+  background: #ffffff;
   border-radius: 10px;
   transition: cubic-bezier(1, 0, 0, 1);
 }
@@ -188,27 +192,34 @@ body {
 /* About Section */
 .about {
   width: 100%;
+  top: 850px;
+  size: 85px;
+  padding: 60px;
+  margin: auto;
+  margin-top: auto;
+  text-align: center;
 }
 
 .about h2 {
   text-align: center;
   font-size: 2.6rem;
-  margin-bottom: 3rem;
+  margin: 5rem;
 }
 
 .about .row {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .about .row .about-img img {
-  width: 50%;
+  width: 70%;
+  padding-left: 7rem;
 }
 
 .content-about-us {
   max-width: 40%;
   margin: auto;
-  text-align: right;
+  text-align: left;
 }
 
 /* .about .row .content {
@@ -232,6 +243,20 @@ body {
 }
 .about .row .content-about-us .p h4 {
   margin-bottom: 15rem;
+}
+
+/* Product Section */
+.product {
+  width: 100%;
+  size: 85px;
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+}
+
+.product h2 {
+  text-align: center;
+  font-size: 2.6rem;
 }
 
 /* media queris (responsive size)CSS*/
@@ -272,6 +297,48 @@ body {
 
   .navbar .navbar-nav.active {
     right: 0;
+  }
+
+  .content {
+    text-align: right;
+    font-size: 1.8rem;
+    width: 100%;
+    padding: 42px;
+    color: #000000;
+    mix-blend-mode: normal;
+    line-height: inherit;
+    margin-top: -320px;
+  }
+  .cta {
+    size-adjust: 2rem;
+  }
+  .about .row {
+    flex-wrap: wrap;
+    padding: 25px;
+  }
+  .about .row .about-img img {
+    height: 25rem;
+    width: 40rem;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: auto;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .about .content-about-us {
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+  .about h2 {
+    font-size: 4rem;
+    text-transform: capitalize;
+    margin-bottom: auto;
+  }
+  .about p {
+    padding: auto;
+    margin-bottom: 1rem;
   }
   /*edit tulisan pada bentuk mobile*/
   .navbar .navbar-nav a {
