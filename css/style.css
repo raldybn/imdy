@@ -6,6 +6,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 * {
   font-family: "poppins", sans-serif;
   margin: 0;
@@ -83,6 +84,7 @@ body {
 .navbar .navbar-extra a:hover {
   color: #adbc9f;
 }
+
 #product-menu {
   display: none;
 }
@@ -188,24 +190,38 @@ body {
   /* font-size: 4rem; */
   font-size: clamp(1rem, 2.5vw, 4rem);
 }
-
+.translate {
+  size-adjust: 5px;
+  padding-right: 1rem;
+  margin-right: 1rem;
+}
 /* About Section */
 .about,
 .contact {
-  width: 100%;
+  /* width: 100%;
   top: 850px;
   size: 85px;
   padding: 60px;
   margin: auto;
   margin-top: auto;
   text-align: center;
+  justify-content: center; */
+  width: 100%;
+  size: 50px;
+  padding: 60px;
+  margin: auto;
+  text-align: center;
 }
 
 .about,
 .contact h2 {
   text-align: center;
-  font-size: 2.6rem;
-  margin: 5rem;
+  font-size: 2.5rem;
+}
+
+.contact .contact-icon {
+  size-adjust: 20rem;
+  color: #ffffff;
 }
 
 .about .row {
@@ -216,23 +232,18 @@ body {
 .about .row .about-img img {
   width: 70%;
   padding-left: 7rem;
+  margin-right: 10rem;
+  justify-content: center;
 }
 
 .content-about-us {
   max-width: 40%;
   margin: auto;
-  text-align: left;
-  font-size: 1rem;
-}
-
-/* .about .row .content {
-  flex: 1 1 45rem;
-  padding: 5 5rem;
-  position: relative;
-  display: inline;
-  width: 50%;
+  margin-right: 80px;
   text-align: center;
-} */
+  font-size: 1rem;
+  justify-content: center;
+}
 
 .about .row .content-about-us h3 {
   font-size: 2rem;
@@ -252,7 +263,7 @@ body {
 /* Product Section */
 .product {
   width: 100%;
-  size: 85px;
+  size: 50px;
   padding: 20px;
   margin: auto;
   text-align: center;
@@ -284,13 +295,45 @@ body {
 
 .product .row .product-card img {
   border-radius: 50%;
-  width: 80%;
+  width: 50%;
 }
 
 .product .row .product-card .product-card-title {
   margin-top: 1.5rem auto 0.5rem;
 }
 
+/* Contact Section */
+.contact {
+  background-color: #163020;
+  margin-top: 2 5 5;
+  padding-top: 1rem;
+  color: #eef0e5;
+}
+.contact .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.contact h2 {
+  padding-bottom: 5px;
+}
+
+.contact .row form {
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+.contact .row contact-icon {
+  font-size: 200px;
+  color: #ffffff;
+}
+.contact .map {
+  padding: 2rem;
+  flex: 1 1 45rem;
+  width: 100%;
+  object-fit: cover;
+}
 /* media queris (responsive size)CSS*/
 
 /* laptop */
@@ -310,7 +353,7 @@ body {
     width: 150px;
   }
   html {
-    font-size: 62.5%;
+    font-size: 82.5%;
   }
 
   #product-menu {
@@ -352,7 +395,8 @@ body {
     height: 25rem;
     width: 40rem;
     align-items: center;
-    padding: 15px;
+    /* padding: 15px; */
+    align-items: center;
     margin-bottom: auto;
     object-fit: cover;
     object-position: center;
@@ -367,6 +411,7 @@ body {
     font-size: 4rem;
     text-transform: capitalize;
     margin-bottom: auto;
+    padding-top: 15rem;
   }
   .about p {
     padding: auto;
@@ -396,7 +441,7 @@ body {
 
 @media (max-width: 450px) {
   html {
-    font-size: 35%;
+    font-size: 60%;
   }
   #product-menu {
     display: inline-block;

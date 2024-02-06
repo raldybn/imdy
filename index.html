@@ -44,14 +44,28 @@
         <a href="#" id="product-menu"><i data-feather="menu"></i></a>
       </div>
     </nav>
-    <section id="hero" class="container">
+    <section id="home" class="home">
       <!-- The video Section -->
       <video class="video" autoplay muted loop>
         <source src="img/video contoh.mp4" type="video/mp4" />
       </video>
       <!-- The video Section -->
+      <div id="google_translate_element"></div>
+      <script class="translate">
+        // Load Google Translate API
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement(
+            { pageLanguage: "en" },
+            "google_translate_element"
+          );
+        }
+      </script>
       <main class="content">
         <div class="jafarel">
+          <script
+            class="translate"
+            src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+          ></script>
           <img
             class="logo"
             src="img/logo-removebg-preview.png"
@@ -72,7 +86,7 @@
 
     <!--about section start-->
     <section id="about" class="about">
-      <h2>ABOUT US</h2>
+      <h2>About Us</h2>
       <div class="row">
         <div class="about-img">
           <img src="img/about-us-.jpg" alt="About Us" />
@@ -101,47 +115,112 @@
 
     <!--product section start-->
     <section id="product" class="product">
-      <h2>OUR PRODUCT</h2>
+      <h2>Our Product</h2>
       <p>Lorem ipsum dolor sit amet c</p>
       <div class="row">
         <div class="product-card">
-          <img src="img/PRODUCT/1.jpg" alt="hiv-1.2" class="menu-card-image" />
-          <h3 class="product-card-title">DALF HIV 1,2 -</h3>
+          <img
+            src="img/PRODUCT/1.jpg"
+            alt="Bacterial-Infectious_Desease"
+            class="menu-card-image"
+          />
+          <h3 class="product-card-title">Bacterial Infectious Desease</h3>
           <p class="product-card-price">IDR 1.000.000</p>
         </div>
         <div class="product-card">
-          <img src="img/PRODUCT/1.jpg" alt="hiv-1.2" class="menu-card-image" />
-          <h3 class="product-card-title">DALF HIV 1,2 -</h3>
+          <img
+            src="img/PRODUCT/1.jpg"
+            alt="Blood-Grooping"
+            class="menu-card-image"
+          />
+          <h3 class="product-card-title">Blood Grooping</h3>
           <p class="product-card-price">IDR 1.000.000</p>
         </div>
         <div class="product-card">
-          <img src="img/PRODUCT/1.jpg" alt="hiv-1.2" class="menu-card-image" />
-          <h3 class="product-card-title">DALF HIV 1,2 -</h3>
+          <img
+            src="img/PRODUCT/1.jpg"
+            alt="Drug-Of-Abuse"
+            class="menu-card-image"
+          />
+          <h3 class="product-card-title">Drug Of Abuse</h3>
           <p class="product-card-price">IDR 1.000.000</p>
         </div>
         <div class="product-card">
-          <img src="img/PRODUCT/1.jpg" alt="hiv-1.2" class="menu-card-image" />
-          <h3 class="product-card-title">DALF HIV 1,2 -</h3>
+          <img
+            src="img/PRODUCT/1.jpg"
+            alt="Latex-Serology"
+            class="menu-card-image"
+          />
+          <h3 class="product-card-title">Latex Serology</h3>
           <p class="product-card-price">IDR 1.000.000</p>
         </div>
         <div class="product-card">
-          <img src="img/PRODUCT/1.jpg" alt="hiv-1.2" class="menu-card-image" />
-          <h3 class="product-card-title">DALF HIV 1,2 -</h3>
+          <img
+            src="img/PRODUCT/1.jpg"
+            alt="Parasit-Malaria"
+            class="menu-card-image"
+          />
+          <h3 class="product-card-title">Parasit Malaria</h3>
           <p class="product-card-price">IDR 1.000.000</p>
         </div>
         <div class="product-card">
-          <img src="img/PRODUCT/1.jpg" alt="hiv-1.2" class="menu-card-image" />
-          <h3 class="product-card-title">DALF HIV 1,2 -</h3>
+          <img
+            src="img/PRODUCT/1.jpg"
+            alt="Tumor-Marker"
+            class="menu-card-image"
+          />
+          <h3 class="product-card-title">Tumor Marker</h3>
+          <p class="product-card-price">IDR 1.000.000</p>
+        </div>
+        <div class="product-card">
+          <img
+            src="img/PRODUCT/1.jpg"
+            alt="Urine-Specimen-Test"
+            class="menu-card-image"
+          />
+          <h3 class="product-card-title">Urine Specimen Test</h3>
+          <p class="product-card-price">IDR 1.000.000</p>
+        </div>
+        <div class="product-card">
+          <img
+            src="img/PRODUCT/1.jpg"
+            alt="Viral-Infectious-Desease"
+            class="menu-card-image"
+          />
+          <h3 class="product-card-title">Viral Infectious Desease</h3>
           <p class="product-card-price">IDR 1.000.000</p>
         </div>
       </div>
     </section>
     <!--product section end-->
-    <section id="Contact" class="contact">
+    <!--contact section Start-->
+    <section id="contact" class="contact">
+      <div class="row"></div>
       <h2>Contact</h2>
-      <p>Lorem ipsum dolor sit amet consectetur.</p>
+      <p>
+        PT. Jafarel Mediatics Graha ADPD Jl. Warung Buncit Raya No. 101F,
+        Pejaten Barat Pasar Minggu, Jakarta Selatan 12510, Indonesia Phone : +62
+        21 26965880 HP : +62 813 99237992 (WA only) Email :
+        mediatics.co@cbn.net.id
+      </p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63454.47625970745!2d106.75794662167971!3d-6.276250800000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f33e18c63e9f%3A0x45f749cc9e04f80b!2sPT.%20Jafarel%20Mediatics!5e0!3m2!1sid!2sid!4v1707189354280!5m2!1sid!2sid"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        class="map"
+      ></iframe>
+
+      <p>Opening Hours : Monday – Friday 8.30 AM – 05.00 PM</p>
+      <div class="contact-icon"></div>
+      <a href="mediatics.co@cbn.net.id">Send Email</a>
+      <a href="#" id="mail"><i data-feather="mail"></i></a>
+      <a href="https://api.whatsapp.com/send?phone=15551234567"
+        >Send WhatsApp Message</a
+      >
+      <a href="#" id="whatsapp"><i data-feather="smartphone"></i></a>
     </section>
-    <!--contact section start-->
+
     <!--contact section end-->
     <script>
       feather.replace();
