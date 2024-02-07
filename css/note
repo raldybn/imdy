@@ -1,0 +1,8 @@
+cara membuka code dari git
+KETIK DI TERMINAL
+git clone [link]
+setelah itu KETIK
+git clone https://
+lalu buka folder code menggunakan cd
+cd belajar_buat_web
+lalu ketik code(spasi). atau code .
