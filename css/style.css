@@ -231,7 +231,7 @@ body {
 }
 
 .about .row .about-img img {
-  width: 70%;
+  width: 95%;
   padding-left: 7rem;
   margin-right: 10rem;
   justify-content: center;
@@ -347,7 +347,7 @@ body {
   flex: 1 1 45rem;
   width: 100%;
   object-fit: cover;
-  border: 10px white;
+  border: 10px rgb(0, 0, 0);
 }
 
 .contact .caption .contact-icon a {
@@ -454,11 +454,11 @@ footer .credit {
   }
   .about .row {
     flex-wrap: wrap;
-    padding: 25px;
+    padding: 18px;
   }
   .about .row .about-img img {
-    height: 25rem;
-    width: 40rem;
+    height: 65%;
+    width: 65%;
     align-items: center;
     /* padding: 15px; */
     align-items: center;
@@ -473,13 +473,14 @@ footer .credit {
     text-align: center;
   }
   .about h2 {
-    font-size: 4rem;
+    font-size: 2.6rem;
     text-transform: capitalize;
     margin-bottom: auto;
-    padding-top: 15rem;
+    padding-top: 5rem;
   }
+
   .about p {
-    padding: auto;
+    padding: 1px;
     margin-bottom: 1rem;
   }
   /*edit tulisan pada bentuk mobile*/
@@ -500,6 +501,18 @@ footer .credit {
   .navbar .navbar-nav a:hover::after {
     transform: scaleX(0.2);
   }
+}
+
+.product {
+  width: 100%;
+  size: 50px;
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+}
+
+.product h2 {
+  padding-bottom: 1px;
 }
 
 /* mobile phone */
