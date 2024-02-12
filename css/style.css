@@ -24,6 +24,18 @@ body {
 }
 
 /*navbar*/
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
