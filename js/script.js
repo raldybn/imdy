@@ -1,15 +1,30 @@
-//toggle class active
+//toggle class active product menu
 const navbarNav = document.querySelector(".navbar-nav");
 //ketika product menu di klik
 const product = document.querySelector("#product-menu");
 product.addEventListener("click", () => {
   navbarNav.classList.toggle("active");
 });
-// klik diluar side bar untuk menghilangkan nav
-//const product = document.querySelector("#product-menu");
-//produk=document.queryselector
+
+// toggle class active search form
+const seacrhForm = document.querySelector(".search-form");
+const searchBox = document.querySelector("#search-box");
+
+document.querySelector("#search-button").onclick = (e) => {
+  seacrhForm.classList.toggle("active");
+  searchBox.focus();
+  e.preventDefault();
+};
+
+// klik diluar elemen
+const pm = document.querySelector("#product-menu");
+const sb = document.querySelector("#search-button");
+
 document.addEventListener("click", function (e) {
-  if (!product.contains(e.target) && !navbarNav.contains(e.target)) {
+  if (!pm.contains(e.target) && !navbarNav.contains(e.target)) {
     navbarNav.classList.remove("active");
+  }
+  if (!sb.contains(e.target) && !seacrhForm.contains(e.target)) {
+    seacrhForm.classList.remove("active");
   }
 });

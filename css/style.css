@@ -83,7 +83,44 @@ body {
 }
 
 .navbar .navbar-extra a:hover {
-  color: #adbc9f;
+  color: #ffffff;
+}
+
+/* navbar search form */
+.navbar .search-form {
+  position: absolute;
+  top: 100%;
+  right: 25%;
+  background-color: rgb(255, 255, 255);
+  width: 25rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: 0.3s;
+}
+
+.navbar .search-form.active {
+  transform: scaley(1);
+  width: 25rem;
+  height: 3rem;
+  top: 100%;
+  right: 10%;
+}
+.navbar .search-form input {
+  height: 100%;
+  width: 100%;
+  font-size: 1rem;
+  color: #000;
+  padding: 1rem;
+}
+
+.navbar .search-form label {
+  cursor: pointer;
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  color: #000;
 }
 
 #product-menu {
@@ -351,14 +388,18 @@ body {
 }
 
 .contact .caption .contact-icon a {
-  padding: 5rem 0.5rem;
+  padding: 1rem 0.5rem;
   color: #000000;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 1px 1px 1px rgb(255, 255, 255);
   text-align: center;
+  margin-inline: 1.5rem;
   /* border: #000000;
   border-radius: 25px; */
 }
 
+.contact .caption .contact-icon a:hover::after {
+  color: whitesmoke;
+}
 /* footer*/
 
 footer {
@@ -501,6 +542,11 @@ footer .credit {
   .navbar .navbar-nav a:hover::after {
     transform: scaleX(0.2);
   }
+}
+
+.navbar .search-form {
+  width: 90%;
+  right: 2rem;
 }
 
 .product {
