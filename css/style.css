@@ -136,26 +136,19 @@ body {
 }
 
 .act-btn {
-  background: rgb(241, 241, 241);
   display: block;
   width: 60px;
   height: 60px;
-  line-height: 50px;
   text-align: center;
   color: rgb(0, 255, 17);
-  font-size: 30px;
-  font-weight: bold;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  text-decoration: none;
   transition: ease all 0.3s;
   position: fixed;
   right: 100px;
-  bottom: 19px;
+  bottom: 21px;
   z-index: 9999;
 }
 .act-btn:hover {
-  background: rgb(146, 252, 195);
+  color: rgb(163, 242, 146);
 }
 
 #product-menu {
@@ -560,45 +553,54 @@ footer .credit {
 }
 
 .bid {
-  margin-top: 100px;
-  background-color: #d2e3c8;
+  padding-top: 50px;
+  background-color: #fbfada;
   border-width: 2rem;
-  border-color: #000;
 }
 .produk-kategori {
   text-align: center;
-  font-size: 30px;
-  color: #436850;
-  background-color: #fbfada;
+  font-size: 40px;
+  color: #000;
   font-weight: bold;
-  border-radius: 25px auto;
   margin: 50px auto 50px auto;
+  border: 1px solid #000000;
+  width: 80%;
+  background-color: #adbc9f;
 }
 .salm-produk {
-  justify-content: space-between;
+  justify-content: center;
   display: flex;
+  background: inherit;
+  flex-wrap: wrap;
+  width: 75%;
+  margin: auto;
+  gap: 100px;
 }
 
 .salm-produk div {
   align-content: center;
-  margin: auto;
+  margin: 5px;
   position: relative;
   text-align: center;
   border: #436850;
 }
 
 .salm-produk div img {
-  max-width: 50%;
+  width: 350px;
+  aspect-ratio: 1/1;
 }
 
 .salm-produk p {
-  color: #000000;
+  color: #fbfada;
+  border: 1px solid #fbfada;
+  background-color: #12372a;
+  font-size: 15pt;
 }
 /* SHOPPING.HTML */
 
 /* media queris (responsive size)CSS*/
 /* laptop */
-@media (max-width: 1366px) {
+@media (min-width: 1281px) {
   html {
     font-size: 75%;
   }
@@ -606,12 +608,13 @@ footer .credit {
 
 /* tablet */
 
-@media (max-width: 768px) {
+@media (max-width: 1025px) {
   /* .jafarel h1 {
     font-size: 1rem !important;
   } */
   .logo {
     width: 150px;
+    aspect-ratio: 1/1;
   }
   html {
     font-size: 82.5%;
@@ -652,16 +655,16 @@ footer .credit {
     flex-wrap: wrap;
     padding: 18px;
   }
-  .about .row .about-img img {
+  /* .about .row .about-img img {
     height: 65%;
     width: 65%;
     align-items: center;
-    /* padding: 15px; */
+    padding: 15px;
     align-items: center;
     margin-bottom: auto;
     object-fit: cover;
     object-position: center;
-  }
+  } */
 
   .about .content-about-us {
     max-width: 90%;
@@ -718,33 +721,11 @@ footer .credit {
 
 /* mobile phone */
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
   html {
     font-size: 60%;
   }
   #product-menu {
     display: inline-block;
-  }
-  .act-btn {
-    background: rgb(241, 241, 241);
-    display: block;
-    width: 85%;
-    height: 85%;
-    line-height: 50px;
-    text-align: center;
-    color: rgb(0, 255, 17);
-    font-size: 30px;
-    font-weight: bold;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    text-decoration: none;
-    transition: ease all 0.3s;
-    position: fixed;
-    right: 100px;
-    bottom: 19px;
-    z-index: 9999;
-  }
-  .act-btn:hover {
-    background: rgb(146, 252, 195);
   }
 }
