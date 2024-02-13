@@ -1,177 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shopping Chart Jafarel</title>
-    <script type="text/javascript">
-      <!-- fitur live chat start -->
-      window.$crisp = [];
-      window.CRISP_WEBSITE_ID = "fb4bfac2-24e4-43f1-a958-dc471f2a300c";
-      (function () {
-        d = document;
-        s = d.createElement("script");
-        s.src = "https://client.crisp.chat/l.js";
-        s.async = 1;
-        d.getElementsByTagName("head")[0].appendChild(s);
-      })();
-    </script>
-    <!-- fitur live chat end -->
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@1,700&family=Merriweather+Sans:ital,wght@1,700&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopping Chart Jafarel</title>
+  <script type="text/javascript">
+    <!-- fitur live chat start -->
+    window.$crisp = [];
+    window.CRISP_WEBSITE_ID = "fb4bfac2-24e4-43f1-a958-dc471f2a300c";
+    (function () {
+      d = document;
+      s = d.createElement("script");
+      s.src = "https://client.crisp.chat/l.js";
+      s.async = 1;
+      d.getElementsByTagName("head")[0].appendChild(s);
+    })();
+  </script>
+  <!-- fitur live chat end -->
 
-    <!--feather Icons-->
-    <script src="https://unpkg.com/feather-icons"></script>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@1,700&family=Merriweather+Sans:ital,wght@1,700&display=swap"
+    rel="stylesheet" />
 
-    <!--My Style-->
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+  <!--feather Icons-->
+  <script src="https://unpkg.com/feather-icons"></script>
 
-  <body>
-    <!-- navbar start -->
-    <div>
-      <a href="index.html"> Home </a>
+  <!--My Style-->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- navbar start -->
+  <nav class="navbar">
+    <a href="#" class="navbar-logo">PT.JAFAREL<span>MEDIATICS</span></a>
+    <div class="navbar-nav">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About Us</a>
+      <a href="index.html#product">Product</a>
+      <a href="index.html#contact">Contact</a>
     </div>
-    <nav class="navbar">
-      <a href="#" class="navbar-logo">PT.JAFAREL<span>MEDIATICS</span></a>
-      <div class="navbar-nav">
-        <a href="index.html">Home</a>
-        <a href="index.html#about">About Us</a>
-        <a href="index.html#product">Product</a>
-        <a href="index.html#contact">Contact</a>
-      </div>
 
-      <div class="elemen"></div>
-      <div class="navbar-extra">
-        <a href="#" id="search-button"><i data-feather="search"></i></a>
-        <a href="shopping.html" id="shopping-cart"
-          ><i data-feather="shopping-cart"></i
-        ></a>
-        <a href="#" id="product-menu"><i data-feather="menu"></i></a>
-      </div>
-
-      <!-- search form start -->
-
-      <div class="search-form">
-        <input type="search" id="search-box" placeholder="searcing.." />
-        <label for="search-box"><i data-feather="search"></i></label>
-      </div>
-    </nav>
-    <!-- search form end -->
-    <!-- navbar end -->
-    <!-- FLOATING BUTTON WA -->
-    <a
-      href="https://api.whatsapp.com/send?phone=nomorHP"
-      target="_blank"
-      class="act-btn"
-      ><svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 50 50"
-        width="60px"
-        height="60px"
-      >
-        <path
-          fill="currentColor"
-          d="M25,2C12.318,2,2,12.318,2,25c0,3.96,1.023,7.854,2.963,11.29L2.037,46.73c-0.096,0.343-0.003,0.711,0.245,0.966 C2.473,47.893,2.733,48,3,48c0.08,0,0.161-0.01,0.24-0.029l10.896-2.699C17.463,47.058,21.21,48,25,48c12.682,0,23-10.318,23-23 S37.682,2,25,2z M36.57,33.116c-0.492,1.362-2.852,2.605-3.986,2.772c-1.018,0.149-2.306,0.213-3.72-0.231 c-0.857-0.27-1.957-0.628-3.366-1.229c-5.923-2.526-9.791-8.415-10.087-8.804C15.116,25.235,13,22.463,13,19.594 s1.525-4.28,2.067-4.864c0.542-0.584,1.181-0.73,1.575-0.73s0.787,0.005,1.132,0.021c0.363,0.018,0.85-0.137,1.329,1.001 c0.492,1.168,1.673,4.037,1.819,4.33c0.148,0.292,0.246,0.633,0.05,1.022c-0.196,0.389-0.294,0.632-0.59,0.973 s-0.62,0.76-0.886,1.022c-0.296,0.291-0.603,0.606-0.259,1.19c0.344,0.584,1.529,2.493,3.285,4.039 c2.255,1.986,4.158,2.602,4.748,2.894c0.59,0.292,0.935,0.243,1.279-0.146c0.344-0.39,1.476-1.703,1.869-2.286 s0.787-0.487,1.329-0.292c0.542,0.194,3.445,1.604,4.035,1.896c0.59,0.292,0.984,0.438,1.132,0.681 C37.062,30.587,37.062,31.755,36.57,33.116z"
-        /></svg
-    ></a>
-
-    <!-- FLOATING BUTTON WA -->
-    <!-- slider start -->
-    <!-- Slideshow container -->
-    <div class="slideshow-container">
-      <!-- Full-width images with number and caption text -->
-      <div class="mySlides fade">
-        <img src="img/SHOPING CHART/ss-produkkami.jpg" style="width: 100%" />
-      </div>
-
-      <div class="mySlides fade">
-        <img src="img/SHOPING CHART/ss-urysa.jpg" style="width: 100%" />
-      </div>
-
-      <div class="mySlides fade">
-        <img src="img/SHOPING CHART/ss-widal.jpg" style="width: 100%" />
-      </div>
-      <div class="mySlides fade">
-        <img src="img/SHOPING CHART/ss-rpr.jpg" style="width: 100%" />
-      </div>
-
-      <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <div class="elemen"></div>
+    <div class="navbar-extra">
+      <a href="#" id="search-button"><i data-feather="search"></i></a>
+      <a href="shopping.html" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+      <a href="#" id="product-menu"><i data-feather="menu"></i></a>
     </div>
-    <br />
 
-    <!-- The dots/circles -->
-    <div style="text-align: center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-      <span class="dot" onclick="currentSlide(4)"></span>
+    <!-- search form start -->
+
+    <div class="search-form">
+      <input type="search" id="search-box" placeholder="searcing.." />
+      <label for="search-box"><i data-feather="search"></i></label>
     </div>
-    <!-- The dots/circles -->
-    <!-- slider end -->
+  </nav>
+  <!-- search form end -->
+  <!-- navbar end -->
+  <!-- slider start -->
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img src="img/SHOPING CHART/ss-produkkami.jpg" style="width: 100%" />
+    </div>
 
-    <!-- isi product dan rincian -->
-    <section class="bid">
-      <div class="produk-kategori">BACTERIAL INFECTIOUS DESEASE</div>
-      <div class="salm-produk">
-        <div>
-          <img src="img/PRODUCT/salm-set.jpg" alt="SALMONELLA ANTIGEN SET" />
-          <p>SALMONELLA ANTIGEN SET</p>
-        </div>
-        <div>
-          <img src="img/PRODUCT/sam-ca.jpg" alt="SALMONELLA IgM DROP TEST" />
-          <p>SALMONELLA IgM DROP TEST</p>
-        </div>
-        <div>
-          <img src="img/PRODUCT/typ-ca.jpg" alt="TYPHOID IgG & IgM DROP TEST" />
-          <p>TYPHOID IgG AND IgM DROP TEST</p>
-        </div>
+    <div class="mySlides fade">
+      <img src="img/SHOPING CHART/ss-urysa.jpg" style="width: 100%" />
+    </div>
+
+    <div class="mySlides fade">
+      <img src="img/SHOPING CHART/ss-widal.jpg" style="width: 100%" />
+    </div>
+    <div class="mySlides fade">
+      <img src="img/SHOPING CHART/ss-rpr.jpg" style="width: 100%" />
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br />
+
+  <!-- The dots/circles -->
+  <div style="text-align: center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+  <!-- The dots/circles -->
+  <!-- slider end -->
+
+  <!-- isi product dan rincian -->
+  <section class="bid">
+    <div class="produk-kategori">BACTERIAL INFECTIOUS DESEASE</div>
+    <div class="salm-produk">
+      <div>
+        <img src="img/PRODUCT/salm-set.jpg" alt="SALMONELLA ANTIGEN SET" />
+        <p>SALMONELLA ANTIGEN SET</p>
       </div>
-    </section>
-    <!-- isi product dan rincian -->
-
-    <!-- Footer Start -->
-    <footer>
-      <div class="social">
-        <a href="#"><i data-feather="instagram"></i></a>
-        <a href="#"><i data-feather="shopping-bag"></i></a>
-        <a href="#"><i data-feather="facebook"></i></a>
-        <a href="#"><i data-feather="whatsapp"></i></a>
+      <div>
+        <img src="img/PRODUCT/sam-ca.jpg" alt="SALMONELLA IgM DROP TEST" />
+        <p>SALMONELLA IgM DROP TEST</p>
       </div>
-
-      <div class="links">
-        <a href="#home">Home</a>
-        <a href="#about">About Us</a>
-        <a href="#product">Our Product</a>
-        <a href="#contact">Contact</a>
+      <div>
+        <img src="img/PRODUCT/typ-ca.jpg" alt="TYPHOID IgG & IgM DROP TEST" />
+        <p>TYPHOID IgG AND IgM DROP TEST</p>
       </div>
+    </div>
+  </section>
+  <!-- isi product dan rincian -->
 
-      <div class="credit">
-        <p>Created by <a>JafarelMediatics</a>.| &copy; 2024.</p>
-      </div>
-    </footer>
-    <!-- Footer End -->
-    <!-- feather Icons -->
-    <script>
-      feather.replace();
-    </script>
+  <!-- Footer Start -->
+  <footer>
+    <div class="social">
+      <a href="#"><i data-feather="instagram"></i></a>
+      <a href="#"><i data-feather="shopping-bag"></i></a>
+      <a href="#"><i data-feather="facebook"></i></a>
+      <a href="#"><i data-feather="whatsapp"></i></a>
+    </div>
 
-    <!--My Javascript-->
-    <script src="js/script.js"></script>
-  </body>
+    <div class="links">
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#product">Our Product</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="credit">
+      <p>Created by <a>JafarelMediatics</a>.| &copy; 2024.</p>
+    </div>
+  </footer>
+  <!-- Footer End -->
+  <!-- FLOATING BUTTON WA -->
+  <a href="https://api.whatsapp.com/send?phone=nomorHP" target="_blank" class="act-btn">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="60px" height="60px">
+      <path fill="currentColor"
+        d="M25,2C12.318,2,2,12.318,2,25c0,3.96,1.023,7.854,2.963,11.29L2.037,46.73c-0.096,0.343-0.003,0.711,0.245,0.966 C2.473,47.893,2.733,48,3,48c0.08,0,0.161-0.01,0.24-0.029l10.896-2.699C17.463,47.058,21.21,48,25,48c12.682,0,23-10.318,23-23 S37.682,2,25,2z M36.57,33.116c-0.492,1.362-2.852,2.605-3.986,2.772c-1.018,0.149-2.306,0.213-3.72-0.231 c-0.857-0.27-1.957-0.628-3.366-1.229c-5.923-2.526-9.791-8.415-10.087-8.804C15.116,25.235,13,22.463,13,19.594 s1.525-4.28,2.067-4.864c0.542-0.584,1.181-0.73,1.575-0.73s0.787,0.005,1.132,0.021c0.363,0.018,0.85-0.137,1.329,1.001 c0.492,1.168,1.673,4.037,1.819,4.33c0.148,0.292,0.246,0.633,0.05,1.022c-0.196,0.389-0.294,0.632-0.59,0.973 s-0.62,0.76-0.886,1.022c-0.296,0.291-0.603,0.606-0.259,1.19c0.344,0.584,1.529,2.493,3.285,4.039 c2.255,1.986,4.158,2.602,4.748,2.894c0.59,0.292,0.935,0.243,1.279-0.146c0.344-0.39,1.476-1.703,1.869-2.286 s0.787-0.487,1.329-0.292c0.542,0.194,3.445,1.604,4.035,1.896c0.59,0.292,0.984,0.438,1.132,0.681 C37.062,30.587,37.062,31.755,36.57,33.116z" />
+    </svg>
+  </a>
+  <!-- FLOATING BUTTON WA -->
+  <!-- feather Icons -->
+  <script>
+    feather.replace();
+  </script>
+
+  <!--My Javascript-->
+  <script src="js/script.js"></script>
+</body>
+
 </html>
