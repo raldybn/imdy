@@ -135,6 +135,29 @@ body {
   color: #000;
 }
 
+.act-btn {
+  background: rgb(241, 241, 241);
+  display: block;
+  width: 60px;
+  height: 60px;
+  line-height: 50px;
+  text-align: center;
+  color: rgb(0, 255, 17);
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  text-decoration: none;
+  transition: ease all 0.3s;
+  position: fixed;
+  right: 100px;
+  bottom: 19px;
+  z-index: 9999;
+}
+.act-btn:hover {
+  background: rgb(146, 252, 195);
+}
+
 #product-menu {
   display: none;
 }
@@ -146,7 +169,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  color: #000000;
+  color: #ffffff;
   mix-blend-mode: difference;
   display: contents;
   align-items: center;
@@ -452,6 +475,127 @@ footer .links a {
 footer .credit {
   font-size: 0.8rem;
 }
+/* SHOPPING.HTML */
+/* Slideshow container */
+.slideshow-container {
+  /* max-width: 500px; */
+  width: 80%;
+  position: relative;
+  margin: 60px auto 0 auto;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: 20px auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgba(0, 0, 0, 0.639);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: #eae9e9;
+  backface-visibility: 50%;
+  opacity: 50%;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 8px 0 0 8px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  color: #fff;
+  opacity: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: difference;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  bottom: 150px;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bid {
+  margin-top: 100px;
+  background-color: #d2e3c8;
+  border-width: 2rem;
+  border-color: #000;
+}
+.produk-kategori {
+  text-align: center;
+  font-size: 30px;
+  color: #436850;
+  background-color: #fbfada;
+  font-weight: bold;
+  border-radius: 25px auto;
+  margin: 50px auto 50px auto;
+}
+.salm-produk {
+  justify-content: space-between;
+  display: flex;
+}
+
+.salm-produk div {
+  align-content: center;
+  margin: auto;
+  position: relative;
+  text-align: center;
+  border: #436850;
+}
+
+.salm-produk div img {
+  max-width: 50%;
+}
+
+.salm-produk p {
+  color: #000000;
+}
+/* SHOPPING.HTML */
+
 /* media queris (responsive size)CSS*/
 /* laptop */
 @media (max-width: 1366px) {
@@ -581,8 +725,26 @@ footer .credit {
   #product-menu {
     display: inline-block;
   }
-}
-
-/* shopping page */
-#slideshow {
+  .act-btn {
+    background: rgb(241, 241, 241);
+    display: block;
+    width: 85%;
+    height: 85%;
+    line-height: 50px;
+    text-align: center;
+    color: rgb(0, 255, 17);
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    text-decoration: none;
+    transition: ease all 0.3s;
+    position: fixed;
+    right: 100px;
+    bottom: 19px;
+    z-index: 9999;
+  }
+  .act-btn:hover {
+    background: rgb(146, 252, 195);
+  }
 }
