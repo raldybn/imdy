@@ -16,6 +16,7 @@ html {
   border: none;
   text-decoration: none;
 }
+
 body {
   font-family: "poppins", sans-serif;
   /* background-color: #fefee9; */
@@ -37,13 +38,13 @@ body {
 }
 
 .navbar {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 7%;
   background-color: #304d30;
-  border-bottom: 3px solid #eef0e5;
-  position: fixed;
+  /* border-bottom: 1px solid #eef0e5; */
   top: 0;
   left: 0;
   right: 0;
@@ -58,6 +59,7 @@ body {
   color: #b6c4b6;
   font-style: italic;
 }
+
 /*(huruf mediatics)*/
 .navbar .navbar-logo span {
   color: #eef0e5;
@@ -71,10 +73,12 @@ body {
   font-size: 1.3rem;
   margin: 0 1rem;
 }
+
 /*garis kecil bayangan di tengah*/
 .navbar .navbar-nav a:hover {
   color: #b6c4b6;
 }
+
 .navbar .navbar-nav a::after {
   content: "";
   display: block;
@@ -120,6 +124,7 @@ body {
   top: 100%;
   right: 10%;
 }
+
 .navbar .search-form input {
   height: 100%;
   width: 100%;
@@ -147,6 +152,7 @@ body {
   bottom: 21px;
   z-index: 9999;
 }
+
 .act-btn:hover {
   color: rgb(163, 242, 146);
 }
@@ -154,6 +160,7 @@ body {
 #product-menu {
   display: none;
 }
+
 .container {
   width: 100%;
   height: 100vh;
@@ -170,14 +177,24 @@ body {
   position: absolute;
   object-fit: cover;
 }
-.video {
+
+#home {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+#home .video {
   width: 100%;
-  height: 785px;
-  object-fit: fill;
+  height: 100%;
+  object-fit: cover;
   z-index: 0;
   background-size: cover;
   overflow: hidden;
 }
+
+
+
 .caption-layout {
   position: absolute;
   left: 0;
@@ -191,8 +208,11 @@ body {
   background: linear-gradient(transparent, black);
   z-index: 1;
 }
+
 /* tulisan di tengah */
 .content {
+  position: absolute;
+  bottom: 50px;
   text-align: right;
   font-size: 2rem;
   width: 100%;
@@ -200,8 +220,8 @@ body {
   color: #000000;
   mix-blend-mode: normal;
   line-height: inherit;
-  margin-top: -30%;
 }
+
 
 .content p {
   font-size: 2dvh;
@@ -240,7 +260,8 @@ body {
 }
 
 .logo {
-  width: auto; /*biar gk pecah svg*/
+  width: auto;
+  /*biar gk pecah svg*/
   height: auto;
   transition: ease-in-out;
 }
@@ -252,15 +273,18 @@ body {
   flex-direction: row;
   width: 100%;
 }
+
 .jafarel h1 {
   /* font-size: 4rem; */
   font-size: clamp(1rem, 2.5vw, 4rem);
 }
+
 .translate {
   size-adjust: 5px;
   padding-right: 1rem;
   margin-right: 1rem;
 }
+
 /* About Section */
 .about,
 .contact {
@@ -314,6 +338,7 @@ body {
 .about .row .content-about-us h3 {
   font-size: 2rem;
 }
+
 .about .row .content-about-us .p h3 {
   margin-bottom: 15rem;
   font-size: 0.5rem;
@@ -322,6 +347,7 @@ body {
 .about .row .content-about-us h4 {
   font-size: 1.8rem;
 }
+
 .about .row .content-about-us .p h4 {
   margin-bottom: 15rem;
 }
@@ -384,6 +410,7 @@ body {
   max-width: 80%;
   margin: auto;
 }
+
 .contact img {
   width: 100%;
   height: 100%;
@@ -393,7 +420,8 @@ body {
   right: 0;
   bottom: 0;
   top: 0;
-  z-index: -1; /*urutan niban*/
+  z-index: -1;
+  /*urutan niban*/
 }
 
 .contact .caption {
@@ -428,6 +456,7 @@ body {
 .contact .caption .contact-icon a:hover::after {
   color: whitesmoke;
 }
+
 /* footer*/
 
 footer {
@@ -451,6 +480,7 @@ footer .social a {
 footer .social a:hover {
   color: #000000;
 }
+
 footer .social,
 .links a:hover {
   color: #000000;
@@ -468,13 +498,15 @@ footer .links a {
 footer .credit {
   font-size: 0.8rem;
 }
+
 /* SHOPPING.HTML */
 /* Slideshow container */
 .slideshow-container {
   /* max-width: 500px; */
-  width: 80%;
+  width: 70%;
+  height: auto;
   position: relative;
-  margin: 60px auto 0 auto;
+  margin: auto;
   border-radius: 30px;
   overflow: hidden;
 }
@@ -547,6 +579,7 @@ footer .credit {
   from {
     opacity: 0.4;
   }
+
   to {
     opacity: 1;
   }
@@ -557,6 +590,7 @@ footer .credit {
   background-color: #fbfada;
   border-width: 2rem;
 }
+
 .produk-kategori {
   text-align: center;
   font-size: 40px;
@@ -567,6 +601,7 @@ footer .credit {
   width: 80%;
   background-color: #adbc9f;
 }
+
 .salm-produk {
   justify-content: center;
   display: flex;
@@ -596,6 +631,7 @@ footer .credit {
   background-color: #12372a;
   font-size: 15pt;
 }
+
 /* SHOPPING.HTML */
 
 /* media queris (responsive size)CSS*/
@@ -609,6 +645,14 @@ footer .credit {
 /* tablet */
 
 @media (max-width: 1025px) {
+  .content {
+    text-align: right;
+    font-size: 1.8rem;
+    width: 100%;
+    padding: 42px;
+    color: #000000;
+  }
+
   /* .jafarel h1 {
     font-size: 1rem !important;
   } */
@@ -616,6 +660,7 @@ footer .credit {
     width: 150px;
     aspect-ratio: 1/1;
   }
+
   html {
     font-size: 82.5%;
   }
@@ -623,6 +668,7 @@ footer .credit {
   #product-menu {
     display: inline-block;
   }
+
   /*pengaturan navbar tablet & mobile version)*/
   .navbar .navbar-nav {
     position: absolute;
@@ -638,23 +684,15 @@ footer .credit {
     right: 0;
   }
 
-  .content {
-    text-align: right;
-    font-size: 1.8rem;
-    width: 100%;
-    padding: 42px;
-    color: #000000;
-    mix-blend-mode: normal;
-    line-height: inherit;
-    margin-top: -320px;
-  }
   .cta {
     size-adjust: 2rem;
   }
+
   .about .row {
     flex-wrap: wrap;
     padding: 18px;
   }
+
   /* .about .row .about-img img {
     height: 65%;
     width: 65%;
@@ -671,6 +709,7 @@ footer .credit {
     margin: auto;
     text-align: center;
   }
+
   .about h2 {
     font-size: 2.6rem;
     text-transform: capitalize;
@@ -682,10 +721,12 @@ footer .credit {
     padding: 1px;
     margin-bottom: 1rem;
   }
+
   /*edit tulisan pada bentuk mobile*/
   .navbar .navbar-nav a {
     color: #163020;
-    display: block; /*membuat tulisan dinavbar kebawah*/
+    display: block;
+    /*membuat tulisan dinavbar kebawah*/
     margin: 1.5rem;
     padding: 0.5rem;
     font-size: 1.5rem;
@@ -696,6 +737,7 @@ footer .credit {
     transform-origin: 0 0;
     color: #000000;
   }
+
   /*garis bayangan pada navbar*/
   .navbar .navbar-nav a:hover::after {
     transform: scaleX(0.2);
@@ -725,6 +767,7 @@ footer .credit {
   html {
     font-size: 60%;
   }
+
   #product-menu {
     display: inline-block;
   }
