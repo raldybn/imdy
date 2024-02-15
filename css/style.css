@@ -596,13 +596,15 @@ footer .credit {
   background-color: var(--primary);
   background-size: 2rem;
   align-items: center;
-  margin-top: 2rem;
+  width: 80%;
+  margin: auto;
 }
 
 .kategori {
   display: flex;
   padding: 0;
   width: 100%;
+  height: 100vh;
 }
 
 .kategori h1 {
@@ -616,13 +618,12 @@ footer .credit {
   /* justify-content: center; */
   flex-direction: column;
   background: var(--bg);
-  /* justify-content: center; */
-  align-content: center;
+  justify-content: center; 
   background-color: #365486;
 }
 .img-kategori img {
   width: 100%;
-  height: 63%;
+  height: 100%;
   opacity: 90%;
 }
 
