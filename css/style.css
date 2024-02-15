@@ -650,7 +650,7 @@ footer .credit {
 }
 
 .img-kategori img {
-  width: 100%;
+  width: 52rem;
   height: 100%;
   opacity: 90%;
 }
@@ -664,6 +664,9 @@ footer .credit {
 
 .find-here {
   position: relative;
+  margin: 15px;
+  font-size: 2rem;
+  border-width: 7px;
 }
 
 .caption-kategori .find-here ul {
@@ -673,8 +676,11 @@ footer .credit {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 20px;
-  left: 0;
+  top: -15px;
+  left: 2rem;
+  text-align: center;
+  margin-left: 23rem;
+  font-size: 10px;
 }
 
 .caption-kategori .find-here ul li {
@@ -693,7 +699,6 @@ footer .credit {
 
 .caption-kategori .find-here ul li a:hover {
   display: block;
-  box-shadow: inset 0px 0px 5px #000;
 }
 
 .caption-kategori .find-here ul li .dropdown {
@@ -702,8 +707,8 @@ footer .credit {
 
 .caption-kategori .find-here ul li:hover .dropdown {
   display: block;
-  /* position: absolute; */
-  padding: 10px;
+  /* position: absolute;
+  padding: 2px; */
 }
 
 .caption-kategori .find-here ul li:hover .dropdown li {
@@ -711,15 +716,15 @@ footer .credit {
 }
 
 .caption-kategori .find-here ul li:hover .dropdown li a {
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 5px;
+  padding: 5px;
+  /* border-radius: 1px; */
+  margin-bottom: 1px;
 }
 
 .caption-kategori .find-here ul li:hover .dropdown li a:hover {
   display: block;
+  box-shadow: 20px 20px 50px 10px pink inset;
   background: #000;
-  box-shadow: inset 0px 0px 5px #000;
 }
 
 /* SHOPPING.HTML */
