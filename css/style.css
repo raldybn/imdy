@@ -654,7 +654,8 @@ footer .credit {
 
 /* ALKES */
 /* BID */
-.bid {
+.bid,
+.bg {
   color: #000000;
   font-family: "Lucida grande";
   margin: 7px 7px auto;
@@ -664,7 +665,8 @@ footer .credit {
   margin-top: 85px;
 }
 
-.background-bid {
+.background-bid,
+.background-bg {
   background-color: #e7eecae4;
   border-radius: 15px;
   height: 618px;
@@ -717,6 +719,12 @@ footer .credit {
 }
 .three {
   background-image: url(../img/PRODUCT/typ-ca.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.four {
+  background-image: url(../img/PRODUCT/bg.png);
   background-position: center;
   background-repeat: no-repeat;
 }
