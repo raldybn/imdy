@@ -641,45 +641,45 @@ footer .credit {
   font-size: 10px;
 }
 
-.caption-kategori .find-here ul li {
+.caption-kategori .find-here ul {
   list-style: none;
   display: inline-block;
 }
-.caption-kategori .find-here:hover ul li a {
+.caption-kategori .find-here:hover ul a {
   display: block;
 }
 
-.caption-kategori .find-here ul li a {
+.caption-kategori .find-here ul a {
   display: none;
   text-decoration: none;
   padding: 20px;
 }
 
-.caption-kategori .find-here ul li a:hover {
+.caption-kategori .find-here ul a:hover {
   display: block;
 }
 
-.caption-kategori .find-here ul li .dropdown {
+.caption-kategori .find-here ul .dropdown {
   display: none;
 }
 
-.caption-kategori .find-here ul li:hover .dropdown {
+.caption-kategori .find-here ul:hover .dropdown {
   display: block;
   /* position: absolute;
   padding: 2px; */
 }
 
-.caption-kategori .find-here ul li:hover .dropdown li {
+.caption-kategori .find-here ul:hover .dropdown {
   display: block;
 }
 
-.caption-kategori .find-here ul li:hover .dropdown li a {
+.caption-kategori .find-here ul:hover .dropdown a {
   padding: 5px;
   /* border-radius: 1px; */
   margin-bottom: 1px;
 }
 
-.caption-kategori .find-here ul li:hover .dropdown li a:hover {
+.caption-kategori .find-here ul:hover .dropdown a:hover {
   display: block;
 }
 
