@@ -616,7 +616,7 @@ footer .credit {
 }
 .caption-kategori {
   padding: 50px;
-  /* padding-bottom: 50rem; */
+  padding-bottom: 80px;
   display: flex;
   /* justify-content: center; */
   flex-direction: column;
@@ -659,7 +659,7 @@ footer .credit {
   color: var(--text);
 }
 .kategori span {
-  color: pink;
+  color: rgb(74, 87, 57);
 }
 
 .find-here {
@@ -727,6 +727,108 @@ footer .credit {
   background: #000;
 }
 
+/* ALKES */
+/* BID */
+.bid {
+  text-align: left;
+  font-size: 35pt;
+  color: var(--text);
+  font-family: "Lucida grande";
+  margin: 7px 7px auto;
+  padding-bottom: 30px;
+}
+
+* {
+  box-sizing: border-box;
+}
+.alkes {
+  display: flex;
+  grid-template-columns: auto;
+  justify-content: center;
+}
+
+.box {
+  padding: 10px;
+  padding-top: 20px;
+}
+.card {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  color: rgb(26, 42, 61);
+  border-radius: 22px;
+  overflow: hidden;
+  background-size: cover;
+  box-shadow: 3px 3px 5px grey;
+}
+
+.one {
+  background-image: url(../img/PRODUCT/salm-set.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.two {
+  background-image: url(../img/PRODUCT/sam-ca.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.three {
+  background-image: url(../img/PRODUCT/typ-ca.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.content-card {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 20px;
+  width: 100%;
+  background-color: #fff;
+  transform: translateY(70px);
+  transition: 0.3s;
+}
+
+.content-card::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: -47px;
+  right: -45px;
+  transform: rotate(-175deg);
+  border-radius: 45%;
+  box-shadow: inset 48px 48px white;
+}
+
+.title {
+  color: grey;
+  line-height: 10px;
+  margin-top: -5px;
+  margin-bottom: -5px;
+}
+.subtitle {
+  display: block;
+  margin-bottom: -8px;
+  margin-top: 4px;
+  font-size: 10px;
+}
+
+.description {
+  font-size: 10px;
+  opacity: 0;
+  transition: opacitiy 0.5s;
+  text-align: justify;
+}
+
+.card:hover .content-card {
+  transform: translateY(0);
+}
+
+.card:hover .description {
+  opacity: 1;
+  transition-delay: 0.3s;
+}
 /* SHOPPING.HTML */
 
 /* media queris (responsive size)CSS*/
