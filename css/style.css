@@ -350,48 +350,6 @@ body {
   margin-bottom: 15rem;
 }
 
-/* Product Section */
-.product {
-  width: 100%;
-  size: 50px;
-  padding: 20px;
-  margin: auto;
-  text-align: center;
-}
-
-.product h2 {
-  text-align: center;
-  font-size: 2.6rem;
-}
-
-.product p {
-  text-align: center;
-  color: #000000;
-  max-width: 30rem;
-  margin: auto;
-}
-
-.product .row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 5rem;
-  justify-content: center;
-}
-
-.product .row .product-card {
-  text-align: center;
-  padding-bottom: 2rem;
-}
-
-.product .row .product-card img {
-  border-radius: 50%;
-  width: 50%;
-}
-
-.product .row .product-card .product-card-title {
-  margin-top: 1.5rem auto 0.5rem;
-}
-
 /* Contact Section */
 .contact {
   /* background: url("https://images.pexels.com/photos/534164/pexels-photo-534164.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
@@ -723,8 +681,6 @@ footer .credit {
 
 .caption-kategori .find-here ul li:hover .dropdown li a:hover {
   display: block;
-  box-shadow: 20px 20px 50px 10px pink inset;
-  background: #000;
 }
 
 /* ALKES */
