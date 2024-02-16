@@ -581,8 +581,6 @@ footer .credit {
   justify-content: center;
 }
 
-
-
 .img-kategori img {
   width: 100%;
   height: 100%;
@@ -625,38 +623,34 @@ footer .credit {
   font-size: 1rem;
   font-weight: bold;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-              Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.find-here ul.dropdown  li {
-       padding: 10px 20px;
+.find-here ul.dropdown li {
+  padding: 10px 20px;
 }
-.find-here ul.dropdown  a {
-       color: inherit;
-       font-size: inherit;
+.find-here ul.dropdown a {
+  color: inherit;
+  font-size: inherit;
 }
-
 
 .find-here .button {
-       display: inline-flex;
-       align-items: center;
-       gap: 10px;
-       flex-direction: row;
-       width: 100%;
-       color: #12372a;
-       font-style: italic;
-       border-radius: 20px;
-       border: solid;
-       background-color: #fff;
-       transition: 0.6s;
-       padding: 12px 70px;
-       font-weight: bold;
-       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-              Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-      transition: cubic-bezier(1, 1, 1, 1);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row;
+  width: 100%;
+  color: #12372a;
+  font-style: italic;
+  border-radius: 20px;
+  border: solid;
+  background-color: #fff;
+  transition: 0.6s;
+  padding: 12px 70px;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  transition: cubic-bezier(1, 1, 1, 1);
 }
-
-
-
 
 /* ALKES */
 /* BID */
