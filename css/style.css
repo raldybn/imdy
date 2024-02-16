@@ -574,41 +574,17 @@ footer .credit {
 }
 .caption-kategori {
   padding: 50px;
-  padding-bottom: 80px;
   display: flex;
-  /* justify-content: center; */
   flex-direction: column;
   background: var(--bg);
+  gap: 20px;
   justify-content: center;
 }
 
-.caption-kategori a {
-  color: #12372a;
-  font-style: italic;
-  border-radius: 12px;
-  border: solid;
-  background-color: #fff;
-  align-items: center;
-  transition: 0.6s;
-  padding: 12px 70px;
-  font-weight: bold;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
 
-.caption-kategori a:hover {
-  color: #365486;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border: 2px solid;
-  padding: 10px 65px;
-  background: #edefed;
-  border-radius: 10px;
-  transition: cubic-bezier(1, 1, 1, 1);
-}
 
 .img-kategori img {
-  width: 52rem;
+  width: 100%;
   height: 100%;
   opacity: 90%;
 }
@@ -622,66 +598,65 @@ footer .credit {
 
 .find-here {
   position: relative;
-  margin: 15px;
   font-size: 2rem;
-  border-width: 7px;
+  width: max-content;
 }
 
-.caption-kategori .find-here ul {
-  margin: 0px;
-  padding: 10px;
-  background: none;
+.find-here:hover ul.dropdown {
   display: flex;
-  flex-direction: column;
+}
+.find-here ul.dropdown {
+  transition: all 0.5s;
+  border: solid;
+  width: 100%;
+  margin: 10px 0px;
+  padding: 10px;
   position: absolute;
-  top: -15px;
-  left: 2rem;
-  text-align: center;
-  margin-left: 23rem;
+  top: 70px;
+  display: none;
+  flex-direction: column;
+  text-align: left;
   font-size: 10px;
-}
-
-.caption-kategori .find-here ul {
   list-style: none;
-  display: inline-block;
+  background: #fff;
+  border-radius: 20px;
+  color: black;
+  gap: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+              Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.caption-kategori .find-here:hover ul a {
-  display: block;
+.find-here ul.dropdown  li {
+       padding: 10px 20px;
 }
-
-.caption-kategori .find-here ul a {
-  display: none;
-  text-decoration: none;
-  padding: 20px;
-}
-
-.caption-kategori .find-here ul a:hover {
-  display: block;
-}
-
-.caption-kategori .find-here ul .dropdown {
-  display: none;
+.find-here ul.dropdown  a {
+       color: inherit;
+       font-size: inherit;
 }
 
-.caption-kategori .find-here ul:hover .dropdown {
-  display: block;
-  /* position: absolute;
-  padding: 2px; */
+
+.find-here .button {
+       display: inline-flex;
+       align-items: center;
+       gap: 10px;
+       flex-direction: row;
+       width: 100%;
+       color: #12372a;
+       font-style: italic;
+       border-radius: 20px;
+       border: solid;
+       background-color: #fff;
+       transition: 0.6s;
+       padding: 12px 70px;
+       font-weight: bold;
+       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+              Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      transition: cubic-bezier(1, 1, 1, 1);
 }
 
-.caption-kategori .find-here ul:hover .dropdown {
-  display: block;
-}
 
-.caption-kategori .find-here ul:hover .dropdown a {
-  padding: 5px;
-  /* border-radius: 1px; */
-  margin-bottom: 1px;
-}
 
-.caption-kategori .find-here ul:hover .dropdown a:hover {
-  display: block;
-}
 
 /* ALKES */
 /* BID */
