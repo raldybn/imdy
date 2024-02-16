@@ -730,12 +730,20 @@ footer .credit {
 /* ALKES */
 /* BID */
 .bid {
-  text-align: left;
-  font-size: 35pt;
-  color: var(--text);
+  color: #000000;
   font-family: "Lucida grande";
   margin: 7px 7px auto;
   padding-bottom: 30px;
+  font-size: 55px;
+  text-align: center;
+  margin-top: 85px;
+}
+
+.background-bid {
+  background-color: #e7eecae4;
+  border-radius: 15px;
+  height: 618px;
+  padding: 10px;
 }
 
 * {
@@ -751,10 +759,20 @@ footer .credit {
   padding: 10px;
   padding-top: 20px;
 }
+.rincian-widal,
+.beli-widal {
+  color: #000000;
+}
+
+.rincian-widal:hover,
+.beli-widal:hover {
+  color: #bbb;
+}
+
 .card {
   position: relative;
-  width: 250px;
-  height: 250px;
+  width: 329px;
+  height: 329px;
   color: rgb(26, 42, 61);
   border-radius: 22px;
   overflow: hidden;
