@@ -988,6 +988,10 @@ footer .credit {
   .img-kategori {
     display: none;
   }
+
+  .caption-kategori {
+    margin: 20px;
+  }
   .caption-kategori span {
     font-size: 38pt;
   }
