@@ -1018,4 +1018,11 @@ footer .credit {
     background-repeat: repeat;
     max-width: max-content;
   }
+
+  .content {
+    padding: 10px;
+  }
+  .jafarel h1 {
+    font-size: 3rem;
+  }
 }
