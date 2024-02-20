@@ -998,6 +998,7 @@ footer .credit {
 
   .caption-kategori {
     /* margin: 20px; */
+    margin-top: 38px;
     background-image: url(../img/kategori.png);
   }
   .caption-kategori span {
