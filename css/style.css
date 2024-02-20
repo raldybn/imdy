@@ -1006,6 +1006,17 @@ footer .credit {
     font-size: 0.5rem;
     padding: 3.5px;
   }
+  .navbar .search-form.active {
+    transform: scaley(1);
+    width: 17rem;
+    height: 2.5rem;
+    top: 100%;
+    right: 25%;
+  }
+  .navbar .search-form.active svg {
+    padding: 4px;
+    margin: -5px;
+  }
   .kategori {
     display: flex;
     height: max-content;
