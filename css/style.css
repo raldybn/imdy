@@ -103,7 +103,7 @@ body {
 }
 
 .navbar .navbar-extra a:hover {
-  color: #ffffff;
+  color: #000000;
 }
 
 /* navbar search form */
@@ -687,16 +687,17 @@ footer .credit {
 }
 
 .produk-alkes {
-  background-image: url(../img/soap3.jpg);
+  background-image: url(../img/soap.jpg);
   /* backface-visibility: 45%; */
   /* background-color: rgba(60, 156, 41, 0.601); */
   /* border-radius: 15px; */
   height: 1460px;
-  padding: 10px;
-  margin: 15px 0px;
+  padding: 220px;
+  /* margin-bottom: 15px 0px; */
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: 100%;
+  max-width: max-content;
 }
 
 /* .background-bid,
@@ -971,7 +972,7 @@ footer .credit {
 }
 
 .produk-alkes {
-  background-image: url(../img/soap3.jpg);
+  background-image: url(../img/soap.jpg);
   background-position: center;
   background-repeat: repeat;
   max-width: max-content;
@@ -987,6 +988,14 @@ footer .credit {
   #product-menu {
     display: inline-block;
   }
+
+  .navbar {
+    font-size: 8px;
+  }
+  .navbar-extra {
+    font-size: 2px;
+  }
+
   .kategori {
     display: flex;
     height: max-content;
@@ -1039,7 +1048,7 @@ footer .credit {
     align-items: baseline;
   }
   .produk-alkes {
-    background-image: url(../img/soap3.jpg);
+    background-image: url(../img/soap.jpg);
     background-position: center;
     background-repeat: repeat;
     max-width: max-content;
