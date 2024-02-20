@@ -1112,4 +1112,12 @@ footer .credit {
     padding: 0px;
     margin: 1px;
   }
+  .wa-button svg {
+    height: 60px;
+    width: 60px;
+    justify-content: end;
+    margin-right: -183px;
+    margin-top: -44px;
+    padding-bottom: 3px;
+  }
 }
