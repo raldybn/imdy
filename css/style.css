@@ -692,7 +692,8 @@ footer .credit {
   /* background-color: rgba(60, 156, 41, 0.601); */
   /* border-radius: 15px; */
   height: 1460px;
-  padding: 220px;
+  padding-left: 10px;
+  padding-bottom: 90px;
   /* margin-bottom: 15px 0px; */
   background-position: center;
   background-repeat: repeat;
@@ -787,7 +788,7 @@ footer .credit {
   position: absolute;
   left: 0;
   bottom: 0;
-  padding: 26px;
+  padding: 20px;
   width: 100%;
   background-color: #fff;
   transform: translateY(100px);
@@ -797,10 +798,10 @@ footer .credit {
 .content-card::before {
   content: "";
   position: absolute;
-  width: 76px;
-  height: 100px;
-  top: -48px;
-  right: -46px;
+  width: 71px;
+  height: 99px;
+  top: -45px;
+  right: -57px;
   transform: rotate(-175deg);
   border-radius: 45%;
   box-shadow: inset 48px 48px white;
@@ -825,6 +826,10 @@ footer .credit {
   opacity: 0;
   transition: opacitiy 0.5s;
   text-align: justify;
+}
+.rincian-widal,
+.beli-widal {
+  font-size: 12px;
 }
 
 .card:hover .content-card {
@@ -976,6 +981,7 @@ footer .credit {
   background-position: center;
   background-repeat: repeat;
   max-width: max-content;
+  padding: 6px;
 }
 
 /* mobile phone */
@@ -991,9 +997,6 @@ footer .credit {
 
   .navbar {
     font-size: 8px;
-  }
-  .navbar-extra {
-    font-size: 2px;
   }
 
   .kategori {
@@ -1067,7 +1070,7 @@ footer .credit {
   }
   .content-card {
     /* font-size: 1pt; */
-    transform: translateY(110px);
+    transform: translateY(96px);
   }
   .description {
     font-size: 7px;
@@ -1077,5 +1080,8 @@ footer .credit {
   .doa {
     font-size: 18px;
     padding: 15px;
+  }
+  .title {
+    font-size: 12px;
   }
 }
