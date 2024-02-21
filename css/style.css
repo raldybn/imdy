@@ -303,10 +303,9 @@ body {
   text-align: center;
 }
 
-.about,
-.contact h2 {
+.about {
   text-align: center;
-  font-size: 2rem;
+  font-size: 3.5rem;
 }
 
 /* .contact .contact-icon {
@@ -352,6 +351,10 @@ body {
   margin-bottom: 15rem;
 }
 
+.about p {
+  font-size: 5px;
+}
+
 /* Contact Section */
 .contact {
   /* background: url("https://images.pexels.com/photos/534164/pexels-photo-534164.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
@@ -365,8 +368,9 @@ body {
   /* padding: 5rem 3rem; */
   text-align: center;
   color: #000000;
-  max-width: 80%;
+  max-width: 100%;
   margin: auto;
+  max-height: max-content;
 }
 
 .contact img {
@@ -390,15 +394,20 @@ body {
 }
 
 .contact .caption h2 {
-  padding-bottom: 5px;
+  padding-bottom: 45px;
+  font-size: 3.5rem;
 }
 
-.contact .caption .map {
+.contact .caption .maps {
   padding: 2rem;
   flex: 1 1 45rem;
   width: 100%;
   object-fit: cover;
   border: 10px rgb(0, 0, 0);
+}
+.maps iframe {
+  width: 35rem;
+  height: 18rem;
 }
 
 .contact .caption .contact-icon a {
@@ -917,6 +926,7 @@ footer .credit {
     max-width: 90%;
     margin: auto;
     text-align: center;
+    font-size: 15px;
   }
 
   .about h2 {
@@ -929,6 +939,7 @@ footer .credit {
   .about p {
     padding: 1px;
     margin-bottom: 1rem;
+    font-size: 15px;
   }
 
   /*edit tulisan pada bentuk mobile*/
@@ -966,10 +977,6 @@ footer .credit {
   text-align: center;
 }
 
-.product h2 {
-  padding-bottom: 1px;
-}
-
 .produk-alkes {
   width: 100%;
   margin: auto;
@@ -983,7 +990,47 @@ footer .credit {
   max-width: max-content;
   padding: 6px;
 }
+/* our partner section */
+.partner h2 {
+  padding-bottom: 1px;
+  font-size: 4.2rem;
+  text-align: center;
+}
+.partner p {
+  text-align: center;
+  padding: 50px 50px;
+}
+.partner {
+  width: 85%;
+  height: auto;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  margin-bottom: 3rem;
+  margin-top: 15px;
+  background-color: #b9ecab;
+  border-radius: 20px;
+  color: rgb(0, 0, 0);
+}
 
+.partner-img {
+  display: flex;
+  flex-wrap: wrap;
+}
+.partner-img img {
+  /* padding: 15px; */
+  height: 45rem;
+  width: 35rem;
+}
+
+/* .partner-img .mandaya img {
+  width: max-content;
+  height: max-content;
+}
+.partner-img .rspj img {
+  width: max-content;
+  height: max-content;
+} */
 /* mobile phone */
 
 @media screen and (max-width: 481px) {
@@ -1116,8 +1163,20 @@ footer .credit {
     height: 60px;
     width: 60px;
     justify-content: end;
-    margin-right: -183px;
-    margin-top: -44px;
+    margin-right: -170px;
+    margin-top: -500px;
     padding-bottom: 3px;
+  }
+  .maps iframe {
+    width: 20rem;
+    height: 12rem;
+  }
+  .partner-img img {
+    /* padding: 15px; */
+    height: 12rem;
+    width: 35rem;
+  }
+  .about p {
+    font-size: 15px;
   }
 }
