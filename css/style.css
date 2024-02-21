@@ -126,7 +126,7 @@ body {
   width: 25rem;
   height: 3rem;
   top: 100%;
-  right: 10%;
+  right: 2.5%;
 }
 
 .navbar .search-form input {
@@ -257,6 +257,7 @@ body {
   background: var(--bg);
   border-radius: 10px;
   transition: cubic-bezier(1, 0, 0, 1);
+  background-color: rgb(31, 133, 74);
 }
 
 .logo {
