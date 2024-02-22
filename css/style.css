@@ -667,6 +667,7 @@ footer .credit {
 .menus {
   margin-top: 51px;
   position: fixed;
+  filter: drop-shadow(5px 5px 5px #fff);
 }
 
 .dropdown ul li {
@@ -1112,6 +1113,8 @@ input {
 
   .kategori {
     display: flex;
+    width: 100%;
+    height: 100%;
     height: max-content;
     flex-direction: column;
   }
@@ -1131,41 +1134,25 @@ input {
 
   .caption-kategori b {
     color: hsl(0, 59%, 94%);
+    filter: drop-shadow(5px 5px 3px grey);
   }
-
+  .caption-kategori b:hover {
+    filter: drop-shadow(8px 5px 3px rgb(222, 247, 218));
+  }
   .caption-kategori p {
     color: #bbb;
   }
-
-  .slideshow-container {
-    /* max-width: 500px; */
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    margin: auto;
-    overflow: hidden;
-    margin-bottom: 5rem;
-    margin-top: 15px;
-  }
-
-  .find-here .button {
-    font-size: 15px;
-    margin-top: 28px;
-    margin-bottom: -12px;
-  }
-  .find-here .button b {
-    color: #000;
-  }
-  .find-here:hover ul.dropdown {
-    z-index: 9999;
-    position: unset;
-    align-items: baseline;
+  .content-kategori {
+    width: 398px;
+    display: contents;
+    font-size: 20px;
   }
   .produk-alkes {
     background-image: url(../img/soap.jpg);
     background-position: center;
     background-repeat: repeat;
     max-width: max-content;
+    margin-top: 848px;
   }
 
   .content {
