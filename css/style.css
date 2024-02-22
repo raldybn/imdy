@@ -459,20 +459,16 @@ footer .credit {
   font-size: 0.8rem;
 }
 
-/* SHOPPING.HTML */
-/* Slideshow container */
+/* 
 .slideshow-container {
-  /* max-width: 500px; */
-  width: 55%;
+  width: 85%;
   height: auto;
   position: relative;
   margin: auto;
   overflow: hidden;
-  margin-bottom: 5rem;
-  margin-top: 15px;
+  margin-bottom: 5px;
+  margin-top: 16px;
 }
-
-/* Hide the images by default */
 .mySlides {
   display: none;
 }
@@ -486,7 +482,6 @@ footer .credit {
   left: 0;
   right: 0;
 }
-/* Next & previous buttons */
 .prev,
 .next {
   cursor: pointer;
@@ -506,13 +501,11 @@ footer .credit {
   opacity: 50%;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0.3rem;
   border-radius: 8px 0 0 8px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
   color: #fff;
@@ -521,7 +514,6 @@ footer .credit {
   background-blend-mode: difference;
 }
 
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -538,7 +530,6 @@ footer .credit {
   background-color: #717171;
 }
 
-/* Fading animation */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -565,11 +556,13 @@ footer .credit {
   margin: auto;
 }
 
+/* .kategori { */
+
 .kategori {
   display: flex;
   padding: 0;
+  height: 65rem;
   width: 100%;
-  height: 100vh;
   justify-content: space-between;
 }
 
@@ -580,87 +573,27 @@ footer .credit {
   word-spacing: 2px;
 }
 
-.img-kategori img {
-  width: 100%;
-  height: 100%;
-  opacity: 100%;
-}
-
-.kategori p {
-  color: var(--text);
-}
-.kategori span {
-  color: rgb(74, 87, 57);
-}
-/* 
-.find-here {
-  position: relative;
-  font-size: 2rem;
-  width: max-content;
-}
-
-.find-here .button {
-  display: inline-flex;
-  align-items: center;
-  width: 100%;
-  color: #000000;
-  font-style: italic;
-  border-radius: 100px;
-  background-color: #fff;
-  transition: 0.6s;
-  padding: 12px 70px;
-  font-weight: bold;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  transition: cubic-bezier(1, 1, 1, 1);
-  margin: 27px 0px;
-  filter: drop-shadow(2px 4px 6px black);
-}
-
-.find-here .button::hover {
-  color: #bbb;
-  background-color: #163020;
-}
-
-.find-here:hover ul.dropdown {
-  display: grid;
-}
-.find-here ul.dropdown {
-  width: 100%;
-  margin: 23px 0px;
-  padding: 10px;
-  position: absolute;
-  top: 70px;
-  display: none;
-  text-align: center;
-  font-size: 10px;
-  list-style: none;
-  background: #fff;
-  border-radius: 20px;
-  color: black;
-  font-size: 1rem;
-  font-weight: bold;
-  filter: drop-shadow(2px 4px 6px black);
-}
-
-.find-here ul.dropdown li {
-  padding: 10px 20px;
-}
-.find-here ul.dropdown a {
-  color: inherit;
-  font-size: inherit;
-} */
-
 .caption-kategori {
   padding: 38px;
   display: flex;
   flex-direction: column;
-  background: var(--bg);
   /* gap: -5px; */
   justify-content: center;
-  width: 50%;
-  height: 50%;
-  padding-top: 400px;
+  width: 100%;
+  height: 100%;
+  padding-top: 35px;
+  font-size: 35px;
+  position: absolute;
+  background: center;
+  background-image: url(../img/kategori.png);
+  align-items: center;
+}
+.caption-kategori b {
+  font-size: 60px;
+  color: violet;
+}
+.caption-kategori i {
+  color: white;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
@@ -672,133 +605,112 @@ footer .credit {
   font-family: "Poppins", sans-serif;
 }
 .dropdown {
-  /* position: absolute; */
-  top: 623px;
-  left: 257px;
   transform: translate(-50%, -50%);
-  background: #1b1b1b;
-  width: 216px;
-  height: 57px;
+  background: #110303;
+  width: 344px;
   line-height: 40px;
-  padding: 8px 25px;
+  padding: 6px 17px;
   border-radius: 5px;
-  margin: 110px;
-  margin-top: 77px;
-  filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.405));
+  padding-top: -19px;
+  margin: 31px;
+  margin-left: 344px;
+  mix-blend-mode: lighten;
+  z-index: 1;
+  display: inline-block;
 }
 
-.dropdown svg {
-  margin-left: 9px;
-  display: inline-flex;
-  justify-content: space-around;
-  align-content: flex-end;
-  flex-wrap: wrap;
+.dropdown ul {
+  position: absolute;
+  background: #313131;
+  list-style: none;
+  top: 49px;
+  left: 0px;
+  width: 100%;
+  border-radius: 5px;
+  display: none;
 }
-
-.dropdown svg:hover {
-  transform: rotate(180deg);
+.buttons span {
+  float: right;
+  line-height: 40px;
+  transition: 0.5s;
+  color: #dbffda;
 }
-
-.caption-kategori span {
-  font-size: 18px;
-  color: #fff;
-}
-
-/* .caption-kategori span:hover {
+.buttons span.rotate::hover {
   transform: rotate(-180deg);
-  color: cyan;
-} */
+  color: #dbffda;
+}
 
 .dropdown label {
-  color: white;
-  font-size: 26px;
+  color: #dbffda;
+  font-size: 22px;
   font-weight: 500;
   display: block;
   cursor: pointer;
 }
 
-.dropdown label:hover {
-  color: cyan;
-}
-
-.buttons span {
-  float: right;
-  line-height: 40px;
-  transition: 0.5s;
-}
-
-.buttons span.rotate {
-  transform: rotate(-180deg);
-}
-
-.dropdown ul {
-  position: absolute;
-  background: #1b1b1b;
-  list-style: none;
-  top: 75px;
-  left: 0;
-  width: 100%;
-  border-radius: 5px;
-  display: none;
-}
 [id^="btn"]:checked + ul {
   display: block;
 }
-
 .dropdown .menus:before {
   position: absolute;
   content: "";
   height: 20px;
   width: 20px;
-  background: #1b1b1b;
+  background: #dbffda;
   right: 20px;
   top: -10px;
   transform: rotate(45deg);
-  z-index: -1;
-  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: 1;
+  display: none;
+  align-items: baseline;
 }
+.menus {
+  margin-top: 51px;
+  position: fixed;
+}
+
 .dropdown ul li {
-  line-height: 40px;
-  padding: 8px 20px;
+  line-height: 50px;
+  padding: 10px 18px;
   cursor: pointer;
-  /* border-bottom: 1px solid rgba(0, 0, 0, 0.2); */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .dropdown ul li label {
   font-size: 18px;
 }
 .dropdown ul li a {
-  color: white;
+  color: #dbffda;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 18px;
   display: block;
 }
 .dropdown ul li a:hover,
 .dropdown ul li label:hover {
-  color: cyan;
+  color: #fff;
 }
-
-/* .dropdown ul ul {
+.dropdown ul ul {
   position: static;
-} */
-/* .dropdown ul ul li {
+}
+.dropdown ul ul li {
   line-height: 30px;
   padding-left: 30px;
   border-bottom: none;
-} */
-/* .dropdown ul ul li a {
-  color: #e6e6e6;
+}
+.dropdown ul ul li a {
+  color: #dbffda;
   font-size: 17px;
-} */
-/* .dropdown ul li span {
-  font-size: 20px;
+}
+.dropdown ul li span {
+  font-size: 15px;
   float: right;
   margin-top: 10px;
   padding: 0 10px;
   transition: 0.5s;
-} */
-/* .dropdown ul li span.rotate {
+  color: #d2e3c8;
+}
+.dropdown ul li span.rotate {
   transform: rotate(-180deg);
-} */
+}
 input {
   display: none;
 }
@@ -1228,8 +1140,8 @@ input {
   .slideshow-container {
     /* max-width: 500px; */
     width: 100%;
-    height: auto;
-    position: relative;
+    height: 100%;
+    position: fixed;
     margin: auto;
     overflow: hidden;
     margin-bottom: 5rem;
