@@ -579,18 +579,6 @@ footer .credit {
   letter-spacing: -5px;
   word-spacing: 2px;
 }
-.caption-kategori {
-  padding: 38px;
-  display: flex;
-  flex-direction: column;
-  background: var(--bg);
-  /* gap: -5px; */
-  justify-content: center;
-}
-
-.caption-kategori span {
-  font-size: 125px;
-}
 
 .img-kategori img {
   width: 100%;
@@ -604,7 +592,7 @@ footer .credit {
 .kategori span {
   color: rgb(74, 87, 57);
 }
-
+/* 
 .find-here {
   position: relative;
   font-size: 2rem;
@@ -614,13 +602,10 @@ footer .credit {
 .find-here .button {
   display: inline-flex;
   align-items: center;
-  /* gap: 10px; */
-  /* flex-direction: row; */
   width: 100%;
   color: #000000;
   font-style: italic;
   border-radius: 100px;
-  /* border: solid; */
   background-color: #fff;
   transition: 0.6s;
   padding: 12px 70px;
@@ -641,23 +626,18 @@ footer .credit {
   display: grid;
 }
 .find-here ul.dropdown {
-  /* transition: all 0.5s; */
-  /* border: solid; */
-  /* transition: width 2s, height 4s; */
   width: 100%;
   margin: 23px 0px;
   padding: 10px;
   position: absolute;
   top: 70px;
   display: none;
-  /* flex-direction: column; */
   text-align: center;
   font-size: 10px;
   list-style: none;
   background: #fff;
   border-radius: 20px;
   color: black;
-  /* gap: 10px; */
   font-size: 1rem;
   font-weight: bold;
   filter: drop-shadow(2px 4px 6px black);
@@ -669,6 +649,158 @@ footer .credit {
 .find-here ul.dropdown a {
   color: inherit;
   font-size: inherit;
+} */
+
+.caption-kategori {
+  padding: 38px;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  /* gap: -5px; */
+  justify-content: center;
+  width: 50%;
+  height: 50%;
+  padding-top: 400px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: "Poppins", sans-serif;
+}
+.dropdown {
+  /* position: absolute; */
+  top: 623px;
+  left: 257px;
+  transform: translate(-50%, -50%);
+  background: #1b1b1b;
+  width: 216px;
+  height: 57px;
+  line-height: 40px;
+  padding: 8px 25px;
+  border-radius: 5px;
+  margin: 110px;
+  margin-top: 77px;
+  filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.405));
+}
+
+.dropdown svg {
+  margin-left: 9px;
+  display: inline-flex;
+  justify-content: space-around;
+  align-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.dropdown svg:hover {
+  transform: rotate(180deg);
+}
+
+.caption-kategori span {
+  font-size: 18px;
+  color: #fff;
+}
+
+/* .caption-kategori span:hover {
+  transform: rotate(-180deg);
+  color: cyan;
+} */
+
+.dropdown label {
+  color: white;
+  font-size: 26px;
+  font-weight: 500;
+  display: block;
+  cursor: pointer;
+}
+
+.dropdown label:hover {
+  color: cyan;
+}
+
+.buttons span {
+  float: right;
+  line-height: 40px;
+  transition: 0.5s;
+}
+
+.buttons span.rotate {
+  transform: rotate(-180deg);
+}
+
+.dropdown ul {
+  position: absolute;
+  background: #1b1b1b;
+  list-style: none;
+  top: 75px;
+  left: 0;
+  width: 100%;
+  border-radius: 5px;
+  display: none;
+}
+[id^="btn"]:checked + ul {
+  display: block;
+}
+
+.dropdown .menus:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  background: #1b1b1b;
+  right: 20px;
+  top: -10px;
+  transform: rotate(45deg);
+  z-index: -1;
+  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.dropdown ul li {
+  line-height: 40px;
+  padding: 8px 20px;
+  cursor: pointer;
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.2); */
+}
+.dropdown ul li label {
+  font-size: 18px;
+}
+.dropdown ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+}
+.dropdown ul li a:hover,
+.dropdown ul li label:hover {
+  color: cyan;
+}
+
+/* .dropdown ul ul {
+  position: static;
+} */
+/* .dropdown ul ul li {
+  line-height: 30px;
+  padding-left: 30px;
+  border-bottom: none;
+} */
+/* .dropdown ul ul li a {
+  color: #e6e6e6;
+  font-size: 17px;
+} */
+/* .dropdown ul li span {
+  font-size: 20px;
+  float: right;
+  margin-top: 10px;
+  padding: 0 10px;
+  transition: 0.5s;
+} */
+/* .dropdown ul li span.rotate {
+  transform: rotate(-180deg);
+} */
+input {
+  display: none;
 }
 
 /* ALKES */

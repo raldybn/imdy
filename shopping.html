@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shopping Chart Jafarel</title>
+
     <script type="text/javascript">
       <!-- fitur live chat start -->
       window.$crisp = [];
@@ -17,6 +18,7 @@
         d.getElementsByTagName("head")[0].appendChild(s);
       })();
     </script>
+
     <!-- fitur live chat end -->
 
     <!-- Fonts -->
@@ -38,6 +40,11 @@
 
     <!--My Style-->
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   </head>
 
   <body>
@@ -76,7 +83,7 @@
       <section class="kategori">
         <div class="caption-kategori">
           <h1>
-            <b>DALF CATEGORY <span>PRODUCT</span></b>
+            <b>DALF CATEGORY PRODUCT</b>
           </h1>
           <p>
             <i
@@ -84,7 +91,7 @@
               company.</i
             >
           </p>
-          <div class="find-here">
+          <!-- <div class="find-here">
             <a class="button" href="#">
               <b>FIND HERE</b>
             </a>
@@ -96,7 +103,49 @@
               <li><a href="#">URINE SPECIMEN TEST</a></li>
               <li><a href="#">TREPONEMAL PALLIDUM</a></li>
             </ul>
-          </div>
+          </div> -->
+          <nav class="dropdown">
+            <label for="btn" class="buttons"
+              >FIND HERE
+              <i class="icon-down" data-feather="arrow-down-circle"></i>
+              <!-- <span class="fas fa-caret-down"></span> -->
+            </label>
+            <input type="checkbox" id="btn" />
+            <ul class="menus">
+              <li><a href="#bid">Bacterial Infectious Desease</a></li>
+              <li>
+                <!-- <label for="btn-2" class="first"
+                  >Blood Grouping
+                  <span class="fas fa-caret-down"></span>
+                </label> -->
+              </li>
+              <li><a href="#bg">Blood Grouping</a></li>
+              <li></li>
+              <li><a href="#doa">Drug Of Abuse</a></li>
+              <li></li>
+              <li><a href="#doa">Latex Serology</a></li>
+              <li></li>
+              <li><a href="#doa">Parasit Malaria</a></li>
+              <li></li>
+              <li><a href="#doa">Tumor Marker</a></li>
+              <li></li>
+              <li><a href="#doa">Urine Specimen Test</a></li>
+              <li></li>
+              <li><a href="#doa">Viral Infectious Desease</a></li>
+              <li></li>
+            </ul>
+          </nav>
+          <script>
+            $(".dropdown .buttons").click(function () {
+              $(".dropdown .button span").toggleClass("rotate");
+            });
+            $(".dropdown ul li .first").click(function () {
+              $(".dropdown ul li .first span").toggleClass("rotate");
+            });
+            $(".dropdown ul li .second").click(function () {
+              $(".dropdown ul li .second span").toggleClass("rotate");
+            });
+          </script>
         </div>
 
         <div class="img-kategori">
