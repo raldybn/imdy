@@ -40,7 +40,7 @@ body {
 }
 
 .navbar {
-  position: fixed;
+  position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -52,7 +52,7 @@ body {
   left: 0;
   right: 0;
   z-index: 9999;
-  opacity: 97%;
+  /* opacity: 97%; */
 }
 
 /*huruf jafarel mediatics*/
@@ -108,7 +108,7 @@ body {
 
 /* navbar search form */
 .navbar .search-form {
-  position: absolute;
+  position: fixed;
   top: 100%;
   right: 25%;
   background-color: rgb(255, 255, 255);
@@ -142,6 +142,142 @@ body {
   font-size: 2rem;
   margin-right: 1.5rem;
   color: #000;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: "Poppins", sans-serif;
+}
+body > .nav-product {
+  position: sticky;
+  top: 11%;
+  left: 3%;
+}
+.nav-product {
+  position: sticky;
+  top: 11%;
+  left: 3%;
+  transform: translate(-50%, -50%);
+  background: #1b1b1b;
+  width: 252px;
+  /* line-height: 40px; */
+  padding: 37px 34px;
+  border-radius: 5px;
+  z-index: 999;
+  backdrop-filter: blur(10.5px);
+  background: center;
+  margin-right: 75rem;
+}
+.nav-product::after {
+  color: fuchsia;
+}
+
+.nav-product label {
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  display: block;
+  cursor: pointer;
+
+  /* margin: 16px; */
+}
+
+.button span {
+  float: right;
+  line-height: 40px;
+  transition: 0.5s;
+}
+.button span.rotate {
+  transform: rotate(-180deg);
+  backdrop-filter: blur(10px);
+  background: center;
+}
+.nav-product ul {
+  position: absolute;
+  /* background: #1b1b1b; */
+  /* backdrop-filter: blur(5px); */
+  list-style: none;
+  top: 75px;
+  left: 0;
+  width: 100%;
+  border-radius: 5px;
+  display: none;
+  backdrop-filter: blur(10px);
+  background: center;
+}
+[id^="btn"]:checked + ul {
+  display: block;
+
+  /* overflow-y: scroll; */
+}
+.nav-product .menu:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  /* background: #1b1b1b; */
+  right: 20px;
+  top: -10px;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+.fa-caret-down:before {
+  content: "\f0d7";
+  font-size: 25px;
+}
+
+.nav-product ul li {
+  position: sticky;
+  top: 11%;
+  left: 3%;
+  line-height: 30px;
+  /* padding: 6px 3px; */
+  cursor: pointer;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  margin-top: 49px;
+}
+.nav-product ul li label {
+  font-size: 17px;
+}
+.nav-product ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+.nav-product ul li a:hover,
+.nav-product ul li label:hover {
+  color: cyan;
+}
+.nav-product ul ul {
+  position: static;
+}
+.nav-product ul ul li {
+  line-height: 30px;
+  padding-left: 30px;
+  border-bottom: none;
+}
+.nav-product ul ul li a {
+  color: #e6e6e6;
+  font-size: 17px;
+}
+.nav-product ul li span {
+  font-size: 20px;
+  float: right;
+  margin-top: 10px;
+  padding: 0 10px;
+  transition: 0.5s;
+}
+.nav-product ul li span.rotate {
+  transform: rotate(-180deg);
+}
+input {
+  display: none;
 }
 
 .act-btn {
@@ -361,9 +497,10 @@ body {
   /* padding: 5rem 3rem; */
   text-align: center;
   color: #000000;
-  max-width: 100%;
+  max-width: 83%;
   margin: auto;
-  max-height: max-content;
+  max-height: 78%;
+  margin-bottom: 75px;
 }
 
 .contact img {
@@ -430,6 +567,7 @@ footer {
 
 footer .social {
   padding: 3rem 4;
+  position: static;
 }
 
 footer .social a {
@@ -561,159 +699,57 @@ footer .credit {
 .kategori {
   display: flex;
   padding: 0;
-  height: 65rem;
+  height: 150rem;
   width: 100%;
   justify-content: space-between;
+  margin-bottom: 10rem;
+  margin-top: -2rem;
 }
 
 .kategori h1 {
-  font-size: 5rem;
-  color: var(--primary);
-  letter-spacing: -5px;
+  font-size: 9rem;
+  color: violet;
+  /* letter-spacing: -5px; */
   word-spacing: 2px;
+  text-align: center;
+  /* padding-left: 224px; */
+}
+
+.kategori i {
+  color: var(--bg);
+  /* padding-left: 224px; */
+  text-align: center;
+  font-size: 2.5rem;
 }
 
 .caption-kategori {
-  padding: 38px;
   display: flex;
   flex-direction: column;
   /* gap: -5px; */
-  justify-content: center;
+  /* justify-content: center; */
   width: 100%;
-  height: 100%;
-  padding-top: 35px;
+  height: 140rem;
+  /* padding-top: 35px; */
   font-size: 35px;
   position: absolute;
-  background: center;
+  /* background: center; */
   background-image: url(../img/kategori.png);
   align-items: center;
+  z-index: 1;
 }
-.caption-kategori b {
-  font-size: 60px;
+/* .caption-kategori b i {
+  font-size: 75px;
   color: violet;
-}
-.caption-kategori i {
-  color: white;
+  /* margin-left: 260px; */
+
+.content-kategori {
+  display: contents;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  user-select: none;
-  font-family: "Poppins", sans-serif;
-}
-.dropdown {
-  transform: translate(-50%, -50%);
-  background: #110303;
-  width: 344px;
-  line-height: 40px;
-  padding: 6px 17px;
-  border-radius: 5px;
-  padding-top: -19px;
-  margin: 31px;
-  margin-left: 344px;
-  mix-blend-mode: lighten;
-  z-index: 1;
-  display: inline-block;
-}
-
-.dropdown ul {
-  position: absolute;
-  background: #313131;
-  list-style: none;
-  top: 49px;
-  left: 0px;
-  width: 100%;
-  border-radius: 5px;
-  display: none;
-}
-.buttons span {
-  float: right;
-  line-height: 40px;
-  transition: 0.5s;
-  color: #dbffda;
-}
-.buttons span.rotate::hover {
-  transform: rotate(-180deg);
-  color: #dbffda;
-}
-
-.dropdown label {
-  color: #dbffda;
-  font-size: 22px;
-  font-weight: 500;
-  display: block;
-  cursor: pointer;
-}
-
-[id^="btn"]:checked + ul {
-  display: block;
-}
-.dropdown .menus:before {
-  position: absolute;
-  content: "";
-  height: 20px;
-  width: 20px;
-  background: #dbffda;
-  right: 20px;
-  top: -10px;
-  transform: rotate(45deg);
-  z-index: 1;
-  display: none;
-  align-items: baseline;
-}
-.menus {
-  margin-top: 51px;
-  position: fixed;
-  filter: drop-shadow(5px 5px 5px #fff);
-}
-
-.dropdown ul li {
-  line-height: 50px;
-  padding: 10px 18px;
-  cursor: pointer;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-.dropdown ul li label {
-  font-size: 18px;
-}
-.dropdown ul li a {
-  color: #dbffda;
-  text-decoration: none;
-  font-size: 18px;
-  display: block;
-}
-.dropdown ul li a:hover,
-.dropdown ul li label:hover {
-  color: #fff;
-}
-.dropdown ul ul {
-  position: static;
-}
-.dropdown ul ul li {
-  line-height: 30px;
-  padding-left: 30px;
-  border-bottom: none;
-}
-.dropdown ul ul li a {
-  color: #dbffda;
-  font-size: 17px;
-}
-.dropdown ul li span {
-  font-size: 15px;
-  float: right;
-  margin-top: 10px;
-  padding: 0 10px;
-  transition: 0.5s;
-  color: #d2e3c8;
-}
-.dropdown ul li span.rotate {
-  transform: rotate(-180deg);
-}
-input {
-  display: none;
+.kategori-item {
+  margin-top: 17rem;
+  padding: 6px 18px;
+  text-align: center;
 }
 
 /* ALKES */
@@ -761,6 +797,7 @@ input {
   justify-content: center;
   gap: 35px;
   flex-wrap: wrap;
+  margin-top: 15rem;
 }
 
 .box {
@@ -1008,13 +1045,13 @@ input {
   right: 2rem;
 }
 
-.product {
+/* .product {
   width: 100%;
   size: 50px;
   padding: 10px;
   margin: auto;
   text-align: center;
-}
+} */
 
 .produk-alkes {
   width: 100%;
@@ -1087,7 +1124,39 @@ input {
   #product-menu {
     display: inline-block;
   }
+  .navbar {
+    padding: 0.5rem 3%;
+    padding-left: 9px;
+  }
+  .nav-product {
+    top: 7%;
+    left: 20%;
+    width: 154px;
+    background: center;
+  }
+  .nav-product label {
+    font-size: 14.5px;
+  }
 
+  .nav-product ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+    display: block;
+  }
+  .nav-product ul li label {
+    font-size: 12px;
+  }
+
+  .nav-product ul ul li a {
+    color: #e6e6e6;
+    font-size: 12px;
+  }
+  [id^="btn"]:checked + ul {
+    display: block;
+    top: 45px;
+    background: center;
+  }
   .navbar .navbar-logo {
     font-size: 1.5rem;
     font-weight: 700;
@@ -1111,37 +1180,23 @@ input {
     margin: -5px;
   }
 
-  .kategori {
+  /* .kategori {
     display: flex;
     width: 100%;
     height: 100%;
     height: max-content;
     flex-direction: column;
-  }
-  .img-kategori {
+  } */
+  /* .img-kategori {
     display: none;
-  }
+  } */
 
   .caption-kategori {
     /* margin: 20px; */
     margin-top: 38px;
     background-image: url(../img/kategori.png);
   }
-  .caption-kategori span {
-    font-size: 38pt;
-    color: var(--bg);
-  }
 
-  .caption-kategori b {
-    color: hsl(0, 59%, 94%);
-    filter: drop-shadow(5px 5px 3px grey);
-  }
-  .caption-kategori b:hover {
-    filter: drop-shadow(8px 5px 3px rgb(222, 247, 218));
-  }
-  .caption-kategori p {
-    color: #bbb;
-  }
   .content-kategori {
     width: 398px;
     display: contents;

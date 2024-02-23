@@ -58,7 +58,6 @@
         <a href="index.html#partner">Our Partner</a>
         <a href="index.html#contact">Contact</a>
       </div>
-
       <div class="elemen"></div>
       <div class="navbar-extra">
         <a href="#" id="search-button"><i data-feather="search"></i></a>
@@ -75,6 +74,7 @@
         <label for="search-box"><i data-feather="search"></i></label>
       </div>
     </nav>
+
     <!-- search form end -->
     <!-- navbar end -->
 
@@ -82,57 +82,58 @@
 
     <section class="kategori">
       <div class="caption-kategori">
-        <div class="content-kategori">
-          <h1>
-            <b>DALF CATEGORY PRODUCT</b>
-          </h1>
-          <p>
-            <i
-              >best medical equipment for diagnostic purposes distribution
-              company.</i
-            >
-          </p>
-          <br />
-          <!-- Drp[down] -->
-          <nav class="dropdown">
-            <label for="btn" class="buttons"
-              ><br />
-              <span><b>FIND HERE</b></span>
-              <span class="fas fa-caret-down"></span>
-            </label>
+        <nav class="nav-product">
+          <label for="btn" class="button" href="#find-here"
+            >Find Here
+            <span class="fas fa-caret-down"></span>
+          </label>
+          <div class="find-here">
             <input type="checkbox" id="btn" />
-            <ul class="menus">
-              <li><a href="#bid">Bacterial Infectious Desease</a></li>
-              <li><a href="#bg">Blood grouping</a></li>
+            <ul class="menu">
+              <li><a href="bid">Bacterial Infectious Desease</a></li>
               <li>
                 <label for="btn-2" class="first"
-                  >Drug Of Abuse
+                  >Drug Abuse
                   <span class="fas fa-caret-down"></span>
                 </label>
                 <input type="checkbox" id="btn-2" />
                 <ul>
-                  <li><a href="#">DOA Drop Test</a></li>
-                  <li><a href="#">DOA Dip Test 3 Ml</a></li>
-                  <li><a href="#">DOA Dip Test 5 Ml</a></li>
+                  <li><a href="#">Drop Test</a></li>
+                  <li><a href="#">Dip test</a></li>
                 </ul>
               </li>
               <li>
                 <label for="btn-3" class="second"
-                  >Hepatitis
+                  >Virus Hepatitis
                   <span class="fas fa-caret-down"></span>
                 </label>
                 <input type="checkbox" id="btn-3" />
                 <ul>
                   <li><a href="#">Drop Test</a></li>
-                  <li><a href="#">Dip Test 3 Ml</a></li>
-                  <li><a href="#">Dip Test 5 Ml</a></li>
+                  <li><a href="#">Dip Test 3Ml</a></li>
+                  <li><a href="#">Dip Test 5Ml</a></li>
                 </ul>
               </li>
               <li><a href="#">Latex Serology</a></li>
-              <li><a href="#">Parasit Malari</a></li>
-              <li><a href="#">Urine Specimen Test</a></li>
+              <li><a href="#">Viral Invectious Desease</a></li>
             </ul>
-          </nav>
+          </div>
+        </nav>
+        <!-- Drp[down] -->
+
+        <div class="content-kategori">
+          <div class="kategori-item">
+            <h1>
+              <b>DALF CATEGORY PRODUCT</b>
+            </h1>
+            <i
+              >best medical equipment for diagnostic purposes distribution
+              company.</i
+            >
+          </div>
+          <div class="kategori-ss">
+            <video src=""></video>
+          </div>
         </div>
       </div>
     </section>
@@ -402,14 +403,14 @@
     <!--My Javascript-->
     <script src="js/script.js"></script>
     <script>
-      $(".dropdown .button").click(function () {
-        $(".dropdown .button span").toggleClass("rotate");
+      $(".nav-product .button").click(function () {
+        $(".nav-product .button span").toggleClass("rotate");
       });
-      $(".dropdown ul li .first").click(function () {
-        $(".dropdown ul li .first span").toggleClass("rotate");
+      $(".nav-product ul li .first").click(function () {
+        $(".nav-product ul li .first span").toggleClass("rotate");
       });
-      $(".dropdown ul li .second").click(function () {
-        $(".dropdown ul li .second span").toggleClass("rotate");
+      $(".nav-product ul li .second").click(function () {
+        $(".nav-product ul li .second span").toggleClass("rotate");
       });
     </script>
   </body>
