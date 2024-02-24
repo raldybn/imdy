@@ -32,25 +32,67 @@
       href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@1,700&family=Merriweather+Sans:ital,wght@1,700&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <!--feather Icons-->
     <script src="https://unpkg.com/feather-icons"></script>
+    <!-- dropdown -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <!-- dropdown -->
 
     <!--My Style-->
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-    <nav class="navbar">
-      <a href="#" class="navbar-logo">PT.JAFAREL<span>MEDIATICS</span></a>
-      <div class="navbar-nav">
-        <a href="#home">Home</a>
-        <a href="#about">About Us</a>
-        <a href="shopping.html">Products</a>
-        <a href="#partner">Our Partner</a>
-        <a href="#contact">Contact</a>
+    <nav>
+      <a href="#" class="navbar-logo">YOUR LOGO</a>
+      <div class="tolls">
+        <div class="navbar-nav">
+          <a href="#">Destination</a>
+          <a href="#">Start Your Plan</a>
+          <a href="#">Info</a>
+        </div>
+        <label for="btn" class="button"
+          >Transportation
+          <span class="fas fa-caret-down"></span>
+        </label>
+        <div class="Transport">
+          <input type="checkbox" id="btn" />
+          <ul class="Transport">
+            <li><a href="#">Bus&Travel</a></li>
+            <li>
+              <label for="btn-2" class="first"
+                >Class
+                <span class="fas fa-caret-down"></span>
+              </label>
+              <input type="checkbox" id="btn-2" />
+              <ul>
+                <li><a href="#">Pages</a></li>
+              </ul>
+            </li>
+            <li>
+              <label for="btn-3" class="second"
+                >Category
+                <span class="fas fa-caret-down"></span>
+              </label>
+              <input type="checkbox" id="btn-3" />
+              <ul>
+                <li><a href="#">Web Design</a></li>
+                <li><a href="#">App Design</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">5 Star Rating</a></li>
+          </ul>
+        </div>
       </div>
-
       <div class="elemen"></div>
       <div class="navbar-extra">
         <a href="#" id="search-button"><i data-feather="search"></i></a>
@@ -59,9 +101,6 @@
         ></a>
         <a href="#" id="product-menu"><i data-feather="menu"></i></a>
       </div>
-
-      <!-- search form start -->
-
       <div class="search-form">
         <input type="search" id="search-box" placeholder="searcing.." />
         <label for="search-box"><i data-feather="search"></i></label>
@@ -71,29 +110,15 @@
     <!-- navbar end -->
 
     <!-- The video Section -->
-    <section id="home">
-      <video class="video" autoplay muted loop>
-        <source src="img/video contoh.mp4" type="video/mp4" />
-      </video>
-      <!-- The video Section -->
-      <main class="content">
-        <div class="jafarel">
-          <img
-            class="logo"
-            src="img/logo-removebg-preview.png"
-            alt="logo Jafarel"
-          />
-          <div>
-            <h1>Together Developing <span> A Healthy life</span></h1>
-            <p>
-              The best medical paraphernalia for diagnostic purposes
-              distribution company in Indonesia.
-            </p>
-            <a href="shopping.html" class="cta">BUY NOW</a>
-          </div>
-          <!--<(ucok) button class="cta">Beli Sekarang</button>-->
-        </div>
-      </main>
+    <!-- <section class="main"> -->
+    <section class="main">
+      <div class="main-img">
+        <img src="img/bajo.jpg" alt="bajo" />
+        <h1>Lets Make Your Future Plan</h1>
+      </div>
+      <nav class="navbar1">
+        <a href="#">TOUR AGENCY</a>
+      </nav>
     </section>
 
     <!--about section start-->
@@ -152,30 +177,49 @@
     <!--product section end-->
     <!--contact section Start-->
     <section id="contact" class="contact">
-      <img class="bc" src="img/bc.jpg" />
-      <div class="caption">
-        <h2>Contact</h2>
-        <p>
-          <b
-            >PT. Jafarel Mediatics Graha ADPD Jl. Warung Buncit Raya No. 101F,
-            Pejaten Barat Pasar Minggu, Jakarta Selatan 12510, Indonesia Phone :
-            +62 21 26965880 HP : +62 813 99237992 (WA only) Email :
-            mediatics.co@cbn.net.id</b
-          >
-        </p>
-        <div class="maps">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63454.47625970745!2d106.75794662167971!3d-6.276250800000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f33e18c63e9f%3A0x45f749cc9e04f80b!2sPT.%20Jafarel%20Mediatics!5e0!3m2!1sid!2sid!4v1707189354280!5m2!1sid!2sid"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            class="map"
-          ></iframe>
+      <div class="bar-contact">
+        <div class="caption">
+          <h2>ALAMAT</h2>
+          <p>
+            <b
+              >PT. Jafarel Mediatics Graha ADPD Jl. Warung Buncit Raya No. 101F,
+              Pejaten Barat Pasar Minggu, Jakarta Selatan 12510, Indonesia Phone
+              : +62 21 26965880 HP : +62 813 99237992 (WA only) Email :
+              mediatics.co@cbn.net.id</b
+            >
+          </p>
+
+          <p>Opening Hours : Monday – Friday 8.30 AM – 05.00 PM</p>
+          <div class="contact-icon">
+            <a href="mediatics.co@cbn.net.id">Send Email</a>
+          </div>
         </div>
-        <p>Opening Hours : Monday – Friday 8.30 AM – 05.00 PM</p>
-        <div class="contact-icon">
-          <a href="mediatics.co@cbn.net.id">Send Email</a>
+        <!-- <img class="bc" src="img/bc.jpg" /> -->
+        <div class="center">
+          <div class="front-face"></div>
+          <div class="back-face">
+            <div class="contents back">
+              <h2>Jafarel Mediatics</h2>
+              <span>Follow Us</span>
+              <div class="icons">
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-telegram"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <div class="maps">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63454.47625970745!2d106.75794662167971!3d-6.276250800000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f33e18c63e9f%3A0x45f749cc9e04f80b!2sPT.%20Jafarel%20Mediatics!5e0!3m2!1sid!2sid!4v1707189354280!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        ></iframe>
       </div>
     </section>
 
@@ -234,5 +278,17 @@
       class="translate"
       src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
     ></script>
+    <script>
+      $("nav .button").click(function () {
+        $("nav .button span").toggleClass("rotate");
+      });
+      $("nav ul li .first").click(function () {
+        $("nav ul li .first span").toggleClass("rotate");
+      });
+      $("nav ul li .second").click(function () {
+        $("nav ul li .second span").toggleClass("rotate");
+      });
+      //   <!-- dropdown -->
+    </script>
   </body>
 </html>
