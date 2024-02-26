@@ -95,7 +95,7 @@ nav {
   top: 0.1%;
   /* left: 50%; */
   /* transform: translate(-50%, -50%); */
-  background: var(--navbar);
+  background: #2c852c;
   /* width: 400px; */
   /* line-height: 40px; */
   /* padding: 8px 25px; */
@@ -449,23 +449,22 @@ h1 {
   padding: 0;
   text-align: center;
   background-color: aquamarine;
-
   background-size: contain;
   border-radius: 75px;
   display: inline-flex;
   justify-content: flex-end;
-  height: 50rem;
+  height: 30rem;
   margin-top: 50px;
 
   /* margin-bottom: 15px; */
 }
 .address p {
-  text-align: start;
-  font-size: 15px;
-  display: flow-root;
-  padding: 2px 2%;
-  padding-top: 20%;
-  /* margin-right: 10%; */
+  text-align: center;
+  font-size: 18px;
+  /* display: flow-root; */
+  padding: 4px 1%;
+  padding-top: 9%;
+  margin-right: 10%;
 }
 
 .address h2 {
@@ -515,7 +514,7 @@ h1 {
   perspective: 1000px;
   /* margin-left: 15%; */
   /* margin-right: 20%; */
-  padding: 0px 18%;
+  padding: 0px 10%;
   width: 39%;
   height: 13%;
 }
