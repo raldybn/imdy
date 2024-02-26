@@ -1,7 +1,10 @@
 //toggle class active product menu
 const navbarNav = document.querySelector(".navbar-nav");
 //ketika product menu di klik
-const product = document.querySelector("#product-menu");
+const product = document.querySelector("#hamburger-menu");
+onclick = () => {
+  navbarNav.classList.toggle("active");
+};
 product.addEventListener("click", () => {
   navbarNav.classList.toggle("active");
 });
@@ -17,11 +20,11 @@ document.querySelector("#search-button").onclick = (e) => {
 };
 
 // klik diluar elemen
-const pm = document.querySelector("#product-menu");
+const hm = document.querySelector("#hamburger-menu");
 const sb = document.querySelector("#search-button");
 
 document.addEventListener("click", function (e) {
-  if (!pm.contains(e.target) && !navbarNav.contains(e.target)) {
+  if (!hm.contains(e.target) && !navbarNav.contains(e.target)) {
     navbarNav.classList.remove("active");
   }
   if (!sb.contains(e.target) && !seacrhForm.contains(e.target)) {
