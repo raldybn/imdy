@@ -450,7 +450,7 @@ h1 {
   text-align: center;
   background-color: aquamarine;
   background-size: contain;
-  border-radius: 75px;
+  border-radius: 75px 75px 0 0;
   display: inline-flex;
   justify-content: flex-end;
   height: 30rem;
