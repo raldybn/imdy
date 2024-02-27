@@ -75,9 +75,9 @@ body {
   margin-top: 0.1%;
   /* width: 50%; */
   height: 58px;
-  /* align-content: center; */
+
   display: inherit;
-  /* justify-content: .center; */
+
   align-items: center;
   justify-content: space-between;
   justify-items: end;
@@ -93,6 +93,7 @@ body {
 nav {
   position: sticky;
   top: 0.1%;
+  transition-delay: 0.5ms;
   /* left: 50%; */
   /* transform: translate(-50%, -50%); */
   background: #2c852c;
@@ -337,15 +338,22 @@ h1 {
   font-size: 5rem;
 }
 .home-caption {
-  padding: 65px 7%;
-  text-align: center;
+  padding: 65px 30%;
+  text-align: start;
   letter-spacing: 2vh;
+  padding-left: 35px;
 }
 .home-caption h1 {
   font-size: 20rem;
 }
 .home-caption p {
   font-size: 2.5rem;
+}
+.home-icons i {
+  color: #000;
+  height: 100px;
+  width: 100px;
+  /* background: none; */
 }
 /* About Section */
 .about,
@@ -514,7 +522,7 @@ h1 {
   perspective: 1000px;
   /* margin-left: 15%; */
   /* margin-right: 20%; */
-  padding: 0px 10%;
+  padding: 0px 15%;
   width: 39%;
   height: 13%;
 }
@@ -915,6 +923,13 @@ footer .credit {
     padding: 42px;
     color: #000000;
   }
+  .about {
+    height: 100%;
+  }
+  .about .row .content-about-us a {
+    height: 50%;
+    width: 50%;
+  }
 
   /* .jafarel h1 {
     font-size: 1rem !important;
@@ -1042,30 +1057,140 @@ footer .credit {
     html {
       font-size: 60%;
     }
-
+    body {
+      /* width: 35rem; */
+      width: 98%;
+      max-height: max-content;
+    }
     #product-menu {
       display: inline-block;
     }
 
+    .tolls {
+    }
+    .navbar-nav a {
+      padding: 1.5px;
+      font-size: 10px;
+    }
+    h1 {
+      font-size: 2.5rem;
+    }
     /*  */
-
-    .caption-kategori {
-      /* margin: 20px; */
-      margin-top: 38px;
-      background-image: url(../img/kategori.png);
+    .home-caption {
+      /* font-size: 25px; */
+      letter-spacing: 0.5vh;
+      padding: 144px 8%;
+    }
+    .home-caption h1 {
+      font-size: 8rem;
+    }
+    .home-caption p {
+      font-size: 25px;
+    }
+    .about {
+      height: 100%;
+    }
+    .about .row .about-img img {
+      width: 95%;
+      padding-left: 0;
+      margin-right: 0;
+    }
+    .partner {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      height: max-content;
     }
 
+    #address {
+      padding: 15px 2%;
+      display: flexbox;
+      width: 100%;
+      margin: 0;
+    }
+
+    .address-caption {
+      padding: 15px 22%;
+      padding-left: 20px;
+    }
+
+    .address p {
+      font-size: 15px;
+    }
+    .address i {
+      font-size: 10px;
+    }
+
+    .center {
+      width: 19rem;
+      height: 25rem;
+      padding: 30px 0%;
+      top: 83%;
+      right: -21%;
+      border-radius: 0;
+    }
+    .contents {
+      left: 0;
+    }
+    .icons {
+      margin: 0;
+      display: inline-flex;
+    }
+    .maps {
+      margin-top: 25%;
+      position: relative;
+    }
+    i.fab {
+      height: 20px;
+      width: 20px;
+      font-size: 10px;
+      background: white;
+      border-radius: 50%;
+      margin: 0 5px;
+      line-height: 40px;
+      cursor: pointer;
+    }
+
+    .fa-whatsapp::before {
+      position: absolute;
+      top: 185px;
+      right: 108px;
+    }
+
+    .fa-instagram:before {
+      position: absolute;
+      top: 185px;
+      right: 78px;
+    }
+    .fa-shopify::before {
+      position: absolute;
+      top: 185px;
+      right: 48px;
+    }
+
+    footer {
+      padding: 0;
+    }
+    .caption-kategori {
+      /* margin: 20px; */
+      /* margin-top: 38px; */
+      background-image: url(../img/kategori.png);
+    }
+    .kategori-item h1 {
+      font-size: 5rem;
+    }
     .content-kategori {
       width: 398px;
       display: contents;
       font-size: 20px;
     }
+
     .produk-alkes {
       background-image: url(../img/soap.jpg);
       background-position: center;
       background-repeat: repeat;
       max-width: max-content;
-      margin-top: 848px;
+      margin-top: 10px;
     }
 
     .content {
@@ -1129,6 +1254,7 @@ footer .credit {
     .op-vid video {
       margin: 21px;
     }
+
     footer .social {
       padding: 5px;
       right: 15;
