@@ -817,7 +817,7 @@ footer .credit {
   height: 279px;
   color: rgb(26, 42, 61);
   border-radius: 22px;
-  overflow: hidden;
+  /* overflow: hidden; */
   background-size: cover;
   box-shadow: 3px 3px 5px grey;
   filter: drop-shadow(2px 4px 6px rgb(69, 68, 68));
@@ -1058,7 +1058,7 @@ footer .credit {
     object-fit: cover;
     z-index: 0;
     background-size: cover;
-    overflow: hidden;
+    /* overflow: hidden; */
     justify-content: center;
     margin: 50px;
     position: relative;
