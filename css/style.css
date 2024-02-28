@@ -972,7 +972,7 @@ footer .credit {
 
   .about .row {
     flex-wrap: wrap;
-    padding: 18px;
+    /* padding: 18px; */
   }
 
   /* .about .row .about-img img {
@@ -990,7 +990,7 @@ footer .credit {
     max-width: 90%;
     margin: auto;
     text-align: center;
-    font-size: 15px;
+    /* font-size: 15px; */
   }
 
   .about h2 {
@@ -1342,9 +1342,8 @@ footer .credit {
     }
     .partner p {
       text-align: center;
-      padding: 15px 56px;
-      margin: -14px;
-      margin-top: -88px;
+      /* padding: 15px 56px; */
+      margin-top: -137px;
     }
     .op-vid video {
       margin: 21px;
