@@ -2,9 +2,7 @@
 const navbarNav = document.querySelector(".navbar-nav");
 //ketika product menu di klik
 const product = document.querySelector("#hamburger-menu");
-onclick = () => {
-  navbarNav.classList.toggle("active");
-};
+
 product.addEventListener("click", () => {
   navbarNav.classList.toggle("active");
 });
