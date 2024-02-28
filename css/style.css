@@ -381,6 +381,7 @@ h1 {
   height: 500px;
   /* padding: 60px; */
   margin: auto;
+  margin-top: 5rem;
   text-align: center;
   padding-left: 0;
 }
@@ -388,8 +389,8 @@ h1 {
 .about {
   text-align: center;
   font-size: 3.5rem;
-  margin-top: 17rem;
-  margin: 10rem;
+  margin-top: 20rem;
+  margin: 20rem;
   margin-left: 5px;
 }
 
