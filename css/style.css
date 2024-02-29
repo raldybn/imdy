@@ -539,7 +539,6 @@ h1 {
   transform: translate(-50%, -50%);
   transform-style: preserve-3d;
   perspective: 1000px;
-
   padding: 0px 15%;
   width: 39%;
   height: 13%;
@@ -1211,7 +1210,7 @@ footer .credit {
       position: absolute;
       top: 95%;
       right: 2.5%;
-      padding: 0 14%;
+      /* padding: 0 14%; */
     }
     .center {
       width: 40rem;
