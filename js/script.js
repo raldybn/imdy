@@ -20,13 +20,15 @@ document.querySelector("#search-button").onclick = (e) => {
 // klik diluar elemen
 const hm = document.querySelector("#hamburger-menu");
 const sb = document.querySelector("#search-button");
-
+const button = document.querySelector(".button");
 document.addEventListener("click", function (e) {
   if (!hm.contains(e.target) && !navbarNav.contains(e.target)) {
     navbarNav.classList.remove("active");
   }
   if (!sb.contains(e.target) && !seacrhForm.contains(e.target)) {
     seacrhForm.classList.remove("active");
+  }
+  if (!button.contains(e.target) && !tolls.contains(e.target)) {
   }
 });
 
