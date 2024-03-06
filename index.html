@@ -45,12 +45,35 @@
     />
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <!-- dropdown -->
+    <!-- google translate -->
+    <script
+      class="translate"
+      src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
 
     <!--My Style-->
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
+    <nav class="navbar2" onload="googleTranslateElementInit()">
+      <div class="clock">
+        <i data-feather="clock"></i>
+        <div class="display"></div>
+      </div>
+      <!-- <div id="google_translate_element"></div>
+      <script>
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement(
+            {
+              pageLanguage: "en",
+              layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            },
+            "google_translate_element"
+          );
+        }
+      </script> -->
+    </nav>
     <nav class="navbar1">
       <img src="img/logo-removebg-preview.png" alt="logo-removebg-preview" />
       <a href="#home" class="navbar-logo">PT. JAFAREL MEDIATICS</a>
@@ -301,6 +324,42 @@
         $("nav ul li .second span").toggleClass("rotate");
       });
       //   <!-- dropdown -->
+    </script>
+    <script>
+      setInterval(function () {
+        const clock = document.querySelector(".display");
+        let time = new Date();
+
+        let sec = time.getSeconds();
+        let min = time.getMinutes();
+        let hr = time.getHours();
+        let day = time.getDay([
+          "Sunday",
+          "Monday",
+          "Selasa",
+          "Rabu",
+          "Kamis",
+          "Jum'at",
+          "Sabtu",
+        ]);
+        if (day == 0) {
+          day = time.getDay(Day - 7);
+        }
+        if (hr == 0) {
+          hr = 12;
+        }
+        if (sec < 10) {
+          sec = "0" + sec;
+        }
+        if (min < 10) {
+          min = "0" + min;
+        }
+        if (hr < 10) {
+          hr = "0" + hr;
+        }
+
+        clock.textContent = day + " " + hr + ":" + min + ":" + sec;
+      });
     </script>
   </body>
 </html>
