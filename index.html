@@ -56,13 +56,20 @@
   </head>
 
   <body>
-    <nav class="navbar2" onload="googleTranslateElementInit()">
+    <nav
+      id="navbar2"
+      onclick="boxKekanan()"
+      class="navbar2"
+      onload="googleTranslateElementInit()"
+    >
+      <i data-feather="chevrons-right" id="chevrons"></i>
       <div class="clock">
         <i data-feather="clock"></i>
         <div class="display"></div>
       </div>
       <div id="google_translate_element" class="translate"></div>
     </nav>
+    <button id="move-button">Move Navbar</button>
     <nav class="navbar1">
       <img src="img/logo-removebg-preview.png" alt="logo-removebg-preview" />
       <a href="#home" class="navbar-logo">PT. JAFAREL MEDIATICS</a>
@@ -121,9 +128,7 @@
           ><i data-feather="shopping-cart"></i
         ></a>
 
-        <a href="#" id="hamburger-menu"
-          ><i data-feather="menu" onclick="myFunction()"></i
-        ></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
       </div>
       <div class="search-form">
         <input type="search" id="search-box" placeholder="searcing.." />
