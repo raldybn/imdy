@@ -838,23 +838,23 @@ footer .credit {
   padding-bottom: 30px;
   font-size: 55px;
   text-align: center;
-  margin-top: 85px;
+  /* margin-top: 85px; */
 
   display: grid;
 }
 
 .produk-alkes {
-  background-image: url(../img/soap.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: repeat;
-  background-size: 120%;
   width: 1345px;
+  display: grid;
+  align-content: center;
+  align-items: center;
 }
 
-/* .background-bid,
-.background-bg {
-} */
+.background-bid,
+.background-bg,
+.background-doa {
+  margin-top: 18rem;
+}
 
 * {
   box-sizing: border-box;
@@ -862,18 +862,22 @@ footer .credit {
 
 .alkes {
   display: flex;
-  grid-template-columns: auto;
   justify-content: center;
-  gap: 35px;
+  gap: 40px;
   flex-wrap: wrap;
-  margin-top: 15rem;
-  /* height: 50rem; */
-  width: fit-content;
+  padding: 15px 20%;
+  /* margin-top: 15rem; */
+  /* background-image: url(../img/bg-alkes.jpg);
+  background-size: unset;
+  background-position: center;
+  background-repeat: repeat; */
+  background-color: #b4e3af;
+  padding: 5px 5%;
 }
 
 .box {
-  padding: 10px;
-  padding-top: 20px;
+  /* padding: 10px;
+  padding-top: 20px; */
 }
 .rincian-widal,
 .beli-widal {
@@ -884,11 +888,10 @@ footer .credit {
 .beli-widal:hover {
   color: #bbb;
 }
-
 .card {
-  position: relative;
-  width: 279px;
-  height: 279px;
+  /* position: relative; */
+  width: 150px;
+  height: 150px;
   color: rgb(26, 42, 61);
   border-radius: 22px;
   overflow: hidden;
@@ -939,15 +942,21 @@ footer .credit {
   background-repeat: no-repeat;
 }
 
+.nine {
+  background-image: url(../img/PRODUCT/thc.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .content-card {
   position: absolute;
-  left: 0;
-  bottom: 0;
-  padding: 20px;
-  width: 100%;
-  background-color: #fff;
-  transform: translateY(85px);
-  transition: 0.5s;
+    left: 0;
+    bottom: 0px;
+    padding: 9px;
+    width: 100%;
+    background-color: #fff;
+    transform: translateY(85px);
+    transition: 0.5s;
 }
 
 .content-card::before {
@@ -977,10 +986,12 @@ footer .credit {
 }
 
 .description {
-  font-size: 10px;
+  font-size: 8px;
   opacity: 0;
   transition: opacitiy 0.5s;
   text-align: justify;
+  padding: 0px 8%;
+}
 }
 .rincian-widal,
 .beli-widal {
@@ -1134,9 +1145,6 @@ footer .credit {
   }
 
   .produk-alkes {
-    background-image: url(../img/soap.jpg);
-    background-position: center;
-    background-repeat: repeat;
     max-width: max-content;
     padding: 6px;
   }
@@ -1473,9 +1481,6 @@ footer .credit {
     }
 
     .produk-alkes {
-      background-image: url(../img/soap.jpg);
-      background-position: center;
-      background-repeat: repeat;
       max-width: max-content;
       margin-top: 10px;
     }
