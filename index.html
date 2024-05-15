@@ -2,370 +2,139 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jafarel Mediatics</title>
-    <script type="text/javascript">
-      <!-- fitur live chat start -->
-      window.$crisp = [];
-      window.CRISP_WEBSITE_ID = "fb4bfac2-24e4-43f1-a958-dc471f2a300c";
-      (function () {
-        d = document;
-        s = d.createElement("script");
-        s.src = "https://client.crisp.chat/l.js";
-        s.async = 1;
-        d.getElementsByTagName("head")[0].appendChild(s);
-      })();
-    </script>
-    <!-- fitur live chat end -->
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@1,700&family=Merriweather+Sans:ital,wght@1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <!--feather Icons-->
+    <title>Raldybn | PORTFOLIO</title>
     <script src="https://unpkg.com/feather-icons"></script>
-    <!-- dropdown -->
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Freeman&family=Jersey+10&family=Jersey+15&family=Poetsen+One&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <!-- dropdown -->
-    <!-- google translate -->
-    <script
-      class="translate"
-      src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-    ></script>
-
-    <!--My Style-->
-    <link rel="stylesheet" href="css/style.css" />
+    <!-- Favicons -->
+    <link href="img/rb.png" style="max-height: 100%" rel="icon" />
+    <!-- Template Main CSS File  -->
+    <link href="css/style.css" rel="stylesheet" />
   </head>
-
   <body>
-    <nav
-      id="navbar2"
-      onclick="boxKekanan()"
-      class="navbar2"
-      onload="googleTranslateElementInit()"
-    >
-      <i data-feather="chevrons-right" id="chevrons"></i>
-      <div class="clock">
-        <i data-feather="clock"></i>
-        <div class="display"></div>
-      </div>
-      <div id="google_translate_element" class="translate"></div>
-    </nav>
-    <button id="move-button">Move Navbar</button>
-    <nav class="navbar1">
-      <img src="img/logo-removebg-preview.png" alt="logo-removebg-preview" />
-      <a href="#home" class="navbar-logo">TITID LOOO PADA</a>
-    </nav>
-    <nav>
-      <div class="tolls">
-        <div class="navbar-nav">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#partner">Our Partner</a>
-          <a href="#address">contact</a>
+    <header>
+      <nav class="navbar">
+        <a href="#hero" class="navbar-logo">RALDYBN</a>
+        <div class="navbar-nav" id="navbar-nav">
+          <a href="#hero">HOME</a>
+          <a href="#about">ABOUT ME</a>
+          <a href="#myweb">MY WEB</a>
+          <a href="#contact">CONTACT</a>
         </div>
-        <label for="btn" class="button"
-          >Products
-          <span class="fas fa-caret-down"></span>
-        </label>
-        <div class="dropdown-product">
-          <input type="checkbox" id="btn" />
-          <ul class="dropdown-product">
-            <li>
-              <a href="shopping.html#bid">Bacterial Infectious Desease</a>
-            </li>
-            <li>
-              <label for="btn-2" class="first"
-                >Drug Of Abuse
-                <span class="fas fa-caret-down"></span>
-              </label>
-              <input type="checkbox" id="btn-2" />
-              <ul>
-                <li><a href="shopping.html#doa">DROP TEST</a></li>
-              </ul>
-              <ul>
-                <li><a href="#">DIP TEST</a></li>
-              </ul>
-            </li>
-            <li>
-              <label for="btn-3" class="second"
-                >Hepatitis
-                <span class="fas fa-caret-down"></span>
-              </label>
-              <input type="checkbox" id="btn-3" />
-              <ul>
-                <li><a href="#">Drop Test</a></li>
-                <li><a href="#">Dip Test 3ML</a></li>
-                <li><a href="#">Dip Test 5ML</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Latex Serology</a></li>
-          </ul>
+        <div class="navbar-extra">
+          <a href="#" id="instagram"><i data-feather="instagram"></i></a>
+          <a href="#" id="smartphone"><i data-feather="smartphone"></i></a>
+          <a href="#" id="mail"><i data-feather="mail"></i></a>
+          <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
         </div>
-      </div>
-      <div class="elemen"></div>
-      <div class="navbar-extra">
-        <a href="#" id="search-button"><i data-feather="search"></i></a>
-        <a href="shopping.html" id="shopping-cart"
-          ><i data-feather="shopping-cart"></i
-        ></a>
-
-        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
-      </div>
-      <div class="search-form">
-        <input type="search" id="search-box" placeholder="searcing.." />
-        <label for="search-box"><i data-feather="search"></i></label>
-      </div>
-    </nav>
-
-    <!-- search form end -->
-    <!-- navbar end -->
-
-    <!-- <section class="main"> -->
-    <section class="home" id="home">
-      <div class="home-caption">
-        <!-- <div class="home-text">
-          <a href="#shopping.html">FIND HERE</a>
-        </div> -->
-        <div class="box"></div>
-        <div class="home-vid">
-          <video class="home-vid" autoplay muted loop height="20rem">
-            <source src="img/ss.mp4" type="video/mp4" />
-          </video>
-        </div>
-      </div>
-
-      <!-- <div class="home">
-       
-        <img src="img/lab.jpg" alt="home-img" />
-      </div> -->
-    </section>
-    <!--about section start-->
-    <section id="about" class="about">
-      <h1>About Us</h1>
-      <div class="row">
-        <div class="about-img">
-          <img src="img/dalf-about.png" alt="About Us" />
-        </div>
-        <div class="content-about-us">
-          <h3>History</h3>
-          <p>
-            PT. Jafarel Mediatics (“Jafarel”) was founded on 27 January 2005, as
-            per Notary deed Rini Soemintapoera, Jakarta Selatan no. 5/2005.
-            Jafarel`s inception was based on the founders` social awareness and
-            concern toward the inadequate medical services to the society.
-          </p>
-          <h4>Quality Work Process</h4>
-          <p>
-            In order to provide the expected service, Jafarel will educate and
-            give extensive understanding of the importance of one`s health to
-            the whole human resources. This expertise regarding health will
-            start from, selective product selection, thorough control regarding
-            stock material; sensitivity toward quality and hygiene medical
-            paraphernalia, also knowledge oriented marketing strategy.
-          </p>
-          <br />
-
-          <a href="#">Selengkapnya</a>
-        </div>
-      </div>
-    </section>
-    <!--about section end-->
-    <!--our partner section start-->
-
-    <section id="partner" class="partner">
-      <h1>Our Partner</h1>
-      <div class="op-vid">
-        <div class="partner">
-          <video class="op-vid" autoplay muted loop>
-            <source src="img/our-partner.mp4" type="video/mp4" />
-          </video>
-        </div>
-      </div>
-
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero at,
-        laboriosam ad dolorum eos, nobis minus veritatis esse quibusdam delectus
-        repellat tenetur hic quasi atque maxime soluta, rem facere provident.
-        Aut error ipsam amet nam recusandae, fugit aliquam saepe reprehenderit
-        quia ipsum omnis, eum necessitatibus quod expedita sint temporibus?
-        Porro ut a minus magni, nemo beatae enim magnam minima aliquid.
-        Explicabo, sequi laboriosam vel consequuntur, nemo aliquid,
-        exercitationem suscipit cum ut magnam dolore dolorum dolor ipsa maiores.
-        Aliquid consequuntur est id aut. Ut dicta similique natus culpa eius
-        fuga? Aperiam. Necessitatibus suscipit, voluptas ex eligendi adipisci
-        consequatur reprehenderit voluptatibus. Vel necessitatibus delectus,
-        neque dolor, quaerat sint est, hic aspernatur blanditiis fugit illum.
-      </p>
-    </section>
-    <!--product section end-->
-    <!--contact section Start-->
-    <section id="address" class="address">
-      <div class="address-caption">
-        <p>
-          PT. Jafarel Mediatics Graha ADPD Jl. Warung Buncit Raya No. 101F,
-          Pejaten Barat Pasar Minggu, Jakarta Selatan 12510, Indonesia.
-        </p>
-      </div>
-      <!-- </section> -->
-      <!-- <img class="bc" src="img/bc.jpg" /> -->
-      <!-- <section id="contact" class="contact"> -->
-      <!-- <div class="bar-contact">
-        <div class="center">
-          <div class="front-face"></div>
-          <div class="back-face"></div>
-        </div>
-      </div> -->
-      <div class="bar-contact">
-        <div class="center">
-          <div class="front-face">
-            <div class="caption">
-              <div class="contents back">
-                <h1>Jafarel Mediatics</h1>
-                <span>Follow Us</span>
-              </div>
-            </div>
-          </div>
-          <div class="back-face">
-            <div class="contents back">
-              <div class="maps">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63454.47625970745!2d106.75794662167971!3d-6.276250800000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f33e18c63e9f%3A0x45f749cc9e04f80b!2sPT.%20Jafarel%20Mediatics!5e0!3m2!1sid!2sid!4v1707189354280!5m2!1sid!2sid"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                  class="map"
-                ></iframe>
-              </div>
-              <div class="icons">
-                <i class="fab fa-whatsapp"></i>
-                <!-- <i class="fab fa-telegram"></i> -->
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-shopify"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h2>
-        <i>
-          Phone : +62 21 26965880 HP : +62 813 99237992 (WA only) Email :
-          mediatics.co@cbn.net.id Opening Hours : Monday – Friday 8.30 AM –
-          05.00 PM</i
+      </nav>
+    </header>
+    <section class="hero" id="hero">
+      <div class="container">
+        <h1
+          style="
+            font-size: 5rem;
+            color: bisque;
+            font-weight: 700;
+            margin-top: 20%;
+            justify-content: center;
+          "
         >
-      </h2>
+          Hello i'm RALDY BELO <br />
+          <span style="font-size: 2rem; color: rgb(250, 240, 135)"
+            >-WEB DEVELOPER</span
+          >
+        </h1>
+      </div>
+      <div class="container-logo"><img src="img/rb.png" alt="logo" /></div>
+    </section>
+    <section class="about" id="about">
+      <div class="about-container">
+        <h1>ABOUT ME</h1>
+        <div class="about-content">
+          <div class="about-bg">
+            <img src="img/raldy2.png" alt="" />
+            <ul>
+              <br />
+              <li>Name : <span>Petrus Reynaldy Belo</span></li>
+              <!-- <li>Phone : <span>25 Years Old</span></li> -->
+              <br />
+              <li>E-Mail : <span>raldybelo@gmail.com</span></li>
+              <br />
+              <li>City : <span>DKI Jakarta</span></li>
+              <br />
+              <li>Nationality : <span>Indonesia</span></li>
+            </ul>
+          </div>
+          <div class="about-desc">
+            <h2>Front End Developer</h2>
+            <br />
+            <p>
+              Enthusiastic and skilled Web Developer with 1+ years of experience
+              in designing, developing, and maintaining high-quality websites
+              and web applications. <br />
+              Proficient in HTML, CSS, JavaScript, PHP and various frameworks
+              like Laravel and NEXT.js. <br />
+              Expertise in building responsive and user-friendly interfaces,
+              ensuring cross-browser compatibility, and optimizing website
+              performance. <br />
+              Possess strong problem-solving and analytical skills, coupled with
+              excellent communication and teamwork abilities. <br />
+              Eager to contribute expertise to a dynamic team and take on
+              challenging projects.
+            </p>
+          </div>
+          <br />
+          <br />
+          <div class="skills-data">
+            <h2 style="font-size: 3rem">My Skills</h2>
+            <br />
+            <p>HTML</p>
+            <br />
+            <div class="persentage">
+              <div class="skills html">90%</div>
+            </div>
+            <br />
+            <p>CSS</p>
+            <br />
+            <div class="persentage">
+              <div class="skills css">95%</div>
+            </div>
+            <br />
+            <p>JavaScript</p>
+            <br />
+            <div class="persentage">
+              <div class="skills js">65%</div>
+            </div>
+            <br />
+            <p>PHP</p>
+            <br />
+            <div class="persentage">
+              <div class="skills php">60%</div>
+            </div>
+            <br />
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!--contact section end-->
-    <!-- Footer Start -->
-    <footer>
-      <div class="social">
-        <a href="#"><i data-feather="instagram"></i></a>
-        <a href="#"><i data-feather="shopping-bag"></i></a>
-        <a href="#"><i data-feather="facebook"></i></a>
-        <a href="#"><i data-feather="whatsapp"></i></a>
-        <a href="#"><i data-feather="mail"></i></a>
-      </div>
-
-      <div class="links">
-        <a href="#home">Home</a>
-        <a href="#about">About Us</a>
-        <a href="#product">Our Product</a>
-        <a href="#contact">Contact</a>
-      </div>
-
-      <div class="credit">
-        <p>Created by <a>JafarelMediatics</a>.| &copy; 2024.</p>
-      </div>
-    </footer>
-
-    <!-- Footer End -->
-
-    <!-- feather Icons -->
     <script>
       feather.replace();
     </script>
-    <!--My Javascript-->
+    <!-- my javascript -->
+    <footer>
+      <div class="footer-cr">
+        <div class="container">
+          <h1>© Copyright RaldyBN 2024, All Rights Reserved.</h1>
+        </div>
+      </div>
+    </footer>
     <script src="js/script.js"></script>
-    <script
-      class="translate"
-      src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-    ></script>
-    <script>
-      $("nav .button").click(function () {
-        $("nav .button span").toggleClass("rotate");
-      });
-      $("nav ul li .first").click(function () {
-        $("nav ul li .first span").toggleClass("rotate");
-      });
-      $("nav ul li .second").click(function () {
-        $("nav ul li .second span").toggleClass("rotate");
-      });
-      //   <!-- dropdown -->
-    </script>
-    <script>
-      setInterval(function () {
-        const clock = document.querySelector(".display");
-        const dayNames = [
-          "Sunday",
-          "Monday",
-          "tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-        ];
-        const d = new Date();
-
-        let time = new Date();
-        let sec = time.getSeconds();
-        let min = time.getMinutes();
-        let hr = time.getHours();
-
-        if (hr == 0) {
-          hr = 12;
-        }
-        if (sec < 10) {
-          sec = "0" + sec;
-        }
-        if (min < 10) {
-          min = "0" + min;
-        }
-        if (hr < 10) {
-          hr = "0" + hr;
-        }
-
-        clock.textContent =
-          dayNames[d.getDay()] + " " + hr + ":" + min + ":" + sec;
-      });
-    </script>
-    <script>
-      // Load Google Translate API
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement(
-          { pageLanguage: "en" },
-          "google_translate_element"
-        );
-      }
-    </script>
-    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   </body>
 </html>
