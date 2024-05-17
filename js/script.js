@@ -16,6 +16,20 @@ document.addEventListener("click", function (e) {
   }
 });
 
+const socialNavigate = document.querySelector(".social");
+
+document.getElementById("smartphone").onclick = () => {
+  socialNavigate.classList.toggle("active");
+};
+
+const smartphone = document.querySelector("#smartphone");
+
+document.addEventListener("click", function (e) {
+  if (!smartphone.contains(e.target) && !socialNavigate.contains(e.target)) {
+    socialNavigate.classList.remove("active");
+  }
+});
+
 /**
  * Hero type effect
  */
