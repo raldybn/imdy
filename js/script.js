@@ -1,3 +1,5 @@
+// NAVBAR
+
 //toggle class active//
 const navbarNavigate = document.querySelector(".navbar-nav");
 
@@ -15,7 +17,9 @@ document.addEventListener("click", function (e) {
     navbarNavigate.classList.remove("active");
   }
 });
+// NAVBAR
 
+// SOCIAL
 const socialNavigate = document.querySelector(".social");
 
 document.getElementById("smartphone").onclick = () => {
@@ -29,19 +33,21 @@ document.addEventListener("click", function (e) {
     socialNavigate.classList.remove("active");
   }
 });
+// SOCIAL
 
-/**
- * Hero type effect
- */
-const typed = select(".typed");
-if (typed) {
-  let typed_strings = typed.getAttribute("data-typed-items");
-  typed_strings = typed_strings.split(",");
-  new Typed(".typed", {
-    strings: typed_strings,
-    loop: true,
-    typeSpeed: 100,
-    backSpeed: 50,
-    backDelay: 2000,
-  });
-}
+// PORTFOLIO DISPLAY
+const center = document.getElementById("center");
+
+document.getElementById("display-web").onclick = () => {
+  center.classList.toggle("active");
+};
+
+const displayWeb = document.getElementById("display-web");
+
+document.addEventListener("click", function (e) {
+  if (!displayWeb.contains(e.target) && !center.contains(e.target)) {
+    center.classList.remove("active");
+  }
+});
+
+// PORTFOLIO DISPLAY

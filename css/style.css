@@ -10,7 +10,7 @@ body {
   background-color: rgb(0, 0, 1, 80%);
   color: #fff;
   scroll-behavior: smooth;
-  transition: 0.2s;
+  animation: backwards;
 }
 
 :root {
@@ -204,14 +204,17 @@ header {
   .navbar .navbar-nav.active {
     right: 0;
     display: grid;
-    padding: 20px 20px 585px 25px;
-    text-align: center;
+    padding: 47px 64px 470px 24px;
     transition: 0.3s linear;
+    justify-items: start;
+    align-content: space-between;
   }
 
   .navbar .navbar-nav.active a {
     color: black;
     font-size: 15px;
+    padding: 24px 0;
+    text-align: start;
     font-family: Arial, Helvetica, sans-serif;
   }
   .navbar .navbar-nav.active a:hover {
@@ -229,7 +232,7 @@ header {
   }
 
   .navbar .navbar-nav.active a:hover::after {
-    transform: scaleX(0.2);
+    transform: scaleX(0.7);
   }
 
   .navbar .navbar-logo img {
@@ -257,10 +260,12 @@ header {
 }
 
 #hero .container h1 {
-  color: var(--i);
+  color: rgb(173 255 175);
   font-weight: 700;
   margin-top: 35vh;
-  text-shadow: 2px 2px 5px red;
+  text-shadow: -5px 5px 1px red;
+  font-size: 131px;
+  padding: 0px 6%;
 }
 
 #hero .container span {
@@ -308,6 +313,16 @@ header {
     width: 50%;
     top: 160px;
   }
+
+  #hero .container h1 {
+    margin-top: 28vh;
+    font-size: 80px;
+  }
+
+  /* #hero .container span {
+    font-size: 14px;
+    padding: 11px 5%;
+  } */
 }
 
 /* HP */
@@ -322,6 +337,15 @@ header {
     width: 50%;
     top: 10rem;
   }
+  #hero .container h1 {
+    margin-top: 33vh;
+    font-size: 46px;
+  }
+
+  #hero .container span {
+    font-size: 14px;
+    padding: 11px 5%;
+  }
 }
 
 /* hero Section END */
@@ -333,10 +357,10 @@ header {
 }
 
 .sub-section {
-  background-color: rgba(0, 0, 0, 0.8);
   height: 100%;
   width: 100%;
-  /* position: absolute; */
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px 2%;
 }
 
 .resume-container h1 {
@@ -552,7 +576,7 @@ header {
 /* PORTFOLIO */
 #portfolio {
   width: 100%;
-  height: 100vh;
+  height: 108vh;
 }
 
 .port-container {
@@ -560,10 +584,8 @@ header {
   box-shadow: 10px 20px 15px 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 1rem 5%;
-  position: absolute;
-  width: 100%;
-  height: 93%;
-  top: 7%;
+  margin-top: 8rem;
+  height: max-content;
 }
 
 .port-container h1 {
@@ -587,6 +609,31 @@ header {
   width: 50rem;
   font-size: 18px;
   padding: 10px 5% 0px 0px;
+  text-align: justify;
+}
+
+.display-web {
+  background-color: rgb(229, 229, 229);
+  width: 22rem;
+  padding: 15px 2%;
+  border-radius: 8px;
+  position: relative;
+  left: 30%;
+}
+
+.display-web:hover {
+  background-color: rgb(210, 210, 210);
+}
+
+.display-web a {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: monospace;
+  display: flex;
+  align-items: center;
+  align-content: space-around;
+  justify-content: space-around;
 }
 
 .center,
@@ -597,12 +644,19 @@ header {
 }
 
 .center {
-  top: 12rem;
+  top: 26rem;
   left: 55rem;
   height: 400px;
   width: 290px;
   transform-style: preserve-3d;
   perspective: 1000px;
+  display: none;
+}
+
+.center.active {
+  display: inline-block;
+  transition: all ease 0.9s;
+  animation: backwards;
 }
 
 /* Laptop  */
@@ -614,7 +668,7 @@ header {
     width: 30%;
   }
   .port-container p {
-    width: 45%;
+    width: 55%;
   }
 }
 
@@ -652,6 +706,12 @@ header {
 
 /* HP */
 @media (max-width: 481px) {
+  .center {
+    top: 71%;
+    left: 9%;
+    height: 34%;
+    width: 58%;
+  }
 }
 
 .front-face,
@@ -672,7 +732,7 @@ header {
   transform-style: preserve-3d;
   transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
   padding: 2rem 10%;
-  box-shadow: 10px 20px 15px 10px rgba(143, 140, 140, 0.1);
+  /* box-shadow: 10px 20px 15px 10px rgba(143, 140, 140, 0.1); */
 }
 
 .contents {
@@ -682,17 +742,16 @@ header {
   perspective: 1000px;
   transform: translateY(-50%) translateZ(60px) scale(0.94);
 }
-.front p {
+/* .front p {
   font-size: 28px;
   font-weight: 700;
   font-family: monospace;
   margin-bottom: 15px;
   color: rgb(0, 255, 225);
-  /* background-color: rgb(0, 51, 255, 65%); */
   background-size: contain;
   background-clip: inherit;
   width: 100%;
-}
+} */
 .front span {
   font-size: 18px;
   color: rgb(0, 0, 0);
