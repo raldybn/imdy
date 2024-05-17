@@ -13,6 +13,10 @@ body {
   transition: 0.2s;
 }
 
+:root {
+  --h1: rgb(127, 212, 131);
+}
+
 /* @media (min-height: 817px) {
 } */
 
@@ -346,26 +350,27 @@ header {
 }
 
 .resume-container .resume-bg {
-  margin: 2rem 3%;
+  margin: 0 3%;
 }
 
-.resume-container .resume-bg ul {
+.resume-container ul {
   list-style: none;
-  font-size: 18px;
+  font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.resume-container .resume-bg ul li {
+.resume-container ul li {
   font-weight: 700;
+  font-size: 15px;
 }
 
-.resume-container .resume-bg ul li span {
+.resume-container ul li span {
   font-weight: lighter;
-  font-size: 1.7rem;
+  font-size: 15px;
 }
 .resume-container img {
   height: fit-content;
-  width: 14rem;
+  width: 25rem;
 }
 
 .resume-container .resume-desc {
@@ -374,9 +379,10 @@ header {
 
 .resume-container .resume-desc h2 {
   font-size: 3rem;
+  color: var(--h1);
 }
 .resume-container .resume-desc p {
-  font-size: 1.7rem;
+  font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
   text-align: justify;
 }
@@ -385,6 +391,10 @@ header {
 .skills-data {
   width: 100%;
   padding: 3rem 5%;
+}
+
+.skills-data h2 {
+  color: var(--h1);
 }
 
 .persentage {
@@ -425,14 +435,26 @@ header {
 
 .experience {
   padding: 6rem 4%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.experience .experience-contain h2 {
+.resume-container .resume-desc i,
+.skills-data i,
+.experience .experience-contain i,
+.experience .education-contain i {
+  color: rgb(0, 255, 8);
+}
+
+.experience .experience-contain h2,
+.experience .education-contain h2 {
   font-size: 3rem;
+  color: var(--h1);
 }
 
-.experience .experience-contain li {
-  font-size: 4rem;
+.experience .experience-contain li,
+.experience .education-contain li {
+  font-size: 27px;
   padding: 2rem 2%;
   list-style: unset;
   list-style-position: inside;
@@ -441,9 +463,10 @@ header {
   font-style: normal;
 }
 
-.experience .experience-contain p {
+.experience .experience-contain p,
+.experience .education-contain p {
   padding: 0 5%;
-  font-size: 1.7rem;
+  font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -457,7 +480,8 @@ header {
 
   .resume-container img {
     height: fit-content;
-    width: 20rem;
+    width: 27rem;
+    margin: 15px 20%;
   }
   .resume-container .resume-bg ul {
     font-size: 18px;
@@ -482,6 +506,10 @@ header {
     padding: 0px 3%;
     margin-top: 9%;
   }
+  .experience {
+    display: grid;
+    gap: 5rem;
+  }
 }
 
 @media (max-width: 481px) {
@@ -490,6 +518,11 @@ header {
   } */
   .resume-container .resume-desc {
     width: 100%;
+  }
+  .resume-container img {
+    height: fit-content;
+    width: 27rem;
+    margin: 26px 8%;
   }
 }
 
