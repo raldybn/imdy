@@ -256,6 +256,19 @@ header {
   padding-top: 50px;
 }
 
+#hero .container h1 {
+  color: var(--h1);
+  font-weight: 700;
+  margin-top: 35vh;
+  text-shadow: 2px 2px 5px red;
+}
+
+#hero .container span {
+  font-size: 2rem;
+  font-family: monospace;
+  color: #fff;
+}
+
 .container-logo img {
   border-color: #01010187;
   border-width: 2%;
