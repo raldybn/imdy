@@ -257,7 +257,7 @@ header {
 }
 
 #hero .container h1 {
-  color: var(--h1);
+  color: var(--i);
   font-weight: 700;
   margin-top: 35vh;
   text-shadow: 2px 2px 5px red;
@@ -267,6 +267,7 @@ header {
   font-size: 2rem;
   font-family: monospace;
   color: #fff;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .container-logo img {
