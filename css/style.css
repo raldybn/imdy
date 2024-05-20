@@ -306,7 +306,6 @@ header {
   width: 30rem;
   border-radius: 50%;
   height: 100%;
-  /* padding: 2.5rem 2%; */
   transition: transform 0.7s ease;
 }
 
