@@ -23,10 +23,10 @@ body {
 
 section {
   height: 100vh;
-  background: url(../img/hero-bg.gif);
-  background-size: cover;
+  background: black;
+  /* background-size: cover;
   position: static;
-  background-attachment: fixed;
+  background-attachment: fixed; */
 }
 
 section h1 {
@@ -95,7 +95,7 @@ header {
 
 .navbar .navbar-nav a:hover {
   color: var(--i);
-  font-size: 1.1rem;
+  /* font-size: 1.1rem; */
   transition: 0.2s linear;
 }
 
@@ -254,6 +254,14 @@ header {
 
 /* hero Section START */
 
+#hero {
+  height: 100vh;
+  background: url(../img/hero-bg.gif);
+  background-size: cover;
+  position: static;
+  background-attachment: fixed;
+}
+
 #hero .container {
   text-align: center;
   display: flex;
@@ -283,11 +291,24 @@ header {
   text-shadow: 2px 2px 4px #000000;
 }
 
+#hero .hero-img {
+  width: 30rem;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  border-radius: 50%;
+}
+
 #hero .container img {
   width: 30rem;
   border-radius: 50%;
   height: 100%;
-  padding: 2.5rem 2%;
+  /* padding: 2.5rem 2%; */
+  transition: transform 0.7s ease;
+}
+
+#hero .container img:hover {
+  transform: scale(1.3);
 }
 
 .container-logo img {
@@ -310,7 +331,121 @@ header {
   transition: 1s;
 }
 
+#about {
+  padding: 5rem;
+  height: max-content;
+}
+
+#about h1 {
+  font-size: 7rem;
+  font-family: "Orbitron";
+  border-bottom: 1px solid #fff;
+  transform: scaleX(0.5);
+  color: #c4c4c4;
+}
+
+#about .about-list {
+  display: flex;
+  padding: 2rem 0px;
+  align-items: center;
+  justify-content: space-around;
+  /* flex-wrap: wrap; */
+}
+
+#about .about-list .about-img {
+  width: 75%;
+  overflow: hidden;
+  position: relative;
+  display: grid;
+  justify-items: center;
+}
+
+#about .about-list img {
+  width: 75%;
+  transition: transform 0.7s ease;
+}
+
+#about .about-list img:hover {
+  transform: scale(1.3);
+}
+
+#about .about-list .list {
+  display: grid;
+  justify-content: space-around;
+  padding: 3rem;
+}
+
+#about .about-list a {
+  color: white;
+  /* width: max-content; */
+  font-size: 3.6rem;
+  display: flex;
+  justify-items: end;
+  width: max-content;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 5rem;
+  height: 7.5rem;
+  font-family: monospace;
+}
+
+#about .about-list a:hover {
+  color: #494949;
+}
+
+/* services */
+#services {
+  height: 100vh;
+  background: url(../img/services.png) center top;
+  background-size: cover;
+  position: static;
+  background-attachment: fixed;
+}
+
+#services .services-cont {
+  padding: 5rem;
+  background-color: rgb(1, 1, 1, 50%);
+  height: 100%;
+  width: 100%;
+}
+
+#services .services-cont h1 {
+  font-size: 10rem;
+}
+
+#services .services-cont .services-bg {
+  background-color: #00ff4cd0;
+  height: 12rem;
+  width: 50%;
+  border-radius: 10px;
+}
+#services .services-cont .services-capt {
+  background: url(../img/city2.jpg) top;
+  height: 60%;
+  width: 95%;
+  position: relative;
+  bottom: 10rem;
+  left: 3rem;
+  padding: 3rem 5%;
+  display: flex;
+  column-gap: 2rem;
+  align-items: center;
+  filter: grayscale(60%);
+  background-size: cover;
+}
+
+#services .services-cont .services-capt p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  text-shadow: #000000;
+  /* font-weight: 700; */
+}
+
 /* LIKES */
+
+#likes {
+  height: max-content;
+}
 
 #likes h1 {
   font-size: 5rem;
@@ -390,6 +525,9 @@ header {
 
 /* Tablet */
 @media (max-width: 758px) {
+  #likes {
+    height: 125vh;
+  }
   #hero .container-logo img {
     left: 43%;
     height: 50%;
@@ -399,6 +537,22 @@ header {
 
   #hero .container h1 {
     font-size: 2.5rem;
+  }
+
+  #about h1 {
+    font-size: 4rem;
+  }
+
+  #about .about-list a {
+    font-size: 3.5rem;
+    gap: 1rem;
+  }
+
+  #services .services-cont .services-capt {
+    display: grid;
+    justify-items: start;
+    align-content: space-around;
+    height: 50%;
   }
 
   .music {
@@ -435,6 +589,18 @@ header {
     /* font-size: 14px; */
     padding: 11px 5%;
   }
+
+  #about h1 {
+    font-size: 2.5rem;
+  }
+  #about .about-list {
+    display: grid;
+    justify-items: center;
+  }
+  #about .about-list a {
+    font-size: 1.7rem;
+    gap: 1rem;
+  }
 }
 
 /* hero Section END */
@@ -461,11 +627,12 @@ header {
 }
 
 .resume-container {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgb(30 30 30 / 50%);
   position: absolute;
   right: -4%;
   margin: 2rem 6%;
   width: 96%;
+  padding: 3rem 0px;
 }
 .resume-container .resume-content {
   justify-content: space-around;
