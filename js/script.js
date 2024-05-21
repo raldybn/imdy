@@ -36,17 +36,17 @@ document.addEventListener("click", function (e) {
 // SOCIAL
 
 // PORTFOLIO DISPLAY
-const center = document.getElementById("center");
+const display = document.getElementById("display-active");
 
 document.getElementById("display-web").onclick = () => {
-  center.classList.toggle("active");
+  display.classList.toggle("active");
 };
 
 const displayWeb = document.getElementById("display-web");
 
 document.addEventListener("click", function (e) {
-  if (!displayWeb.contains(e.target) && !center.contains(e.target)) {
-    center.classList.remove("active");
+  if (!displayWeb.contains(e.target) && !display.contains(e.target)) {
+    display.classList.remove("active");
   }
 });
 

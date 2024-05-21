@@ -283,6 +283,8 @@ header {
 
 .caption {
   height: 100%;
+  display: grid;
+  justify-items: center;  
 }
 
 #hero .container h1 {
@@ -298,19 +300,26 @@ header {
 
 #hero .container span {
   font-weight: 700;
-  /* font-family: "Orbitron", sans-serif; */
-  /* text-shadow: 7px 7px 0px var(--h2); */
   font-size: 10rem;
-  color: var(--i);
+  /* font-family: monospaces; */
+  color: var(--h1);
+  text-shadow: 6px 6px 6px var(--bg);
 }
 
 #hero .container h2 {
-  color: var(--h1);
+  color: var(--h2);
+  background-color: rgb(1, 1, 1, 80%);
+  /* width: max-content; */
   font-size: 2.6rem;
   font-family: fantasy;
   letter-spacing: 5px;
-  text-shadow: 4px 4px 5px var(--bg);
-  padding: 0 1%;
+  /* text-shadow: 4px 4px 5px var(--h1); */
+  /* padding: 9px 1%; */
+  height: 5rem;
+  display: grid;
+  align-items: center;
+  padding: 0 4%;
+  border-radius: 10px;
 }
 
 #hero .hero-img {
@@ -410,18 +419,23 @@ header {
 #services .services-cont {
   padding: 5rem;
   /* background-color: rgb(1, 1, 1, 50%); */
-  height: 100%;
+  height: 80%;
   width: 100%;
+  display: grid;
 }
 
 #services .services-cont h1 {
   font-size: 10rem;
   color: var(--h2);
   text-shadow: 7px 7px 0px var(--h3);
-  background-color: var(--h1);
+  background-color: var(--bluedark);
   width: max-content;
+  height: max-content;
   padding: 2rem;
+  box-shadow: 5px 5px 5px var(--i);
   margin: 2rem;
+  border-radius:10px;
+ /* z-index: 999; */
 }
 
 #services .services-cont .services-bg {
@@ -432,10 +446,10 @@ header {
 }
 #services .services-cont .services-capt {
   background: url(../img/city2.jpg) top;
-  height: 60%;
+  height: 100%;
   width: 95%;
   position: relative;
-  bottom: 10rem;
+  /* bottom: 10rem; */
   left: 3rem;
   padding: 3rem 5%;
   display: flex;
@@ -553,6 +567,10 @@ header {
     /* font-size: 2.5rem; */
   }
 
+  #hero .container h2 {
+    font-size: 17.5px;
+  }
+
   #about {
     height: 100vh;
   }
@@ -569,9 +587,25 @@ header {
     margin: 5rem -7%;
   }
 
+  
   #services .services-cont h1 {
     font-size: 7.5rem;
   }
+
+
+
+  #services .services-cont {
+    height: 53%;
+  }
+
+  #services .services-cont .services-capt h2 {
+    font-size: 20px;
+  }
+
+  #services .services-cont .services-capt p {
+    font-size: 18px;
+  }
+
 
   .music {
     display: grid;
@@ -603,6 +637,9 @@ header {
     display: contents;
   }
 
+  #hero .container h2 {
+    font-size: 13px;
+  }
   /* #hero .container span {
   
   
@@ -620,13 +657,16 @@ header {
     font-size: 1.7rem;
     gap: 1rem;
   }
+
+  
+
 }
 
 /* hero Section END */
 /* resume */
 #resume {
   width: 100%;
-  height: 250vh;
+  height: 270vh;
   margin-top: 4rem;
 }
 
@@ -869,7 +909,7 @@ header {
 /* PORTFOLIO */
 #portfolio {
   width: 100%;
-  height: 108vh;
+  height: 130vh;
 }
 
 .port-container {
@@ -882,8 +922,8 @@ header {
 }
 
 .port-container h1 {
-  color: var(--h1);
-  font-size: 7rem;
+  color: var(--h3);
+  font-size: 10rem;
 }
 
 .port-container h2 {
@@ -894,7 +934,13 @@ header {
   font-size: 45px;
   font-family: monospace;
   font-weight: bold;
-  color: var(--h1);
+  color: var(--h2);
+}
+
+.port-p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .port-container p {
@@ -905,18 +951,70 @@ header {
   text-align: justify;
 }
 
+.display {
+  width: max-content;
+  display: inline-flex;
+  position: fixed;
+  top: 35%;
+  right: 10px;
+  align-items: center;
+  /* left: 54%; */
+  gap: 2rem;
+}
+
 .display-web {
-  background-color: var(--i);
-  width: 22rem;
+  top: 39%;
+  background-color: var(--h1);
+  width: 5rem;
   padding: 15px 2%;
   border-radius: 8px;
-  position: relative;
-  left: 30%;
-  color: var(--bg);
+  display: inline-flex;
+  height: 15rem;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .display-web:hover {
-  background-color: var(--h1);
+  /* background-color: var(--h2); */
+  color: var(--h1);
+  /* transform: rotateY(180deg); */
+  
+}
+
+/* .display-web:hover::after {
+  transform: rotateY(-180deg);
+} */
+
+.display-active {
+  display: none;
+}
+
+.display-active.active {
+  background-color: #ff66c4;
+    width: 49rem;
+    /* height: 23rem; */
+    display: inline-flex;
+    align-items: center;
+    transition: ease all 0.5s;
+    padding: 10px 0%;
+    justify-content: space-evenly;
+}
+
+.display-active.active i {
+  height: 100%;
+}
+
+.display-active.active img {
+width: 35rem;
+}
+
+/* .display-active svg {
+  transform: rotateY(180deg);
+} */
+
+.display-web:hover {
+  transition: 0.8s;
+  transform: rotateY(-180deg);
 }
 
 .display-web a {
@@ -930,6 +1028,9 @@ header {
   justify-content: space-around;
 }
 
+
+
+
 .center,
 .front-face,
 .contents,
@@ -938,8 +1039,8 @@ header {
 }
 
 .center {
-  top: 26rem;
-  left: 55rem;
+  top: 60%;
+  left: 64%;
   height: 400px;
   width: 290px;
   transform-style: preserve-3d;
@@ -956,9 +1057,9 @@ header {
 /* Laptop  */
 @media (max-width: 1366px) {
   .center {
-    top: 23%;
-    left: 55%;
-    height: 80%;
+    top: 49%;
+    left: 50%;
+    height: 50%;
     width: 30%;
   }
   .port-container p {
@@ -966,19 +1067,19 @@ header {
   }
 }
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   .center {
     top: 26%;
     left: 53%;
     height: 48%;
     width: 30%;
   }
-}
+} */
 @media (max-width: 1000px) {
   .center {
-    top: 30%;
-    left: 50%;
-    height: 44%;
+    top: 63%;
+    left: 45%;
+    height: 40%;
     width: 33%;
   }
 }
@@ -986,9 +1087,9 @@ header {
 /* Tablet */
 @media (max-width: 758px) {
   .center {
-    top: 62%;
-    left: 18%;
-    height: 36%;
+    top: 49%;
+    left: 27%;
+    height: 40%;
     width: 45%;
   }
 
@@ -1001,10 +1102,10 @@ header {
 /* HP */
 @media (max-width: 481px) {
   .center {
-    top: 71%;
-    left: 9%;
-    height: 34%;
-    width: 58%;
+    top: 49%;
+    left: 27%;
+    height: 28%;
+    width: 45%;
   }
 }
 
@@ -1312,7 +1413,7 @@ header {
 /* CONTACT */
 
 footer {
-  background-color: var(--i);
+  background-color: var(--bluedark);
   height: 5vh;
   font-size: 7px;
   text-align: center;
@@ -1322,7 +1423,7 @@ footer {
   top: 0;
   bottom: 0;
   left: 0;
-  border-top: 1px solid var(--i);
+  border-top: 2px solid var(--bg);
 }
 
 .footer-cr h1 {
