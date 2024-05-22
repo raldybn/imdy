@@ -525,7 +525,7 @@ header {
 }
 
 .playlist .songs:hover {
-  background-color: var(--h3);
+  background-color: rgb(22, 131, 49);
   color: var(--h2);
 }
 
