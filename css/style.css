@@ -1232,6 +1232,7 @@ header {
   display: grid;
   /* justify-items: center; */
   align-items: center;
+  padding: 2.5rem 0%;
 }
 
 .maps h2 {
