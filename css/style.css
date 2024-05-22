@@ -1108,7 +1108,7 @@ header {
 #contact {
   width: 100%;
   height: max-content;
-  background: url(../img/hero1.png) center;
+  background: url(../img/city.jpg) center;
   background-size: cover;
   position: static;
   background-attachment: fixed;
@@ -1162,7 +1162,7 @@ header {
 }
 
 #contact .contact-cont .address h2 {
-  font-size: 2rem;
+  font-size: 1.2rem;
   gap: 1rem;
   height: max-content;
   font-family: system-ui;
@@ -1173,15 +1173,16 @@ header {
 }
 
 .address-capt {
-  display: grid;
-  /* gap: 1rem; */
+  display: flex;
+  gap: 1rem;
+  align-items: center;
   color: var(--h1);
 }
 
 .address-capt h3 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-family: monospace;
-  padding: 0px 9%;
+  /* padding: 0px 5%; */
 }
 
 .address-capt .icons {
