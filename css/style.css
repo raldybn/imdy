@@ -1230,7 +1230,7 @@ header {
 
 .maps {
   display: grid;
-  justify-items: center;
+  /* justify-items: center; */
   align-items: center;
 }
 
@@ -1334,7 +1334,7 @@ header {
     height: 100%;
     display: grid;
     align-items: start;
-    padding: 5px 2%;
+    /* padding: 5px 2%; */
     justify-items: stretch;
     margin: 0rem 0%;
     border-radius: 10px;
