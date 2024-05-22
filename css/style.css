@@ -1210,6 +1210,7 @@ header {
   background-color: #e5e5e5;
   margin: 0.6rem;
   display: flex;
+  box-shadow:(5px, 5px, 5px, var(--i));
   gap: 1rem;
   height: 10rem;
   width: 95%;
