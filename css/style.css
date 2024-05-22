@@ -148,7 +148,6 @@ header {
   height: 215%;
   border-radius: 5px;
   flex-wrap: wrap;
-
   width: 40%;
 }
 
@@ -453,17 +452,22 @@ header {
   /* bottom: 10rem; */
   /* left: 3rem; */
   padding: 3rem 5%;
-  display: flex;
+  display: grid;
   column-gap: 2rem;
   align-items: center;
   filter: grayscale(60%);
   background-size: cover;
 }
 
+#services .services-cont .services-capt h2 {
+  font-size: 3rem;
+}
+
 #services .services-cont .services-capt p {
   font-family: Arial, Helvetica, sans-serif;
   color: var(--h1);
   text-shadow: 0px 5px 5px var(--bg);
+  font-size: 20px;
   /* font-weight: 700; */
 }
 
@@ -593,7 +597,7 @@ header {
   }
 
   #services .services-cont {
-    height: 53%;
+    height: 100%;
   }
 
   #services .services-cont .services-capt h2 {
@@ -687,6 +691,15 @@ header {
   width: 96%;
   padding: 3rem 0px;
 }
+
+.profile {
+  display: flex;
+  padding: 6rem 4%;
+  justify-content: space-evenly;
+  gap: 5rem;
+  align-items: center;
+}
+
 .resume-container .resume-content {
   justify-content: space-around;
   display: flex;
@@ -696,9 +709,9 @@ header {
   filter: grayscale(100%);
 }
 
-.resume-container .resume-bg {
+/* .resume-container .resume-bg {
   margin: 0 3%;
-}
+} */
 
 .resume-container ul {
   list-style: none;
@@ -719,11 +732,11 @@ header {
 }
 .resume-container img {
   height: fit-content;
-  width: 25rem;
+  width: max-content;
 }
 
 .resume-container .resume-desc {
-  width: 50%;
+  width: 100%;
 }
 
 .resume-container .resume-desc h2 {
@@ -738,9 +751,26 @@ header {
 }
 
 /* skills start */
+
+.my-skills {
+  display: flex;
+  width: 100%;
+}
+
 .skills-data {
   width: 100%;
   padding: 3rem 5%;
+  /* width: 50%; */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.web-skills {
+  width: 100%;
+}
+
+.language {
+  width: 100%;
 }
 
 .skills-data h2 {
@@ -756,6 +786,7 @@ header {
 .skills-data p {
   font-size: 26px;
   color: var(--h1);
+  font-family: monospace;
 }
 
 .skills {
@@ -812,6 +843,14 @@ header {
   border-radius: 50%;
 }
 
+.resume-container .resume-desc i:hover,
+.skills-data i:hover,
+.experience .experience-contain i:hover,
+.experience .education-contain:hover i {
+  color: var(--bg);
+  background-color: var(--h2);
+}
+
 .skills-data h2,
 .resume-container .resume-desc h2,
 .experience .experience-contain h2,
@@ -820,8 +859,17 @@ header {
   color: var(--bluedark);
   background-color: var(--i);
   display: flow;
-  width: 85%;
+  width: 100%;
+  font-family: system-ui;
   border-radius: 40px 40px 40px 40px;
+}
+
+.skills-data h2:hover,
+.resume-container .resume-desc h2:hover,
+.experience .experience-contain h2:hover,
+.experience .education-contain h2:hover {
+  background: var(--h3);
+  color: var(--i);
 }
 
 .experience .experience-contain li,
@@ -844,13 +892,21 @@ header {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 1180px) {
+  .resume-container img {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 @media (max-width: 758px) {
   #resume {
     width: 100%;
     height: 400vh;
+  }
+
+  .profile {
+    display: grid;
   }
 
   .resume-container img {
