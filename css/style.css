@@ -1242,7 +1242,7 @@ header {
 }
 
 .maps iframe {
-  /* padding: 0rem 2% !important; */
+  padding: 2rem 0% !important;
   border-radius: 10px !important;
 }
 
