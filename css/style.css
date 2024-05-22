@@ -150,6 +150,7 @@ header {
   border-radius: 5px;
   flex-wrap: wrap;
   width: 40%;
+  box-shadow: 3px 3px 3px var(--bg);
 }
 
 .social a {
@@ -177,6 +178,7 @@ header {
   justify-content: flex-start;
   margin-right: 4rem;
   transition: 0.2s linear;
+  
 }
 
 /* Laptop  */
