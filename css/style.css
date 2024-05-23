@@ -474,9 +474,9 @@ header {
 
 /* LIKES */
 
-#likes {
+/* #likes {
   height: max-content;
-}
+} */
 
 #likes h1 {
   font-size: 10rem;
@@ -484,31 +484,45 @@ header {
   /* height: 12rem; */
   display: grid;
   align-items: center;
-  padding: 0 5%;
+  padding: 0 10%;
   color: var(--i);
   text-shadow: 5px 4px 0px var(--h2);
   justify-items: center;
 }
+#likes {
+  width: 100%;
+  background: url(../img/spotify-bg.png);
+  height: max-content;
+  background-size: cover;
+  position: static;
+  background-attachment: fixed;
+}
 
 #likes .likes-bg {
-  background-color: var(--bg);
+  background-color: rgb(0, 0, 0, 90%);
   width: 100%;
-  height: 100vh;
+  /* height: 100%; */
+}
+
+.likes-bg h2 {
+  font-size: 4rem;
+  margin: 3rem;
+  font-family: monospace;
 }
 
 #likes .likes-bg img {
   margin: 2rem;
 }
+
 .music {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  align-items: center;
-  justify-content: space-evenly;
+  display: grid;
+  text-align: center;
 }
 
 .music .playlist {
-  display: grid;
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 .playlist {
@@ -522,12 +536,14 @@ header {
 .playlist .songs {
   display: flex;
   align-items: center;
-  /* flex-wrap: wrap; */
+  margin: 2rem 1%;
 }
 
 .playlist .songs:hover {
-  background-color: var(--spotify);
-  color: var(--h2);
+  /* background-color: var(--spotify);
+  color: var(--h2); */
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px var(--spotify);
 }
 
 .playlist .songs img {
@@ -542,6 +558,21 @@ header {
   font-family: "Freeman", sans-serif;
   /* font-weight: 400; */
   font-style: normal;
+}
+
+.podcast {
+  display: grid;
+  text-align: center;
+}
+
+.podcast .takes {
+  display: flex;
+  gap: 2rem;
+  /* width: 100%; */
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 2rem;
+  justify-content: center;
 }
 
 /* Laptop  */
@@ -559,9 +590,6 @@ header {
 
 /* Tablet */
 @media (max-width: 758px) {
-  #likes {
-    height: 125vh;
-  }
   #hero .container-logo img {
     left: 43%;
     height: 50%;
@@ -609,16 +637,26 @@ header {
     font-size: 18px;
   }
 
+  .playlist .songs {
+    display: flex;
+    align-items: center;
+    margin: 2rem 1%;
+    width: 100%;
+  }
+
   .music {
     display: grid;
     justify-items: center;
     align-items: start;
   }
   .playlist {
-    display: flex;
+    display: grid;
     padding: 1rem;
     height: 100%;
     width: 100%;
+  }
+  .music .playlist {
+    width: 87%;
   }
 }
 
