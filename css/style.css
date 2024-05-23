@@ -150,6 +150,7 @@ header {
   border-radius: 5px;
   flex-wrap: wrap;
   width: 40%;
+  box-shadow: 3px 3px 3px var(--bg);
 }
 
 .social a {
@@ -177,6 +178,7 @@ header {
   justify-content: flex-start;
   margin-right: 4rem;
   transition: 0.2s linear;
+  
 }
 
 /* Laptop  */
@@ -946,6 +948,8 @@ header {
 
   .profile {
     display: grid;
+    gap: 0;
+    padding: 0;
   }
 
   .resume-container img {
@@ -970,6 +974,10 @@ header {
 
   .resume-container .resume-desc {
     width: 100%;
+  }
+
+  .resume-container .resume-content {
+    padding: 0;
   }
 
   .skills-data {
@@ -1190,17 +1198,18 @@ header {
 }
 
 #contact .contact-cont .address {
-  display: grid;
+  display: flex;
+  flex
   height: max-content;
   padding: 5px 2%;
   color: var(--bg);
   border-radius: 10px;
-  justify-content: start;
-  align-content: space-evenly;
+  justify-content: space-around;
+  /* align-content: space-evenly; */
 }
 
 #contact .contact-cont .address h2 {
-  font-size: 1.2rem;
+  font-size: 2rem;
   gap: 1rem;
   height: max-content;
   font-family: system-ui;
@@ -1210,38 +1219,60 @@ header {
   color: var(--i);
 }
 
-.address-capt {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  color: var(--h1);
-}
 
 .address-capt h3 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-family: monospace;
-  /* padding: 0px 5%; */
+  color: var(--h3);
 }
 
 .address-capt .icons {
   background-color: var(--h3);
-  padding: 5px;
+  padding: 1rem;
   border-radius: 50%;
   color: var(--i);
   margin: 10px 0;
   display: block;
-  height: 2rem;
-  width: 2rem;
+  height: 4rem;
+  width: 4rem;
 }
 
 #contact .contact-cont .address span {
   font-size: 18px;
 }
 
+.sub-address {
+  display: grid;
+  width: 100%;
+}
+
+.address-capt {
+  background-color: #e5e5e5;
+  margin: 0.6rem;
+  display: flex;
+  box-shadow:(5px, 5px, 5px, var(--i));
+  gap: 1rem;
+  height: 10rem;
+  width: 95%;
+  color: var(--h1);
+  border-radius: 10px;
+  padding: -2px 1%;
+  align-items: center;
+  justify-content: center;
+}
+
+.address-capt .keterangan {
+  display: grid;
+  gap: 1rem;
+  width: 50%;
+  justify-items: start;
+}
+
 .maps {
   display: grid;
-  justify-items: center;
+  /* justify-items: center; */
   align-items: center;
+  padding: 2.5rem 0%;
 }
 
 .maps h2 {
@@ -1252,7 +1283,7 @@ header {
 }
 
 .maps iframe {
-  /* padding: 0rem 2% !important; */
+  padding: 2rem 0% !important;
   border-radius: 10px !important;
 }
 
@@ -1264,18 +1295,18 @@ header {
 @media (max-width: 758px) {
   #contact {
     height: max-content;
+    /* margin-top: 13rem; */
   }
 
   #contact .contact-cont {
     display: grid;
     align-content: center;
-    height: 78rem;
+    /* height: 78rem; */
     width: 100%;
     justify-content: center;
     justify-items: center;
     padding: 5%;
   }
-
   #contact .contact-cont .address {
     display: grid;
     height: 100%;
@@ -1285,9 +1316,18 @@ header {
     /* gap: 2.5rem; */
   }
 
+  .address-capt .keterangan {
+    gap: 0;
+  }
+
+
   #contact .contact-cont .address h2 {
     font-size: 17px;
     height: 4rem;
+  }
+
+  .address-capt{
+    gap: 2rem;
   }
 
   .address-capt h3 {
@@ -1335,7 +1375,7 @@ header {
     height: 100%;
     display: grid;
     align-items: start;
-    padding: 5px 2%;
+    /* padding: 5px 2%; */
     justify-items: stretch;
     margin: 0rem 0%;
     border-radius: 10px;
