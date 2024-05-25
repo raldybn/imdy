@@ -517,9 +517,9 @@ header {
 }
 
 .music {
-  display: flex;
+  /* display: flex; */
   text-align: start;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .music .playlist {
