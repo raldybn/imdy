@@ -517,8 +517,9 @@ header {
 }
 
 .music {
-  display: grid;
-  text-align: center;
+  display: flex;
+  text-align: start;
+  align-items: center;
 }
 
 .music .playlist {
@@ -539,13 +540,14 @@ header {
   display: flex;
   align-items: center;
   margin: 2rem 1%;
+  width: 38%;
 }
 
 .playlist .songs:hover {
   /* background-color: var(--spotify);
   color: var(--h2); */
   border-radius: 15px;
-  box-shadow: 0px 0px 15px var(--spotify);
+   box-shadow: 0px 0px 15px var(--i);
 }
 
 .playlist .songs img {
@@ -1273,6 +1275,7 @@ header {
   /* justify-items: center; */
   align-items: center;
   padding: 2.5rem 0%;
+  border-radius: 13px;
 }
 
 .maps h2 {
@@ -1378,7 +1381,6 @@ header {
     /* padding: 5px 2%; */
     justify-items: stretch;
     margin: 0rem 0%;
-    border-radius: 10px;
     border-style: none;
   }
 }
