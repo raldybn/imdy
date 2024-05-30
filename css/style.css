@@ -214,7 +214,7 @@ header {
     transition: 0.3s linear;
     justify-items: start;
     align-content: space-between;
-    background-color: var(--h1);
+    background-color: rgb(275,275,275,96%);
   }
 
   .navbar .navbar-nav.active a {
@@ -226,7 +226,7 @@ header {
   }
   .navbar .navbar-nav.active a:hover {
     transition: 0.2s linear;
-    color: var(--h3);
+    color: var(--i);
   }
 
   .navbar .navbar-nav.active a::after {
@@ -279,15 +279,18 @@ header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-content: center;
-    height: 90%;
+    height: 100%;
+    column-gap: 5rem;
+
 }
 
 #hero .container  {
   width: 100%;
+  /* position: absolute; */
   display: flex;
-  margin-bottom: 30%;
+  /* margin-bottom: 30%; */
 }
 
 .container .logo img {
@@ -296,28 +299,25 @@ header {
   border-radius: 50%;
 }
 
-#hero .hero-bg .hero-img img {
-  /* margin:1rem; */
-  /* height: 100%; */
-  width: 100%;
-      /* width: 100%; */
-    height: 95%;
-  /* box-shadow: 0 0 5px 5px #141414; */
-  /* background-blend-mode :difference; */
-  /* position: relative; */
-  /* border-radius: 50%; */
-    /* border-style: solid; */
-    /* box-shadow: 1px 1px 1px 1px grey; */
-}
 
 
 #hero .hero-bg .hero-img {
   width: 50%;
   overflow: hidden;
-  position: relative;
+  /* position: relative; */
   height: 100%;
+  margin-right: 0 10%;
   /* border-radius: 50%; */
   /* position: absolute; */
+}
+
+#hero .hero-bg .hero-img img {
+  /* width: 100%;
+  height: 100%; */
+  background-position: top;
+  
+  backdrop-filter: blur(10px);
+  
 }
 
 #hero .container {
@@ -681,12 +681,12 @@ header {
   }
 
   #hero .container h1 {
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 0rem;
   }
 
    #hero .container .caption span {
-    font-size: 18px;
+    font-size: 10px;
     margin-bottom: 1rem;
   } 
 
@@ -696,6 +696,7 @@ header {
 
   #hero .hero-bg .hero-img {
     width: fit-content;
+    display: block;
     /* height: 87%; */
   }
 
