@@ -377,13 +377,14 @@ header {
 }
 
 
-#hero .hero-btn:hover{
+#hero .hero-btn:hover {
   /* opacity: 60%; */
-  color:#000000;
+  color:var(--black);
+  border-color: white;
   /* font-weight: 700; */
-  background-color: rgba(249, 232, 0, 0.8);
+  background-color: rgba(252, 252, 249, 0.8);
   transition: all ease 0.2s;
-  box-shadow: 2px 2px 2px var(--h1);
+  box-shadow: 2px 1px 0px  0px var(--h1);
 }
 
 #about {
@@ -649,19 +650,21 @@ header {
     /* top: 25%; */
     height: 90%;
     display: inline-grid;
-    align-content: stretch;
+    align-content: space-between;
   }
 
   #hero .container {
     width: 100%;
     display: grid;
     justify-items: center;
+    padding: 10rem 0;
   }
 
   .caption {
       width: max-content;
       height: max-content;
       text-align: center;
+      justify-items: center;
   }
 
   .container .logo {
@@ -693,7 +696,9 @@ header {
   }
 
   #hero .hero-bg .hero-img img {
-    /* width: 75%; */
+    width: 100%;
+    position: relative;
+    height: max-content;
   }
 
   #about {
@@ -974,14 +979,14 @@ header {
   justify-content: space-around;
   border-radius: 50%;
 }
-
+/* 
 .resume-container .resume-desc i:hover,
 .skills-data i:hover,
 .experience .experience-contain i:hover,
 .experience .education-contain:hover i {
   color: var(--bg);
   background-color: var(--h2);
-}
+} */
 
 .skills-data h2,
 .resume-container .resume-desc h2,
@@ -991,6 +996,7 @@ header {
   color: var(--bluedark);
   background-color: var(--i);
   display: flow;
+  transition: all ease 0.3s;
   width: 100%;
   font-family: system-ui;
   border-radius: 40px 40px 40px 40px;
