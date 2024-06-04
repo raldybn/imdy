@@ -142,15 +142,29 @@ header {
   display: none;
 }
 
+.social h1 {
+  font-size: 18px;
+  border-bottom: 2px solid var(--i);
+  color: var(--h1);
+  font-family: monospace;
+  margin: 0 10%;
+  width: 78%;
+}
+
 .social .social-icon {
-  background-color: var(--h2);
-  display: flex;
+  /* background-color: rgb(275, 275, 275, 50%); */
+  display: grid;
+  backdrop-filter: blur(8px);
   justify-content: space-around;
-  height: 215%;
-  border-radius: 5px;
+  height: 100%;
+  border-radius: 20px;
   flex-wrap: wrap;
-  width: 40%;
+  margin-top: 1.25rem;
+  margin-right: 5%;
+  width: 90%;
   box-shadow: 3px 3px 3px var(--bg);
+  justify-content: space-around;
+  justify-items: center;
 }
 
 .social a {
@@ -162,24 +176,86 @@ header {
   align-items: center;
   justify-content: space-around;
   align-content: space-evenly;
-  color: #000;
+  color: #ffffff;
 }
 
 .social a:hover {
-  color: var(--i);
   transition: all 0.2s;
   /* border-bottom: 1px solid #828282; */
 }
 
+.social-media {
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
+  height: 100%;
+  padding: 2%;
+  flex-wrap: wrap;
+}
+
 .social.active {
   display: flex;
-  margin-top: 5rem;
+  margin-top: 4.5rem;
   flex-direction: row-reverse;
   justify-content: flex-start;
-  margin-right: 4rem;
+  /* margin-right: 15rem; */
   transition: 0.2s linear;
   
 }
+
+#instagram:hover {
+  /* background: #121FCF; */
+  background: linear-gradient(to right, #000ece 0%, #db1612 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#twitter:hover {
+  color: rgb(212, 212, 212);
+  filter: opacity(75%);
+}
+#facebook:hover {
+color: #0084ff;
+/* filter: opacity(50%); */
+}
+#linkedin:hover {
+color: #0053a0;
+/* filter: opacity(50%); */
+}
+
+#telegram:hover {
+color: #049bff;
+/* filter: opacity(50%); */
+}
+#github:hover {
+color: rgb(212, 212, 212);
+filter: opacity(75%);
+}
+
+
+#whatsapp:hover {
+color: #12ee1d;
+filter: opacity(75%);
+}
+
+
+.contact-sect {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* padding: 15px; */
+}
+.contact-sect h2 {
+  font-size: 10px;
+}
+
+.address {
+  display: flex;
+  width: 100%;
+  padding: 15px 10%;
+}
+
+
 
 /* Laptop  */
 @media (max-width: 1366px) {
@@ -293,10 +369,19 @@ header {
   /* margin-bottom: 30%; */
 }
 
-.container .logo img {
+.logo {
+  width: 100%;
+}
+
+.logo img {
   background-color: rgb(225, 221, 221);
   width: 5rem;
   border-radius: 50%;
+  transform: rotate(0deg);
+}
+.logo img:hover {
+  transform: rotate(360deg);
+  transition: 1s;
 }
 
 
@@ -329,10 +414,11 @@ header {
 }
 
 .caption {    
+  width: 100%;
   height: 100%;
   display: grid;
-  justify-items: end;
-  text-align: start;
+  margin: 10% 0;
+  justify-content: center;
 }
 
 
@@ -817,18 +903,18 @@ header {
   }
 
   .caption {
-      width: max-content;
+      /* width: max-content; */
       height: max-content;
       text-align: center;
       justify-items: center;
   }
 
-  .container .logo {
+  .logo {
     display: block;
     margin-bottom: 0;
   }
 
-  .container .logo img {
+  .logo img {
     width: 10%;
   }
 
@@ -1618,20 +1704,20 @@ header {
 
 
 .address-capt h3 {
-  font-size: 1.2rem;
+  font-size: 10px;
   font-family: monospace;
   color: var(--h3);
 }
 
 .address-capt .icons {
   background-color: var(--h3);
-  padding: 1rem;
+  padding: 8px;
   border-radius: 50%;
   color: var(--i);
   margin: 10px 0;
   display: block;
-  height: 4rem;
-  width: 4rem;
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
 #contact .contact-cont .address span {
@@ -1640,28 +1726,31 @@ header {
 
 .sub-address {
   display: grid;
-  width: 100%;
+  width: 50%;
+  height: 50%;
+  align-content: stretch;
+  gap: 10px;
 }
 
 .address-capt {
   background-color: #e5e5e5;
-  margin: 0.6rem;
+  /* margin: 0.6rem; */
   display: flex;
   box-shadow:(5px, 5px, 5px, var(--i));
-  gap: 1rem;
-  height: 10rem;
-  width: 95%;
-  color: var(--h1);
+  /* gap: 5rem; */
+  height: 100%;
+  width: 97%;
+  color: var(--h3);
   border-radius: 10px;
   padding: -2px 1%;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .address-capt .keterangan {
   display: grid;
-  gap: 1rem;
-  width: 50%;
+  /* gap: 1rem; */
+  width: 80%;
   justify-items: start;
 }
 
@@ -1669,20 +1758,26 @@ header {
   display: grid;
   /* justify-items: center; */
   align-items: center;
-  padding: 2.5rem 0%;
+  /* padding: 2.5rem 0%; */
   border-radius: 13px;
+  width: 100%;
+  height: 100%;
 }
 
 .maps h2 {
-  font-size: 3rem;
+  font-size: 18px;
   border-bottom: 2px solid var(--i);
-  color: var(--i);
+  color: rgb(255, 255, 255);
   font-family: monospace;
+  margin: 0 10%;
 }
 
 .maps iframe {
   padding: 2rem 0% !important;
   border-radius: 10px !important;
+  width: 80%;
+  height: 100%;
+  margin: 0 10%;
 }
 
 /* Laptop  */
@@ -1729,7 +1824,7 @@ header {
   }
 
   .address-capt h3 {
-    font-size: 15px;
+    font-size: 8px;
   }
 
   .maps {
