@@ -139,7 +139,7 @@ header {
 }
 
 .social {
-  display: none;
+  margin-top: -200%;
 }
 
 .social h1 {
@@ -148,23 +148,22 @@ header {
   color: var(--h1);
   font-family: monospace;
   margin: 0 10%;
-  width: 78%;
+  width: 79%;
 }
 
 .social .social-icon {
-  /* background-color: rgb(275, 275, 275, 50%); */
   display: grid;
-  backdrop-filter: blur(8px);
-  justify-content: space-around;
-  height: 100%;
-  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  /* background-color: #e5e5e5; */
+  /* height: 100%; */
+  border-radius: 10px 0px 0px 10px;
   flex-wrap: wrap;
-  margin-top: 1.25rem;
-  margin-right: 5%;
-  width: 90%;
+  width: 100%;
   box-shadow: 3px 3px 3px var(--bg);
-  justify-content: space-around;
   justify-items: center;
+  justify-content: center;
+  align-content: center;
+  margin-top: -6%;
 }
 
 .social a {
@@ -176,7 +175,7 @@ header {
   align-items: center;
   justify-content: space-around;
   align-content: space-evenly;
-  color: #ffffff;
+  color: var(--h1);
 }
 
 .social a:hover {
@@ -189,17 +188,19 @@ header {
   width: 80%;
   justify-content: space-evenly;
   height: 100%;
-  padding: 2%;
+  /* padding: 1%; */
   flex-wrap: wrap;
 }
 
 .social.active {
   display: flex;
-  margin-top: 4.5rem;
+  margin-top: 4rem;
   flex-direction: row-reverse;
   justify-content: flex-start;
-  /* margin-right: 15rem; */
-  transition: 0.2s linear;
+  transition: 0.6s linear;
+  transition-property: inherit;
+  width: 100%;
+  height: 100vh;
   
 }
 
@@ -243,10 +244,12 @@ filter: opacity(75%);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  height: 100%;
+
   /* padding: 15px; */
 }
 .contact-sect h2 {
-  font-size: 10px;
+  font-size: 17px;
 }
 
 .address {
@@ -390,7 +393,7 @@ filter: opacity(75%);
   width: 50%;
   overflow: hidden;
   /* position: relative; */
-  height: 100%;
+  height: max-content;
   margin-right: 0 10%;
   /* border-radius: 50%; */
   /* position: absolute; */
@@ -883,6 +886,18 @@ filter: opacity(75%);
 /* Tablet */
 @media (max-width: 758px) {
   
+  .social-media {
+    justify-content: center;
+  }
+
+  .contact-sect h2  {
+    font-size: 10px;
+  }
+
+  .address-capt h3 {
+    font-size: 9px;
+  }
+
   #hero {
     height: 100vh;
   }
@@ -1652,7 +1667,7 @@ filter: opacity(75%);
   /* background-color: rgba(0, 0, 0, 80%); */
   width: 100%;
   height: 100%;
-  display: flex;
+  /* display: flex; */
 }
 
 .contact-img {
@@ -1704,9 +1719,9 @@ filter: opacity(75%);
 
 
 .address-capt h3 {
-  font-size: 10px;
+  font-size: 14px;
   font-family: monospace;
-  color: var(--h3);
+  color: black;
 }
 
 .address-capt .icons {
@@ -1733,12 +1748,12 @@ filter: opacity(75%);
 }
 
 .address-capt {
-  background-color: #e5e5e5;
+  background-color: var(--h2);
   /* margin: 0.6rem; */
   display: flex;
   box-shadow:(5px, 5px, 5px, var(--i));
   /* gap: 5rem; */
-  height: 100%;
+  height: 6.5rem;
   width: 97%;
   color: var(--h3);
   border-radius: 10px;
@@ -1751,7 +1766,7 @@ filter: opacity(75%);
   display: grid;
   /* gap: 1rem; */
   width: 80%;
-  justify-items: start;
+  justify-items: center;
 }
 
 .maps {
@@ -1761,13 +1776,13 @@ filter: opacity(75%);
   /* padding: 2.5rem 0%; */
   border-radius: 13px;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .maps h2 {
   font-size: 18px;
   border-bottom: 2px solid var(--i);
-  color: rgb(255, 255, 255);
+  color: var(--h1);
   font-family: monospace;
   margin: 0 10%;
 }
@@ -1806,7 +1821,7 @@ filter: opacity(75%);
     /* padding: 15px 4%; */
     align-items: center;
     border-radius: 10px 10px 0px 0px;
-    /* gap: 2.5rem; */
+    gap: 1rem;
   }
 
   .address-capt .keterangan {
@@ -1819,17 +1834,25 @@ filter: opacity(75%);
     height: 4rem;
   }
 
-  .address-capt{
-    gap: 2rem;
+  .address-capt {
+    /* gap: 1rem; */
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
   }
 
   .address-capt h3 {
     font-size: 8px;
   }
 
+  .sub-address {
+    width: 100%;
+    display: grid;
+  }
+
   .maps {
-    width: 135%;
-    height: 100%;
+    width: 100%;
+    /* height: 100%; */
     display: grid;
     align-items: start;
     padding: 5px 2%;
@@ -1863,9 +1886,17 @@ filter: opacity(75%);
     border-radius: 10px 10px 0px 0px;
   }
 
+  .address-capt {
+    /* gap: 1rem; */
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+
   .maps {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     display: grid;
     align-items: start;
     /* padding: 5px 2%; */
@@ -1873,6 +1904,8 @@ filter: opacity(75%);
     margin: 0rem 0%;
     border-style: none;
   }
+
+
 }
 
 /* CONTACT */
