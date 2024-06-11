@@ -1527,9 +1527,9 @@ filter: opacity(75%);
 }
 
 @media (max-width: 481px) {
-  /* #resume {
-    height: 195vh;
-  } */
+  #resume {
+    height: 450vh;
+  }
   .resume-container .resume-desc {
     width: 100%;
   }
