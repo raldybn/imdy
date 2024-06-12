@@ -35,19 +35,36 @@ document.addEventListener("click", function (e) {
 });
 // SOCIAL
 
-// PORTFOLIO DISPLAY
-const display = document.getElementById("display-active");
+// gallery DISPLAY
+const imgSide= document.getElementById("imgSide");
+const artSide = document.getElementById("artSide");
 
-document.getElementById("display-web").onclick = () => {
-  display.classList.toggle("active");
+  document.getElementById("img-btn").onclick = () => {
+  imgSide.classList.toggle("active");
 };
 
-const displayWeb = document.getElementById("display-web");
+
+document.getElementById("art-btn").onclick = () => {
+  artSide.classList.toggle("active");
+};
+
+const imgBtn = document.getElementById("img-btn");
+const captImg = document.getElementById("capt-img");
 
 document.addEventListener("click", function (e) {
-  if (!displayWeb.contains(e.target) && !display.contains(e.target)) {
-    display.classList.remove("active");
+  if (!imgBtn.contains(e.target) && !imgSide.contains(e.target)) {
+    imgSide.classList.remove("active");
   }
 });
 
-// PORTFOLIO DISPLAY
+const artBtn= document.getElementById("art-btn");
+
+document.addEventListener("click", function (e) {
+  if (!artBtn.contains(e.target) && !artSide.contains(e.target)) {
+    artSide.classList.remove("active");
+  }
+});
+
+// CAPT IMG DISPLAY
+
+
