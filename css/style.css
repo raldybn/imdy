@@ -1212,7 +1212,7 @@ filter: opacity(75%);
 
 
   #img-btn, #art-btn {
-    font-size: 3.5rem;
+    font-size: 2rem;
   }
 
 
@@ -1264,7 +1264,10 @@ filter: opacity(75%);
 
   .imgSide, .artSide {
     /* position: relative; */
+    position: absolute;
     display: grid;
+    top: 489%;
+    left: -210%;
   }
 
 
@@ -1290,10 +1293,11 @@ filter: opacity(75%);
   }
 
   .collection {
-    display: flex;
+    display: grid;
     justify-items: center;
     align-items: center;
     width: 100%;
+    height: 100%;
   }
 
   .gallery .part {
@@ -1340,6 +1344,7 @@ filter: opacity(75%);
     width: 70%;
     /* height: 30%; */
     background-color: #2b2c0f;
+    display: none;
   }
 
   .gallery .img-4 img {
@@ -1350,7 +1355,6 @@ filter: opacity(75%);
     display: flex;
     width: 100%;
     justify-content: space-around;
-    margin-top: 10%;
   }
 
   .img-link a{
@@ -1404,16 +1408,27 @@ filter: opacity(75%);
     left: 0%;
     width: 100%;
     height: 100%;
-    position: relative;
-    top: -81%;
+    margin-top: -5%;
+    /* position: relative;
+    top: -81%; */
   }
 
   .artSide.active {
     left: 0%;
     width: 100%;
     height: 100%;
-    position: relative;
-    top: -75%;
+    margin-top: -5%;
+    /* position: relative;
+    top: -75%; */
+  }
+
+  .gallery .img-2 {
+    width: 71%;
+    height: 90%;
+  }
+  
+  #perjamuan {
+    display: none;
   }
 }
 
