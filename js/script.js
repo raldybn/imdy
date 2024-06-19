@@ -39,14 +39,19 @@ document.addEventListener("click", function (e) {
 const imgSide= document.getElementById("imgSide");
 const artSide = document.getElementById("artSide");
 
+
   document.getElementById("img-btn").onclick = () => {
   imgSide.classList.toggle("active");
 };
 
-
 document.getElementById("art-btn").onclick = () => {
   artSide.classList.toggle("active");
 };
+
+
+
+
+
 
 const imgBtn = document.getElementById("img-btn");
 const captImg = document.getElementById("capt-img");
