@@ -49,6 +49,14 @@ document.getElementById("art-btn").onclick = () => {
 };
 
 
+document.getElementById("back").onclick = () => {
+  imgSide.classList.remove("active");
+};
+
+document.getElementById("back1").onclick = () => {
+  artSide.classList.remove("active");
+};
+
 
 
 
@@ -69,6 +77,9 @@ document.addEventListener("click", function (e) {
     artSide.classList.remove("active");
   }
 });
+
+
+
 
 // CAPT IMG DISPLAY
 
