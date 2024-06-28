@@ -1894,13 +1894,10 @@ filter: opacity(75%);
 .port-container {
   background-color: var(--h1);
   box-shadow: var(--bg);
-  /* border-radius: 8px; */
   padding: 5rem 5%;
-  /* margin-top: 4rem; */
   height: max-content;
-  /* background: url(../img/work.jpg); */
-  background-size: cover;
-  margin: 4rem;
+  margin: 1rem;
+  margin-top: 5rem;
 }
 
 .port-capt {
@@ -1909,12 +1906,14 @@ filter: opacity(75%);
 
 .port-container h1 {
   color: var(--h3);
-  font-size: 5rem;
-  text-align: center;
+  font-size: 3.8rem;
+  text-align: start;
+  font-family: sans-serif;
 }
 
 .port-container h2 {
   color: black;
+  padding:3px 0;
 }
 
 .port-container h3 {
@@ -1932,15 +1931,17 @@ filter: opacity(75%);
 
 .port-p {
   display: grid;
-  width: 80%;
-
+  width: 40%;
+  border-style: solid;
+  border-radius: 10px;
+  box-shadow: 5px 5px 2.5px grey;
 }
 
 .port-container p {
   color: black;
   /* width: 50rem; */
-  font-size: 18px;
-  padding: 10px 5% 0px 0px;
+  font-size: 14px;
+  padding: 2px;
   text-align: justify;
   font-style: italic;
 }
@@ -1948,7 +1949,7 @@ filter: opacity(75%);
 .port-p a {
   color: white;
   background-color: var(--h3);
-  font-size: 17px;
+  font-size: 13px;
   width: max-content;
   height: max-content;
   border-style: solid;
@@ -1957,7 +1958,7 @@ filter: opacity(75%);
   font-family: fantasy;
   display: flex;
   align-items: center;
-  gap: 1rem;
+    /* gap: 1rem; */
   margin-top: 1rem;
   transition: ease 0.2s;
 }
@@ -1971,6 +1972,9 @@ filter: opacity(75%);
   height: 1rem;
 }
 
+.project-capt {
+  padding: 10px;
+}
 
 .port-img {
   width: 89%;
@@ -1978,8 +1982,8 @@ filter: opacity(75%);
 }
 
 .port-img  img {
-  width: 45%;
-  border-style: groove;
+  width: 100%;
+  /* border-style: groove; */
 }
 
 
@@ -1996,7 +2000,7 @@ filter: opacity(75%);
 /* Tablet */
 @media (max-width: 758px) {
   .port-container p {
-    font-size: 15px;
+    font-size: 12px;
     width: 100%;
   }
   .projects {
@@ -2006,9 +2010,13 @@ filter: opacity(75%);
   }
 
   .port-img img {
-    width: 80%;
+    width: 100%;
+  }
+  .port-p {
+    width: 100%;
   }
 }
+
 
 /* PORTFOLIO */
 
