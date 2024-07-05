@@ -2307,7 +2307,7 @@ footer {
 }
 
 
-footer .sosmed-caption h1, footer .contact-caption h1, .download-link h1  {
+footer .sosmed-caption h1, footer .contact-caption h1, .download h1  {
   color: white;
   font-family: sans-serif;
   font-width:bold;
@@ -2426,19 +2426,21 @@ footer .maps h1 {
     display: grid;
     justify-content: center;
   }
+
   .footer-content {
-    margin-bottom: 5rem;
+    /* margin-bottom: 5rem; */
     width: 100%;
     padding: 0 5%;
     display: flex;
-    gap: 3.5rem;
+    gap: 5rem;
     flex-wrap: wrap;
     }
+
     .social-media, .contact-me, .download {
       width: 100%;
     }
-    footer .sosmed-caption h1, footer .contact-caption h1, .download-link h1 {
-      /* border-bottom: none; */
+    footer .sosmed-caption h1, footer .contact-caption h1, .download h1 {
+      border-bottom: none;
     }
     .address {
       width: 100%;
@@ -2448,6 +2450,7 @@ footer .maps h1 {
     }
     .maps iframe {
       width: 80%;
+      height: 100%;
     }
     .sosmed-link, .contact-link {
       display: flex;
@@ -2459,5 +2462,11 @@ footer .maps h1 {
     }
     .social-media a, .contact-link a, .download-link a {
       gap: 0;
+    }
+
+    .download-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
     }
 }
