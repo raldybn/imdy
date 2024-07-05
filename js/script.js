@@ -20,19 +20,19 @@ document.addEventListener("click", function (e) {
 // NAVBAR
 
 // SOCIAL
-const socialNavigate = document.querySelector(".social");
+// const socialNavigate = document.querySelector(".social");
 
-document.getElementById("smartphone").onclick = () => {
-  socialNavigate.classList.toggle("active");
-};
+// document.getElementById("smartphone").onclick = () => {
+//   socialNavigate.classList.toggle("active");
+// };
 
-const smartphone = document.querySelector("#smartphone");
+// const smartphone = document.querySelector("#smartphone");
 
-document.addEventListener("click", function (e) {
-  if (!smartphone.contains(e.target) && !socialNavigate.contains(e.target)) {
-    socialNavigate.classList.remove("active");
-  }
-});
+// document.addEventListener("click", function (e) {
+//   if (!smartphone.contains(e.target) && !socialNavigate.contains(e.target)) {
+//     socialNavigate.classList.remove("active");
+//   }
+// });
 // SOCIAL
 
 // gallery DISPLAY
