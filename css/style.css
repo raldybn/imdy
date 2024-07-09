@@ -2428,16 +2428,14 @@ footer .maps h1 {
   }
 
   .footer-content {
-    /* margin-bottom: 5rem; */
-    width: 100%;
-    padding: 0 5%;
-    display: flex;
     gap: 5rem;
-    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
     }
 
     .social-media, .contact-me, .download {
-      width: 100%;
+      width: 30%;
+      
     }
     footer .sosmed-caption h1, footer .contact-caption h1, .download h1 {
       border-bottom: none;
@@ -2452,21 +2450,22 @@ footer .maps h1 {
       width: 80%;
       height: 100%;
     }
-    .sosmed-link, .contact-link {
-      display: flex;
+    .sosmed-link, .contact-link, .download-link {
+      display: grid;
       justify-content: center;
-      gap: 5%;
+      gap: 3%;
     }
     .social-media a svg, .contact-link a svg {
       height: 2rem;
     }
     .social-media a, .contact-link a, .download-link a {
-      gap: 0;
+      gap: 1rem;
+      font-size: 14px;
     }
 
-    .download-link {
+    /* .download-link {
       display: flex;
       align-items: center;
       justify-content: space-evenly;
-    }
+    } */
 }
