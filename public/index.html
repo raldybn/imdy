@@ -1,0 +1,565 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <link rel="stylesheet" href="/public/css/style.css">
+  <title>RaldyBN | Website</title>
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+
+<body class="bg-white">
+  <header class="bg-transparent absolute top-0 left-0 w-full flex items-center justify-center z-10 transition duration-300 ease-in-out">
+    <div class="container">
+      <div class="flex items-center justify-between relative">
+        <div class="px-4">
+          <a href="#home" class="font-bold lg:text-4xl text-indigo-400 text-black-400 block py-6 lg:py-0 ">RALDYBN</a>
+        </div>
+        <div class="flex items-center px-4">
+          <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+            <span class="hamburger-line white transition duration-300 ease-in-out origin-top-left"></span>
+            <span class="hamburger-line transition duration-300 ease-in-out"></span>
+            <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+          </button>
+
+          <nav id="nav-menu" class="hidden  absolute py-5 bg-white shadow-lg w-auto right-4 left-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none  lg: rounded-none">
+            <ul class="block lg:flex ">
+              <!-- <li class="group">
+                <a href="#home" class="text-base lg:text-slate-200 text-black font-bold py-2 mx-8 flex transition duration-300 ease-in-out group-hover:text-yellow-500">Beranda</a>
+              </li> -->
+              <div class="group">
+                <a href="index.html">
+                    <button type="button"
+                        class="text-base lg:text-yellow-500 text-black font-bold py-2 mx-8 flex transition duration-300 ease-in-out group-hover:text-yellow-500 lg:group-hover:text-white rounded focus:bg-gray-900">
+                        Beranda
+                        <!-- Dropdown arrow -->
+                        <svg class="w-4 h-4 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 12l-5-5h10l-5 5z" />
+                        </svg>
+                    </button>
+                </a>
+        
+                <!-- Dropdown menu -->
+                <div
+                    class="absolute overflow-hidden lg:left-cost w-40 origin-top-left bg-white divide-y divide-gray-100 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300">
+                    <div class="py-4">
+                      <a href="index.html#about" class="block px-4 py-2 text-sm text-gray-700 hover:text-yellow-500 lg:hover:bg-gray-100">Tentang Saya</a>
+                      <a href="index.html#galery" class="block px-4 py-2 text-sm text-gray-700 hover:text-yellow-500 lg:hover:bg-gray-100">Galery</a>
+                      <a href="index.html#music" class="block px-4 py-2 text-sm text-gray-700 hover:text-yellow-500 lg:hover:bg-gray-100">Music</a>
+                      <a href="index.html#contact" class="block px-4 py-2 text-sm text-gray-700 hover:text-yellow-500 lg:hover:bg-gray-100">Kontak Saya</a>
+                  </div>
+                </div>
+              </div>
+              <!-- <li class="group">
+                <a href="#about" class="text-base lg:text-slate-200 text-black font-bold py-2 mx-8 flex transition duration-300 ease-in-out group-hover:text-yellow-500">Tentang Saya</a>
+              </li> -->
+              <li class="group">
+                <a href="blog.html" class="text-base lg:text-yellow-500 text-black font-bold py-2 mx-8 flex transition duration-300 hover:text-yellow-500 ease-in-out lg:group-hover:text-white">Blog</a>
+              </li>
+              <li class="group">
+                <a href="resume.html" class="text-base lg:text-yellow-500 text-black font-bold py-2 mx-8 flex transition duration-300 hover:text-yellow-500 ease-in-out lg:group-hover:text-white">resume</a>
+              </li>
+              <li class="group">
+                <a href="portfolio.html" class="text-base lg:text-yellow-500 text-black font-bold py-2 mx-8 flex transition duration-300 hover:text-yellow-500 ease-in-out lg:group-hover:text-white">Portfolio</a>
+              </li>
+              <!-- <li class="group">
+                <a href="#contact" class="text-base lg:text-slate-200 text-black font-bold py-2 mx-8 flex transition duration-300 ease-in-out group-hover:text-yellow-500">Kontak Kami</a>
+              </li> -->
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- HOME START -->
+  <section id="home" class="w-full h-screen bg-[url('/public/img/moon.jpg')] bg-center bg-cover bg-no-repeat">
+    <div class="bg-transparent py-20">
+      <div class="container mx-auto px-6 md:px-12">
+          <div class="flex flex-col gap-8 md:flex-row lg:mt-32 items-center">
+              <div class="md:w-1/2 lg:w-1/3 mt-8 md:mt-0">
+                <img src="/public/img/img-9.png" alt="Hero Image" class="rounded-lg shadow-lg" />
+              </div>
+              <div class="md:w-1/2 lg:w-2/3">
+                  <h1 class="text-4xl md:text-6xl lg:text-7xl text-yellow-500 font-bold mb-6">
+                      Hello I'm <br class="hidden md:block" />
+                      <span class="text-indigo-600">RALDY BELO</span>
+                  </h1>
+                  <p class="text-lg md:text-xl lg:text-2xl text-gray-400 mb-8">
+                      I create beautiful and functional websites for businesses of all sizes.
+                  </p>
+                  <div class="flex gap-2">
+                      <a href="resume.html" class="bg-yellow-500 hover:bg-yellow-100 transition duration-150 ease-in-out hover:text-black text-white font-bold py-3 px-6 rounded-md">Check my Resume
+                      </a>
+                      <a href="#" class="bg-gray-700 hover:bg-gray-600 text-white transition duration-150 ease-in-out font-bold py-3 px-6 rounded-md">Follow Me on Instagram
+                      </a>
+                  </div>
+              </div>
+              
+          </div>
+      </div>
+  </div>
+  </section>
+  <!-- HOME END -->
+    <!-- ABOUT START -->
+  <section id="about" class="pt-36 pb-32">
+    <div  class="bg-white grid lg:flex p-8">
+      <!-- about -->
+      <div
+        class="max-w-2xl mx-4 sm:max-w-sm md:max-w-sm lg:max-w-sm xl:max-w-sm sm:mx-auto md:mx-auto hover:scale-110 lg:mx-auto xl:mx-auto mt-16 bg-white transition duration-300 ease-in-out shadow-xl rounded-lg text-gray-900 hover:shadow-2xl">
+        <div class="rounded-t-lg h-32 overflow-hidden">
+            <img class="object-cover object-top w-full" src='https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt='Mountain'>
+        </div>
+        <div class="mx-auto w-32 h-32 relative -mt-16 border-4 border-white rounded-full overflow-hidden">
+            <img class="object-cover object-center h-32" src='img/profil.jpg' alt='Woman looking front'>
+        </div>
+        <div class="text-center mt-2">
+            <h2 class="font-semibold">Petrus Reynaldy Belo</h2>
+            <p class="text-gray-500">@raldybn</p>
+        </div>
+        <ul class="py-4 mt-2 text-gray-700 flex items-center justify-around">
+            <li class="flex flex-col items-center justify-around">
+                <svg class="w-4 fill-current text-blue-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path
+                        d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                </svg>
+                <div>25</div>
+            </li>
+            <li class="flex flex-col items-center justify-between">
+                <svg class="w-4 fill-current text-blue-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path
+                        d="M7 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0 1c2.15 0 4.2.4 6.1 1.09L12 16h-1.25L10 20H4l-.75-4H2L.9 10.09A17.93 17.93 0 0 1 7 9zm8.31.17c1.32.18 2.59.48 3.8.92L18 16h-1.25L16 20h-3.96l.37-2h1.25l1.65-8.83zM13 0a4 4 0 1 1-1.33 7.76 5.96 5.96 0 0 0 0-7.52C12.1.1 12.53 0 13 0z" />
+                </svg>
+                <div>10k</div>
+            </li>
+            <li class="flex flex-col items-center justify-around">
+                <svg class="w-4 fill-current text-blue-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path
+                        d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z" />
+                </svg>
+                <div>15</div>
+            </li>
+        </ul>
+      <div class="p-4 border-t mx-8 mt-2 ">
+          <a href="https://www.instagram.com/raldybn/" target="_blank"><button class="w-1/2 block mx-auto rounded-full bg-gray-900 hover:shadow-lg font-semibold transition duration-300 ease-in-out text-white px-6 py-2 hover:bg-opacity-25">Follow</button></a>
+      </div>
+    </div>
+    <div class="lg:w-2/4 w-full">
+      <h1 class="font-bold text-4xl lg:text-6xl py-8 lg:p-6">Tentang Saya</h1>
+      <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo tempore suscipit autem, unde, doloribus illum architecto repellendus esse magnam sed eius exercitationem repellat dolorem dignissimos, iste velit pariatur. Cumque, maiores.
+      Nesciunt, deleniti? Commodi provident adipisci quae atque harum, ipsa dolorum recusandae, cupiditate iure saepe veniam repellendus in. Facilis distinctio unde deserunt voluptates nostrum, provident vitae rerum ipsam reprehenderit voluptas iste.
+      Est expedita illo incidunt nam quos corporis, sed voluptates obcaecati a tempora necessitatibus repellat vel aliquam laborum alias eveniet amet aperiam accusamus nemo debitis velit voluptas earum minus dolores. Provident.
+      Placeat impedit id hic, consequuntur molestiae doloremque blanditiis vel porro, qui quae eos sunt! Officia accusamus, eveniet minus assumenda ratione dolorum sint adipisci tenetur ipsum consequatur eum commodi voluptatem praesentium.
+      Vitae soluta debitis voluptas id similique. Ut eligendi laborum quod nulla a deleniti nemo rem in, dolores repellat totam itaque doloremque, et fuga quos? Minus atque hic esse deserunt quidem!
+      Iste assumenda beatae ipsa facilis, vero natus soluta quas magni distinctio quibusdam harum dolorum ad ut, saepe voluptates atque, vitae nostrum alias laudantium esse quidem repellendus sed fugit reiciendis! Soluta.</p>
+      <div class="lg:mt-9 mt-5">
+        <ul class="text-5xl text-white w-max lg:w-full gap-8 lg:gap-16 flex flex-wrap justify-center">
+            <a href="#"><li class="flex justify-center items-center p-1 bg-black/40 hover:shadow-lg hover:shadow-indigo-500/40 hover:bg-slate-700 transition duration-300 ease-in-out rounded-full mt-2 h-12 w-12">
+              <i data-feather="instagram" class="hero-icon"></i>
+            </li></a>
+            <a href="#"><li class="flex justify-center items-center p-1 bg-black/40 hover:shadow-lg hover:shadow-indigo-500/40 hover:bg-slate-700 transition duration-300 ease-in-out  rounded-full mt-2 h-12 w-12">
+              <i data-feather="facebook" class="hero-icon"></i>
+            </li></a>
+            <a href="#"><li class="flex justify-center items-center p-1 bg-black/40 hover:shadow-lg hover:shadow-indigo-500/40 hover:bg-slate-700 transition duration-300 ease-in-out  rounded-full mt-2 h-12 w-12">
+              <i data-feather="user" class="hero-icon"></i>
+            </li></a>
+            <a href="#"><li class="flex justify-center items-center p-1 bg-black/40 hover:shadow-lg hover:shadow-indigo-500/40 hover:bg-slate-700 transition duration-300 ease-in-out rounded-full mt-2 h-12 w-12">
+              <i data-feather="mail" class="hero-icon"></i>
+            </li></a>
+        </ul>
+      </div>
+    </div>
+    
+  </section>
+  <!-- ABOUT START -->
+  <section class="text-gray-700 body-font">
+    <div class="container px-5 mx-auto">
+      <div class="flex flex-wrap -m-4 text-center">
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+          <div class="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:bg-slate-200 hover:scale-110">
+            <i data-feather="layout" class="text-indigo-500 w-12 h-12 mb-3 inline-block"></i>
+            <h2 class="title-font font-medium text-3xl text-gray-900">1 Years</h2>
+            <p class="leading-relaxed font-bold">Junior Web Developer</p>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+          <div class="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:bg-slate-200 hover:scale-110">
+            <i data-feather="file-text" class="text-indigo-500 w-12 h-12 mb-3 inline-block"></i>
+            <h2 class="title-font font-medium text-3xl text-gray-900">2 Years</h2>
+            <p class="leading-relaxed font-bold">Staff Administration</p>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+          <div class="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:bg-slate-200 hover:scale-110">
+            <i data-feather="package" class="text-indigo-500 w-12 h-12 mb-3 inline-block"></i>
+            <h2 class="title-font font-medium text-3xl text-gray-900">6 Month</h2>
+            <p class="leading-relaxed font-bold">Staff Warehouse</p>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+          <div class="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:bg-slate-200 hover:scale-110">
+            <i data-feather="pie-chart" class="text-indigo-500 w-12 h-12 mb-3 inline-block"></i>
+            <h2 class="title-font font-medium text-3xl text-gray-900">1 Years</h2>
+            <p class="leading-relaxed font-bold">Sales</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-12 md:py-24">
+    <div class="w-full max-w-6xl rounded bg-black mx-auto pl-0 pr-4 sm:px-6 md:px-8 relative">
+        <div class="shadow rounded-xl">
+            <div class="grid overflow-hidden text-white shadow-xl md:grid-cols-2 bg-blue-600 rounded-xl">
+              <aside class="relative hidden md:block">
+                <img class="absolute inset-0 object-cover object-left-top w-full h-full mt-16 -mr-16 rounded-tl-lg" src="/public/img/hero.png" alt="Discover our beautiful panel">
+              </aside>
+                <aside class="p-8 space-y-4 md:p-16">
+                    <h2 class="text-2xl font-bold tracking-tight md:text-4xl font-headline">
+                      Let's Check my Portfolio
+                    </h2>
+
+                    <p class="font-medium text-blue-100 md:text-2xl">
+                       Raldy Belo <span>Junior Web Developer</span>
+                    </p>
+
+                    <div>
+                        <a href="" class="bg-yellow-500 font-bold hover:bg-yellow-200 text-black text-blue-600 px-4 py-2 mt-3 rounded-xl">
+                            Hire now.
+                        </a>
+                    </div>
+                </aside>
+
+                
+            </div>
+        </div>
+    </div>
+  </section>
+  <section class="bg-zinc-50 overflow-hidden mt-14 lg:mb-14" >
+      <div class="bg-white dark:bg-gray-800 h-screen mb-20 py-6 sm:py-8 lg:py-12">
+        <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+            <div class="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
+                <div class="flex items-center gap-12" id="gallery">
+                    <h2 class="text-2xl font-bold text-gray-800 lg:text-3xl dark:text-white">Gallery</h2>
+    
+                    <p class="hidden max-w-screen-sm text-gray-500 dark:text-gray-300 md:block">
+                      "This gallery highlights my passion for creating visually stunning and user-centric designs."
+                    </p>
+                </div>
+    
+                <a href="#"
+                    class="inline-block rounded-lg border bg-white dark:bg-gray-700 dark:border-none px-4 py-2 text-center text-sm font-semibold text-gray-500 dark:text-gray-200 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:px-8 md:py-3 md:text-base">
+                    More
+                </a>
+            </div>
+    
+            <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
+                <!-- image - start -->
+                <a href="#"
+                    class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                    <img src="/public/img/galeri/about.jpg" loading="lazy" alt="Photo by Minh Pham" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+    
+                    <div
+                        class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                    </div>
+    
+                    <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">VR</span>
+                </a>
+                <!-- image - end -->
+    
+                <!-- image - start -->
+                <a href="#"
+                    class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+                    <img src="/public/img/galeri/angel.jpg" loading="lazy" alt="Photo by Magicle" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+    
+                    <div
+                        class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                    </div>
+    
+                    <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Tech</span>
+                </a>
+                <!-- image - end -->
+    
+                <!-- image - start -->
+                <a href="#"
+                    class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+                    <img src="/public/img/galeri/man.png" loading="lazy" alt="Photo by Martin Sanchez" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+    
+                    <div
+                        class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                    </div>
+    
+                    <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Dev</span>
+                </a>
+                <!-- image - end -->
+    
+                <!-- image - start -->
+                <a href="#"
+                    class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                    <img src="/public/img/galeri/hero2.JPG" loading="lazy" alt="Photo by Lorenzo Herrera" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+    
+                    <div
+                        class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                    </div>
+    
+                    <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Retro</span>
+                </a>
+                <!-- image - end -->
+            </div>
+        </div>
+      </div>     
+  </section>
+  <section>
+    
+  </section>
+  <section  id="music" class="w-full lg:h-max h-max bg-[url('/public/img/spotify.png')] bg-center bg-cover bg-no-repeat lg:pt-0  pt-8">
+    <div  class="bg-white grid justify-items-center bg-opacity-65 w-full h-max lg:h-max pt-12 pb-32">
+      <div class="mb-4 flex items-center justify-between px-9 gap-8 rounded-2xl bg-white w-11/12  sm:mb-8 md:mb-12">
+        <div class="flex items-center gap-12">
+            <h2 class="text-2xl font-bold text-gray-950 lg:text-3xl dark:text-white">My Playlist</h2>
+            <p class="hidden max-w-screen-sm text-gray-900 dark:text-gray-300 md:block">
+              "Discover the melodies and rhythms that shape my perspective and influence my work."
+            </p>
+        </div>
+        <div class="p-3 flex flex-col md:flex-row items-center justify-center">
+          <a href="https://open.spotify.com/user/317plqjlk5nrindlktuatyqt4is4" target="_blank">
+            <button type="button" class="text-white hover:before:bg-redborder-red-500 relative text-sm px-5 py-2.5 text-center inline-flex items-center me-2 mb-2 w-[13rem] md:w-[15rem] overflow-hidden bg-black shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-white before:transition-all before:duration-500 hover:text-black hover:before:left-0 hover:before:w-full rounded-lg">
+              <span class="text-center inline-flex items-center z-10">
+                <svg width="40px" height="40px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">    
+                  <title>Spotify-color</title>
+                  <desc>Created with Sketch.</desc>
+                  <defs>
+                  </defs>
+                  <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Color-" transform="translate(-200.000000, -460.000000)" fill="#00DA5A">
+                      <path d="M238.16,481.36 C230.48,476.8 217.64,476.32 210.32,478.6 C209.12,478.96 207.92,478.24 207.56,477.16 C207.2,475.96 207.92,474.76 209,474.4 C217.52,471.88 231.56,472.36 240.44,477.64 C241.52,478.24 241.88,479.68 241.28,480.76 C240.68,481.6 239.24,481.96 238.16,481.36 M237.92,488.08 C237.32,488.92 236.24,489.28 235.4,488.68 C228.92,484.72 219.08,483.52 211.52,485.92 C210.56,486.16 209.48,485.68 209.24,484.72 C209,483.76 209.48,482.68 210.44,482.44 C219.2,479.8 230,481.12 237.44,485.68 C238.16,486.04 238.52,487.24 237.92,488.08 M235.04,494.68 C234.56,495.4 233.72,495.64 233,495.16 C227.36,491.68 220.28,490.96 211.88,492.88 C211.04,493.12 210.32,492.52 210.08,491.8 C209.84,490.96 210.44,490.24 211.16,490 C220.28,487.96 228.2,488.8 234.44,492.64 C235.28,493 235.4,493.96 235.04,494.68 M224,460 C210.8,460 200,470.8 200,484 C200,497.2 210.8,508 224,508 C237.2,508 248,497.2 248,484 C248,470.8 237.32,460 224,460" id="Spotify">
+                      </path>
+                    </g>
+                  </g>
+                </svg>
+                <p class="ps-4 text-left">
+                  <span class="text-sm font-light">Open my</span><br><span class="text-lg">Spotify Profile</span>
+                </p>
+              </span>
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="lg:flex grid gap-5 p-8 lg:justify-center items-center">
+        <div class="lg:flex lg:flex-wrap grid gap-5">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7ivEZyVKpHlqCKFFUqOYX1?utm_source=generator&theme=0" width="100%" height="252" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" class=" lg:hover:scale-105 hover:rounded hover:border-solid transition duration-200 ease-in-out "></iframe>
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6WsG550j67Aj29z0iel7lo?utm_source=generator&theme=0" width="100%" height="252" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" class=" lg:hover:scale-105 hover:rounded hover:border-solid transition duration-200 ease-in-out "></iframe>
+        </div>
+        <div class="lg:flex lg:flex-wrap grid gap-5">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1Y57iWs9X7krJxQpuFLAjq?utm_source=generator&theme=0" width="100%" height="252" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" class=" lg:hover:scale-105 hover:rounded hover:border-solid transition duration-200 ease-in-out "></iframe>
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0X6urbVPZcWoeb68fTsmV3?utm_source=generator&theme=0" width="100%" height="252" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" class=" lg:hover:scale-105 hover:rounded hover:border-solid transition duration-200 ease-in-out "></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- GALLERY END--> 
+
+  <!-- CONTACT START -->
+  <section id="contact" class="bg-orange shadow-2xl m-4 rounded-xl px-5 pb-12 my-6">
+    <div class="lg:flex grid items-center justify-around gap-5">
+    
+  
+      <form method="post" class="">
+        <div class="h-max w-full  rounded-lg">
+            <div class="">
+              <div class="p-4 md:p-8">
+                <h1 class="text-black font-bold text-center pb-8 text-4xl md:text-5xl lg:text-6xl">CONTACT ME</h1>
+                  <form class="flex flex-col items-center">
+                    <div class=" xl:w-full">
+                      <div class="flex flex-col md:flex-row">
+                        <input id="name" name="name" type="text"
+                              class="my-2 py-2 px-4 rounded-md bg-yellow-100 text-gray-800 w-full md:w-1/2 md:mr-2 outline-none focus:ring-2 focus:ring-blue-600"
+                              placeholder="Name">
+                        <input id="email" name="name" type="email"
+                              class="my-2 py-2 px-4 rounded-md bg-yellow-100 text-gray-800 w-full md:w-1/2 md:ml-2 outline-none focus:ring-2 focus:ring-blue-600"
+                              placeholder="Email">
+                      </div>
+                        <input id="subject" type="text" placeholder="Subject"
+                              class="my-2 py-2 px-4 rounded-md bg-yellow-100 text-gray-800 w-full outline-none focus:ring-2 focus:ring-blue-600">
+                        <textarea id="message" name=message" rows="5" placeholder="Say Something"
+                              class="my-2 py-2 px-4 rounded-md bg-yellow-100 text-gray-800 w-full outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+                    </div>
+                    <button
+                         class="border-2 text-md font-bold mt-5 rounded-md py-2 px-4 bg-indigo-400 hover:bg-indigo-500 text-gray-800 hover:text-white transition duration-300 ease-in-out focus:ring-blue-600">
+                          Send Message
+                    </button>
+                    <div class="mt-4">
+                            <p class="text-white">If you prefer not to use web forms, you can reveal our email address on <a href="https://veilmail.io/e/FkKh7o"
+                                class="underline text-white" target="_blank">veilmail.io/e/FkKh7o</a>.
+                    </div>
+                  </form>
+              </div>
+            </div>
+        </div>
+        <div id="map" class="relative h-3/5 lg:h-full lg:w-1/2 w-full overflow-hidden bg-cover bg-[50%] bg-no-repeat ">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11672.945750644447!2d-122.42107853750231!3d37.7730507907087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858070cc2fbd55%3A0xa71491d736f62d5c!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1619524992238!5m2!1sen!2sus"
+            width="100%" height="480" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </form>
+    </div>
+       <!-- Your form goes here -->
+   
+  </section>
+  <!-- CONTACT END -->
+
+ 
+
+  <footer class="lg:flex justify-around items-baseline w-full lg:h-full h-full bottom-0 left-0 right-0">
+    <div class="bg-gray-100">
+      <div class=" py-10 px-4 sm:px-6 text-gray-800 sm:flex justify-between mx-auto">
+          <div class="p-5 sm:w-4/12">
+              <h3 class="font-bold text-xl text-black mb-4">RALDYBN</h3>
+              <p class="text-gray-500 text-sm mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting
+                  industry.</p>
+              <div class="flex-row flex">
+                  <a href="/#" class="w-6 mx-1">
+                      <svg class="fill-current cursor-pointer text-gray-500 hover:text-gray-800" width="100%"
+                          height="100%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+                          xmlns:serif="http://www.serif.com/"
+                          style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+                          <path id="Twitter" d="M24,12c0,6.627 -5.373,12 -12,12c-6.627,0 -12,-5.373 -12,-12c0,-6.627
+                    5.373,-12 12,-12c6.627,0 12,5.373 12,12Zm-6.465,-3.192c-0.379,0.168
+                    -0.786,0.281 -1.213,0.333c0.436,-0.262 0.771,-0.676
+                    0.929,-1.169c-0.408,0.242 -0.86,0.418 -1.341,0.513c-0.385,-0.411
+                    -0.934,-0.667 -1.541,-0.667c-1.167,0 -2.112,0.945 -2.112,2.111c0,0.166
+                    0.018,0.327 0.054,0.482c-1.754,-0.088 -3.31,-0.929
+                    -4.352,-2.206c-0.181,0.311 -0.286,0.674 -0.286,1.061c0,0.733 0.373,1.379
+                    0.94,1.757c-0.346,-0.01 -0.672,-0.106 -0.956,-0.264c-0.001,0.009
+                    -0.001,0.018 -0.001,0.027c0,1.023 0.728,1.877 1.694,2.07c-0.177,0.049
+                    -0.364,0.075 -0.556,0.075c-0.137,0 -0.269,-0.014 -0.397,-0.038c0.268,0.838
+                    1.048,1.449 1.972,1.466c-0.723,0.566 -1.633,0.904 -2.622,0.904c-0.171,0
+                    -0.339,-0.01 -0.504,-0.03c0.934,0.599 2.044,0.949 3.237,0.949c3.883,0
+                    6.007,-3.217 6.007,-6.008c0,-0.091 -0.002,-0.183 -0.006,-0.273c0.413,-0.298
+                    0.771,-0.67 1.054,-1.093Z"></path>
+                      </svg>
+                  </a>
+                  <a href="/#" class="w-6 mx-1">
+                      <svg class="fill-current cursor-pointer text-gray-500 hover:text-gray-800" width="100%"
+                          height="100%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+                          xmlns:serif="http://www.serif.com/"
+                          style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+                          <path id="Facebook" d="M24,12c0,6.627 -5.373,12 -12,12c-6.627,0 -12,-5.373 -12,-12c0,-6.627
+                    5.373,-12 12,-12c6.627,0 12,5.373
+                    12,12Zm-11.278,0l1.294,0l0.172,-1.617l-1.466,0l0.002,-0.808c0,-0.422
+                    0.04,-0.648 0.646,-0.648l0.809,0l0,-1.616l-1.295,0c-1.555,0 -2.103,0.784
+                    -2.103,2.102l0,0.97l-0.969,0l0,1.617l0.969,0l0,4.689l1.941,0l0,-4.689Z"></path>
+                      </svg>
+                  </a>
+                  <a href="/#" class="w-6 mx-1">
+                      <svg class="fill-current cursor-pointer text-gray-500 hover:text-gray-800" width="100%"
+                          height="100%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+                          xmlns:serif="http://www.serif.com/"
+                          style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+                          <g id="Layer_1">
+                              <circle id="Oval" cx="12" cy="12" r="12"></circle>
+                              <path id="Shape" d="M19.05,8.362c0,-0.062 0,-0.125 -0.063,-0.187l0,-0.063c-0.187,-0.562
+                       -0.687,-0.937 -1.312,-0.937l0.125,0c0,0 -2.438,-0.375 -5.75,-0.375c-3.25,0
+                       -5.75,0.375 -5.75,0.375l0.125,0c-0.625,0 -1.125,0.375
+                       -1.313,0.937l0,0.063c0,0.062 0,0.125 -0.062,0.187c-0.063,0.625 -0.25,1.938
+                       -0.25,3.438c0,1.5 0.187,2.812 0.25,3.437c0,0.063 0,0.125
+                       0.062,0.188l0,0.062c0.188,0.563 0.688,0.938 1.313,0.938l-0.125,0c0,0
+                       2.437,0.375 5.75,0.375c3.25,0 5.75,-0.375 5.75,-0.375l-0.125,0c0.625,0
+                       1.125,-0.375 1.312,-0.938l0,-0.062c0,-0.063 0,-0.125
+                       0.063,-0.188c0.062,-0.625 0.25,-1.937 0.25,-3.437c0,-1.5 -0.125,-2.813
+                       -0.25,-3.438Zm-4.634,3.927l-3.201,2.315c-0.068,0.068 -0.137,0.068
+                       -0.205,0.068c-0.068,0 -0.136,0 -0.204,-0.068c-0.136,-0.068 -0.204,-0.204
+                       -0.204,-0.34l0,-4.631c0,-0.136 0.068,-0.273 0.204,-0.341c0.136,-0.068
+                       0.272,-0.068 0.409,0l3.201,2.316c0.068,0.068 0.136,0.204
+                       0.136,0.34c0.068,0.136 0,0.273 -0.136,0.341Z" style="fill: rgb(255, 255, 255);"></path>
+                          </g>
+                      </svg>
+                  </a>
+                  <a href="/#" class="w-6 mx-1">
+                      <svg class="fill-current cursor-pointer text-gray-500 hover:text-gray-800" width="100%"
+                          height="100%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+                          xmlns:serif="http://www.serif.com/"
+                          style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+                          <path id="Shape" d="M7.3,0.9c1.5,-0.6 3.1,-0.9 4.7,-0.9c1.6,0 3.2,0.3 4.7,0.9c1.5,0.6 2.8,1.5
+                    3.8,2.6c1,1.1 1.9,2.3 2.6,3.8c0.7,1.5 0.9,3 0.9,4.7c0,1.7 -0.3,3.2
+                    -0.9,4.7c-0.6,1.5 -1.5,2.8 -2.6,3.8c-1.1,1 -2.3,1.9 -3.8,2.6c-1.5,0.7
+                    -3.1,0.9 -4.7,0.9c-1.6,0 -3.2,-0.3 -4.7,-0.9c-1.5,-0.6 -2.8,-1.5
+                    -3.8,-2.6c-1,-1.1 -1.9,-2.3 -2.6,-3.8c-0.7,-1.5 -0.9,-3.1 -0.9,-4.7c0,-1.6
+                    0.3,-3.2 0.9,-4.7c0.6,-1.5 1.5,-2.8 2.6,-3.8c1.1,-1 2.3,-1.9
+                    3.8,-2.6Zm-0.3,7.1c0.6,0 1.1,-0.2 1.5,-0.5c0.4,-0.3 0.5,-0.8 0.5,-1.3c0,-0.5
+                    -0.2,-0.9 -0.6,-1.2c-0.4,-0.3 -0.8,-0.5 -1.4,-0.5c-0.6,0 -1.1,0.2
+                    -1.4,0.5c-0.3,0.3 -0.6,0.7 -0.6,1.2c0,0.5 0.2,0.9 0.5,1.3c0.3,0.4 0.9,0.5
+                    1.5,0.5Zm1.5,10l0,-8.5l-3,0l0,8.5l3,0Zm11,0l0,-4.5c0,-1.4 -0.3,-2.5
+                    -0.9,-3.3c-0.6,-0.8 -1.5,-1.2 -2.6,-1.2c-0.6,0 -1.1,0.2 -1.5,0.5c-0.4,0.3
+                    -0.8,0.8 -0.9,1.3l-0.1,-1.3l-3,0l0.1,2l0,6.5l3,0l0,-4.5c0,-0.6 0.1,-1.1
+                    0.4,-1.5c0.3,-0.4 0.6,-0.5 1.1,-0.5c0.5,0 0.9,0.2 1.1,0.5c0.2,0.3 0.4,0.8
+                    0.4,1.5l0,4.5l2.9,0Z"></path>
+                      </svg>
+                  </a>
+                  <!-- <a href="/#" class="w-6 mx-1">
+                      <svg class="fill-current cursor-pointer text-gray-500 hover:text-gray-800" width="100%"
+                          height="100%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+                          xmlns:serif="http://www.serif.com/"
+                          style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+                          <path id="Combined-Shape" d="M12,24c6.627,0 12,-5.373 12,-12c0,-6.627 -5.373,-12 -12,-12c-6.627,0
+                    -12,5.373 -12,12c0,6.627 5.373,12 12,12Zm6.591,-15.556l-0.722,0c-0.189,0
+                    -0.681,0.208 -0.681,0.385l0,6.422c0,0.178 0.492,0.323
+                    0.681,0.323l0.722,0l0,1.426l-4.675,0l0,-1.426l0.935,0l0,-6.655l-0.163,0l-2.251,8.081l-1.742,0l-2.222,-8.081l-0.168,0l0,6.655l0.935,0l0,1.426l-3.74,0l0,-1.426l0.519,0c0.203,0
+                    0.416,-0.145 0.416,-0.323l0,-6.422c0,-0.177 -0.213,-0.385
+                    -0.416,-0.385l-0.519,0l0,-1.426l4.847,0l1.583,5.704l0.042,0l1.598,-5.704l5.021,0l0,1.426Z"></path>
+                      </svg>
+                  </a> -->
+              </div>
+          </div>
+          <div class="p-5 sm:w-5/12 flex flex-col">
+              <div class="text-sm uppercase text-gray-800 font-bold mb-5">Recent Blogs</div>
+              <div class="flex mb-3 hover:scale-105 hover:rounded hover:border-solid transition duration-200 ease-in-out hover:shadow-2xl">
+                  <div class="h-20 w-3/12 bg-cover "
+                      style="background-image: url('../public/img/blog/milan.jpg.crdownload')"
+                      title="Woman holding a mug">
+                  </div>
+                  <div class="pl-3 w-9/12 ">
+                      <div class="font-bold text-sm">Bangkitnya Rossoneri: AC Milan Kembali ke Puncak</div>
+                      <p class="text-gray-700 text-sm">
+                        Dalam beberapa musim terakhir, AC Milan menunjukkan tanda-tanda kebangkitan. 
+                      </p>
+                  </div>
+              </div>
+          </div>
+          <div class="p-5 sm:w-3/12">
+              <div class="text-sm uppercase text-gray-800 font-bold mb-5">Address</div>
+              <ul class="grid gap-2">
+                  <li>
+                     Alamat : Kalimalang, Jakarta Timur.
+                  </li>
+                  <li>
+                      Email : Raldybelo@gmail.com
+                  </li>
+                  <li>
+                      Phone : (+62)857-8279-3702
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <div class="flex py-5 m-auto text-gray-800 text-sm flex-col items-center border-t max-w-screen-xl">
+          <p>© RaldyBN 2024. All Rights Reserved.</p>
+      </div>
+  </div>
+  </footer>
+
+  
+
+  <script src="/dist/js/script.js"></script>
+  <script>
+    feather.replace();
+  </script>
+  
+</body>
+</html>
